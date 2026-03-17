@@ -4,7 +4,7 @@ import OopsBasic from "./Oops/BASICC++.pdf";
 import OopsBasic2 from "./Oops/CLASS&OBJECTpart2.pdf";
 import Constructor from "./Oops/CONSTRUCTOR.pdf";
 import CopyConstructor from "./Oops/COPYCONSTRUCTOR.pdf";
-import Destructor from "./Oops/Destructor.pdf";
+import Destructor from "./Oops/DESTRUCTOR.pdf";
 import Encapsulation from "./Oops/ENCAPSULATION.pdf";
 import Inheritance from "./Oops/INHERITANCE.pdf";
 import TypesOfInheritance from "./Oops/TYPESOFINHERITANCE.pdf";
