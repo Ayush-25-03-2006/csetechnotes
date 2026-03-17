@@ -64,7 +64,7 @@ function Dsa() {
       Download PDF
     </a>
     <button
-      className="btn btn-success btn-lg mb-4 ms-3"
+      className="btn btn-primary btn-lg mb-4 ms-3"
       onClick={() => setShowPdf1(!showPdf1)}
     >
       {showPdf1 ? "Hide Notes" : "Show Notes"}
