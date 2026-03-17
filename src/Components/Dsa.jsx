@@ -150,7 +150,7 @@ function Dsa() {
             className="btn btn-success btn-lg mb-3 ms-3"
             onClick={() => setShowPdf4(!showPdf4)}
           >
-            {showPdf1 ? "Hide Notes" : "Show Notes"}
+            {showPdf4 ? "Hide Notes" : "Show Notes"}
           </button>
     
           {showPdf4 && (
