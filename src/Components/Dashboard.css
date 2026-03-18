@@ -1,0 +1,84 @@
+/* Page background */
+body {
+    background: linear-gradient(135deg, #1f1f1f, #2b5876, #4e4376);
+    min-height: 100vh;
+}
+
+/* Dashboard container spacing */
+.row {
+    margin-top: 20px;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    background: #ffffff;
+}
+
+/* Card hover animation */
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+
+/* Card image */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Image zoom effect */
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Card body */
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Subject title */
+.card-body h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Button styling */
+.card-body .btn {
+    width: 120px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.card-body .btn:hover {
+    transform: scale(1.08);
+    background-color: #0d6efd;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 160px;
+    }
+
+    .card-body h3 {
+        font-size: 18px;
+    }
+}
+
+/* Extra spacing for mobile */
+@media (max-width: 576px) {
+    .row {
+        padding: 10px;
+    }
+}
