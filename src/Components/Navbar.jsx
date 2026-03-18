@@ -3,25 +3,12 @@ import { useState, useEffect } from "react"
 
 function Navbar() {
 
-    const [darkMode, setDarkMode] = useState(
-        localStorage.getItem("theme") === "dark"
-    )
+    const [darkMode] = useState(true)
 
     useEffect(() => {
-        if (darkMode) {
-            document.body.style.backgroundColor = "#121212"
-            document.body.style.color = "white"
-            localStorage.setItem("theme", "dark")
-        } else {
-            document.body.style.backgroundColor = "white"
-            document.body.style.color = "black"
-            localStorage.setItem("theme", "light")
-        }
-    }, [darkMode])
-
-    const toggleTheme = () => {
-        setDarkMode(!darkMode)
-    }
+        document.body.style.backgroundColor = "#121212"
+        document.body.style.color = "white"
+    }, [])
 
     return (
         <nav className={`navbar navbar-expand-lg ${darkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"} mb-3`}>
@@ -62,10 +49,6 @@ function Navbar() {
                         </li>
 
                     </ul>
-
-                    <button className="btn btn-outline-primary me-5" onClick={toggleTheme}>
-                        {darkMode ? "Light Mode ☀️" : "Dark Mode 🌙"}
-                    </button>
 
                 </div>
             </div>
