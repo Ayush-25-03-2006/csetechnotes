@@ -25,7 +25,7 @@ function Dashboard() {
             </div>
             <div className="col">
                 <div className="card">
-                    <img src={c} className="card-img-top" style={{height: "545px"}} alt="Computer Networks" />
+                    <img src={c} className="card-img-top" alt="Computer Networks" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
                         <Link to="/" className="btn btn-primary mb-2 btn-lg">
                             C
@@ -91,7 +91,7 @@ function Dashboard() {
             </div>
             <div className="col">
                 <div className="card">
-                    <img src={oops} className="card-img-top" style={{height:"540px"}} alt="Object Oriented Programming" />
+                    <img src={oops} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
                         <Link to="/Oops" className="btn btn-primary mb-2 btn-lg">
                             OOPS
