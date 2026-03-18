@@ -1,3 +1,4 @@
+import "./Dashboard.css";
 import dbms from "./Images/dbms.jpeg";
 import os from "./Images/os.jpeg";
 import oops from "./Images/oops.jpeg";
