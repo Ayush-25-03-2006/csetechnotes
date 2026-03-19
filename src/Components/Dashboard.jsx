@@ -121,7 +121,7 @@ function Dashboard() {
                     <img src={matrix} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
                         <Link to="/De" className="btn btn-primary mb-2 btn-lg">
-                            DE
+                            Matrix
                         </Link>
                         <h3 style={{color: "white"}}>Matrix & Linear Algebra</h3>
                     </div>
@@ -132,7 +132,7 @@ function Dashboard() {
                     <img src={probability} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
                         <Link to="/De" className="btn btn-primary mb-2 btn-lg">
-                            DE
+                            P & S
                         </Link>
                         <h3 style={{color: "white"}}>Probability & Statistics</h3>
                     </div>
@@ -143,7 +143,7 @@ function Dashboard() {
                     <img src={calculus} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
                         <Link to="/De" className="btn btn-primary mb-2 btn-lg">
-                            DE
+                            DC
                         </Link>
                         <h3 style={{color: "white"}}>Differential Calculus</h3>
                     </div>
@@ -154,7 +154,7 @@ function Dashboard() {
                     <img src={discrete} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
                         <Link to="/De" className="btn btn-primary mb-2 btn-lg">
-                            DE
+                            DM
                         </Link>
                         <h3 style={{color: "white"}}>Discrete Mathematics</h3>
                     </div>
