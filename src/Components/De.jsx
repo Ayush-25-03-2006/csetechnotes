@@ -16,7 +16,7 @@ function De() {
         <div className="container mt-4">
                   <u><h3 >Topic Wise Notes Content</h3></u>
                   <hr />
-                    <h3 className="mb-4">1. Boolean Algebra Logical Gates & K-Map</h3>
+                    <h3 className="mb-4">1. Boolean Algebra, Logical Gates & K-Map</h3>
                     <a
                       href={bool}
                       download
@@ -41,7 +41,7 @@ function De() {
                       </div>
                     )}
                     <hr />
-                    <h3 className="mb-4">2. Implementation Of Gates Using Nand & Nor</h3>
+                    <h3 className="mb-4">2. Implementation Of All Gates Using NAND & NOR</h3>
                     <a
                       href={gate}
                       download
