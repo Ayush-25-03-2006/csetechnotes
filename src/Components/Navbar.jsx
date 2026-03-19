@@ -24,6 +24,7 @@ function Navbar() {
                         <li className="nav-item"><Link className="nav-link" to="/De">DE</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Os">OS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Java">JAVA</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Cn">CN</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Oops">OOPS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Matrix">Matrix</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Ps">Probability</Link></li>
