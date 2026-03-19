@@ -8,6 +8,11 @@ import java from "./Images/java.jpeg";
 import daa from "./Images/daa.jpeg";
 import c from "./Images/c.jpeg";
 import de from "./Images/de.jpeg";
+import calculus from "./Images/Differentialcalculus.jpeg";
+import discrete from "./Images/discrete.jpeg";
+import matrix from "./Images/matrix.jpeg";
+import probability from "./Images/probability.jpeg";
+
 import { Link } from "react-router-dom";
 function Dashboard() {
     return (
@@ -111,7 +116,50 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
-
+            <div className="col">
+                <div className="card">
+                    <img src={matrix} className="card-img-top" alt="Object Oriented Programming" />
+                    <div style={{backgroundColor: "#333333"}} className="card-body">
+                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                            DE
+                        </Link>
+                        <h3 style={{color: "white"}}>Matrix & Linear Algebra</h3>
+                    </div>
+                </div>
+            </div>
+            <div className="col">
+                <div className="card">
+                    <img src={probability} className="card-img-top" alt="Object Oriented Programming" />
+                    <div style={{backgroundColor: "#333333"}} className="card-body">
+                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                            DE
+                        </Link>
+                        <h3 style={{color: "white"}}>Probability & Statistics</h3>
+                    </div>
+                </div>
+            </div>
+            <div className="col">
+                <div className="card">
+                    <img src={calculus} className="card-img-top" alt="Object Oriented Programming" />
+                    <div style={{backgroundColor: "#333333"}} className="card-body">
+                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                            DE
+                        </Link>
+                        <h3 style={{color: "white"}}>Differential Calculus</h3>
+                    </div>
+                </div>
+            </div>
+            <div className="col">
+                <div className="card">
+                    <img src={discrete} className="card-img-top" alt="Object Oriented Programming" />
+                    <div style={{backgroundColor: "#333333"}} className="card-body">
+                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                            DE
+                        </Link>
+                        <h3 style={{color: "white"}}>Discrete Mathematics</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
