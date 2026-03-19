@@ -1,0 +1,14 @@
+.nav-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+}
+
+.nav-scroll::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+.navbar-nav .nav-link {
+    padding: 8px 15px;
+    white-space: nowrap;
+}
