@@ -120,7 +120,7 @@ function Dashboard() {
                 <div className="card">
                     <img src={matrix} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
-                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                        <Link to="/" className="btn btn-primary mb-2 btn-lg">
                             Matrix
                         </Link>
                         <h3 style={{color: "white"}}>Matrix & Linear Algebra</h3>
@@ -131,7 +131,7 @@ function Dashboard() {
                 <div className="card">
                     <img src={probability} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
-                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                        <Link to="/" className="btn btn-primary mb-2 btn-lg">
                             P & S
                         </Link>
                         <h3 style={{color: "white"}}>Probability & Statistics</h3>
@@ -142,7 +142,7 @@ function Dashboard() {
                 <div className="card">
                     <img src={calculus} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
-                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                        <Link to="/" className="btn btn-primary mb-2 btn-lg">
                             DC
                         </Link>
                         <h3 style={{color: "white"}}>Differential Calculus</h3>
@@ -153,7 +153,7 @@ function Dashboard() {
                 <div className="card">
                     <img src={discrete} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
-                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
+                        <Link to="/" className="btn btn-primary mb-2 btn-lg">
                             DM
                         </Link>
                         <h3 style={{color: "white"}}>Discrete Mathematics</h3>
