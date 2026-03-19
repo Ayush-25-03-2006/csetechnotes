@@ -104,7 +104,7 @@ function Dashboard() {
                 <div className="card">
                     <img src={de} className="card-img-top" alt="Object Oriented Programming" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
-                        <Link to="/" className="btn btn-primary mb-2 btn-lg">
+                        <Link to="/De" className="btn btn-primary mb-2 btn-lg">
                             DE
                         </Link>
                         <h3 style={{color: "white"}}>Digital Electronics</h3>
