@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
+import "./Navbar.css";
 
 function Navbar() {
-
-    const [darkMode] = useState(true)
 
     useEffect(() => {
         document.body.style.backgroundColor = "#121212"
@@ -11,46 +10,25 @@ function Navbar() {
     }, [])
 
     return (
-        <nav className={`navbar navbar-expand-lg ${darkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"} mb-3`}>
+        <nav className="navbar navbar-dark bg-dark">
             <div className="container-fluid">
 
-                <Link className="navbar-brand me-5" to="/">
-                    <i className="bi bi-laptop"></i>
-                </Link>
-
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <li className="nav-item">
-                            <Link className="nav-link active me-5" to="/">Home</Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link className="nav-link me-5" to="/about">About</Link>
-                        </li>
-
-                        <li className="nav-item dropdown">
-                            <Link className="nav-link dropdown-toggle me-5" to="/" role="button" data-bs-toggle="dropdown">
-                                Notes Provider
-                            </Link>
-
-                            <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/action">Name</Link></li>
-                                <li><Link className="dropdown-item" to="/another">Designation</Link></li>
-                                <li><Link className="dropdown-item" to="/something">Degree</Link></li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li><Link className="dropdown-item" to="/something">Developer Name</Link></li>
-                            </ul>
-                        </li>
+                {/* Scrollable Menu */}
+                <div className="nav-scroll">
+                    <ul className="navbar-nav flex-row">
+                        <li className="nav-item"><Link className="nav-link" to="/"><i className="bi bi-laptop"></i></Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/c">C</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Dsa">DSA</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Daa">DAA</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Dbms">DBMS</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/De">DE</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Os">OS</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Java">JAVA</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Oops">OOPS</Link></li>
 
                     </ul>
-
                 </div>
+
             </div>
         </nav>
     )
