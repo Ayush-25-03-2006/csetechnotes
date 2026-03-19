@@ -8,7 +8,7 @@ import java from "./Images/java.jpeg";
 import daa from "./Images/daa.jpeg";
 import c from "./Images/c.jpeg";
 import de from "./Images/de.jpeg";
-import calculus from "./Images/Differentialcalculus.jpeg";
+import calculus from "./Images/differentialcalculas.jpeg";
 import discrete from "./Images/discrete.jpeg";
 import matrix from "./Images/matrix.jpeg";
 import probability from "./Images/probability.jpeg";
