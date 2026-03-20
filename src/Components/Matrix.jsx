@@ -33,7 +33,7 @@ function Matrix() {
                       </div>
                     )}
                     <hr />
-                    <h3 className="mb-4">1. Matrix Notes</h3>
+                    <h3 className="mb-4">2. Matrix Question & Answer</h3>
                     <a
                       href={matrixnotes}
                       download
