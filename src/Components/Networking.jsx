@@ -7,7 +7,7 @@ function Networking() {
     return(
         <>
             <h3 className="mb-4">1. Computer Network Notes</h3>
-            
+            <hr />
                   <a
                     href={Network}
                     download
