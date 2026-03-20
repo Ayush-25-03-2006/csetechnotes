@@ -8,6 +8,8 @@ function Matrix() {
         <div className="container mt-4">
                   <u><h3 >Topic Wise Notes Content</h3></u>
                   <hr />
+                  <h1># Matrix</h1>
+                  <hr />
                     <h3 className="mb-4">1. Matrix Notes</h3>
                     <a
                       href={matrixnotes}
