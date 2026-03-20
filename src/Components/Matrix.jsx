@@ -6,7 +6,7 @@ import calculus1 from "./Matrix/MATHSnotesCALCULUS-I.pdf";
 import integration from "./Matrix/INTEGRATIONBETAGAMMAPYQ.pdf";
 import betagamma1ques from "./Matrix/BETAGAMMAQUESANS.pdf";
 import betagamma2ques from "./Matrix/BETAGAMMA7.8QUESANS.pdf"; 
-import calculus2 from "./Matrix/MATHSnotesCALCULUSII.pdf";
+import calculus2 from "./Matrix/MATHSnotesCALCULUSll.pdf";
 import taylor from "./Matrix/TAYLOR'SMACLUARIN'SROLLSTHEOREMpyq.pdf";
 import maxmin from "./Matrix/MAXIMAMINIMA&LAGRANGEMULTIPLIER.pdf";
 import limit from "./Matrix/LIMITCONTINUITY&DIFFERENTIABILITY.pdf";
