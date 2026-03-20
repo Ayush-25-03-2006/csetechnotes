@@ -35,7 +35,7 @@ function Matrix() {
                     <hr />
                     <h3 className="mb-4">2. Matrix Question & Answer</h3>
                     <a
-                      href={matrixnotes}
+                      href={questionmatrix}
                       download
                       className="btn btn-primary btn-lg mb-4"
                     >
@@ -50,7 +50,7 @@ function Matrix() {
                     {showPdf2 && (
                       <div className="mt-3">
                         <iframe
-                          src={matrixnotes}
+                          src={questionmatrix}
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
