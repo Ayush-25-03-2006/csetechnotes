@@ -15,3 +15,6 @@
 .nav-item :hover {
     color: rgb(85, 85, 161);
 }
+.container-fluid {
+    border-radius: 15px;
+}

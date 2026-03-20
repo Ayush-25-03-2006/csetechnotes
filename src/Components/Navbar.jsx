@@ -32,7 +32,6 @@ function Navbar() {
                         <li className="nav-item"><Link className="nav-link" to="/Discrete">Discrete</Link></li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     )
