@@ -1,6 +1,6 @@
 import { useState } from "react";
-import matrixnotes from "./Matrix/MATHS_MATRIX&LINEARALGEBRA.pdf";
-import questionmatrix from "./Matrix/MATHS_notes_MATRIX&LINEARALGEBRA.pdf";
+import questionmatrix from "./Matrix/MATHS_MATRIX&LINEARALGEBRA.pdf";
+import matrixnotes from "./Matrix/MATHS_notes_MATRIX&LINEARALGEBRA.pdf";
 function Matrix() {
     const [showPdf1, setShowPdf1] = useState(false);
     const [showPdf2, setShowPdf2] = useState(false);
