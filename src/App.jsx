@@ -8,6 +8,7 @@ import Daa from './Components/Daa'
 import Dsa from './Components/Dsa'
 import Os from './Components/Os'
 import De from './Components/De'
+import Matrix from './Components/Matrix'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/Dsa' element={<Dsa/>}/>
           <Route path='/Os' element={<Os/>}/>
           <Route path="/De" element={<De/>}/>
+          <Route path="/Matrix" element={<Matrix/>}/>
         </Routes>
 
       </div>
