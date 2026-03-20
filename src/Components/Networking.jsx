@@ -6,6 +6,9 @@ function Networking() {
 
     return(
         <>
+        <div className="container mt-4">
+        <u><h3 >Topic Wise Notes Content</h3></u>
+            <hr />
             <h3 className="mb-4">1. Computer Network Notes</h3>
                   <a
                     href={Network}
@@ -32,7 +35,8 @@ function Networking() {
                       ></iframe>
                     </div>
                   )}
-                  <hr />
+                  </div>
+                  
         </>
     )
 }
