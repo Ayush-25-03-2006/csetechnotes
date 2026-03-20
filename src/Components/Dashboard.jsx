@@ -87,7 +87,7 @@ function Dashboard() {
                 <div className="card">
                     <img src={java} className="card-img-top" alt="Computer Networks" />
                     <div style={{backgroundColor: "#333333"}} className="card-body">
-                        <Link to="/java" className="btn btn-primary mb-2 btn-lg">
+                        <Link to="/Java" className="btn btn-primary mb-2 btn-lg">
                             JAVA
                         </Link>
                         <h3 style={{color: "white"}}>Java Programming</h3>
