@@ -15,6 +15,7 @@
 .nav-item :hover {
     color: rgb(85, 85, 161);
 }
-.container-fluid {
-    border-radius: 15px;
+.navbar {
+    border-radius: 30px; /* change value as you like */
+    margin: 10px; /*  optional for spacing */
 }
