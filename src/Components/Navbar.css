@@ -18,4 +18,7 @@
 .navbar {
     border-radius: 50px; /* change value as you like */
     margin: 10px; /*  optional for spacing */
+    background: linear-gradient(90deg,#1f4150,#2f5562,#2c5364);
+
 }
+
