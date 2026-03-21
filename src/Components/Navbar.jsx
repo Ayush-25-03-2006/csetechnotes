@@ -3,6 +3,12 @@ import { useEffect } from "react"
 import "./Navbar.css";
 
 function Navbar() {
+
+    useEffect(() => {
+        // document.body.style.backgroundColor = "#121212"
+        document.body.style.color = "white"
+    }, [])
+
     return (
         <nav className="navbar navbar-dark bg-dark">
             <div className="container-fluid">
