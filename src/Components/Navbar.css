@@ -13,7 +13,7 @@
     white-space: nowrap;
 }
 .nav-item :hover {
-    color: rgb(85, 85, 161);
+    color: rgb(85, 161, 106);
 }
 .navbar {
     border-radius: 50px; /* change value as you like */
