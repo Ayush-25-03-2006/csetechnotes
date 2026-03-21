@@ -9,6 +9,7 @@ import Dsa from './Components/Dsa'
 import Os from './Components/Os'
 import De from './Components/De'
 import Matrix from './Components/Matrix'
+import Java from './Components/Java'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/Os' element={<Os/>}/>
           <Route path="/De" element={<De/>}/>
           <Route path="/Matrix" element={<Matrix/>}/>
+          <Route path="/Java" element={<Java/>}/>
         </Routes>
 
       </div>
