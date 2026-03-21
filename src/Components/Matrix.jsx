@@ -560,7 +560,7 @@ function Matrix() {
                       </div>
                     )}
                     <hr />
-                    <h1>@ Important Question</h1>
+                    <h1 style={{color:"crimson"}}>@ Important Question</h1>
                     <hr />
                     <h3 className="mb-4">1. Math Important Question</h3>
                     <a
