@@ -5,7 +5,7 @@ import "./Navbar.css";
 function Navbar() {
 
     useEffect(() => {
-        // document.body.style.backgroundColor = "#121212"
+        document.body.style.backgroundColor = "#121212"
         document.body.style.color = "white"
     }, [])
 
@@ -16,7 +16,7 @@ function Navbar() {
                 {/* Scrollable Menu */}
                 <div className="nav-scroll">
                     <ul className="navbar-nav flex-row">
-                        <li className="nav-item"><Link className="nav-link" to="/"><i className="bi bi-laptop"></i></Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/"><i className="bi bi-house-fill"></i></Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/c">C</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Dsa">DSA</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Daa">DAA</Link></li>
