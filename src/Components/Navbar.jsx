@@ -5,7 +5,7 @@ import "./Navbar.css";
 function Navbar() {
 
     useEffect(() => {
-        document.body.style.backgroundColor = "#121212"
+        document.body.style.backgroundColor = "#333333"
         document.body.style.color = "white"
     }, [])
 
