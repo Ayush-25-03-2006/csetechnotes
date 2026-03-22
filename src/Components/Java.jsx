@@ -30,7 +30,7 @@ function Java() {
                 width="70%"
                 height="200px"
                 title="OOPS Notes"
-                onLoad={() => toast.success("Notes Loaded Successfully...")}
+                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:2000,transition:null})}
               ></iframe>
             </div>
           )}
