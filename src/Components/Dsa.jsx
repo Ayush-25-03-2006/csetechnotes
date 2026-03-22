@@ -1,4 +1,4 @@
-import introduction from "./Dsa/introduction&OverviewtoDSA.pdf";
+import introduction from "./Dsa/introduction&overviewtoDSA.pdf";
 import ll1 from "./Dsa/LINKEDLIST1.pdf";
 import ll2 from "./Dsa/linkedlist2.pdf";
 import ll3 from "./Dsa/linkedlist3.pdf";
