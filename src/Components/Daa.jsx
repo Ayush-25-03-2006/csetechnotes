@@ -195,7 +195,7 @@ function Daa() {
                   ></iframe>
                 </div>
               )}
-              <ToastContainer position="top-center"/>
+              <ToastContainer position="top-center" theme="dark"/>
             </div>
     )
 }

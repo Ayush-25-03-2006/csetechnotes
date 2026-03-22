@@ -91,7 +91,7 @@ function Dbms() {
                 ></iframe>
               </div>
             )}
-            <ToastContainer position="top-center"/>
+            <ToastContainer position="top-center" theme="dark"/>
         </div>
     )
 }
