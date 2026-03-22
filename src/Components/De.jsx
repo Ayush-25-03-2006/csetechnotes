@@ -12,7 +12,7 @@ function De() {
     const [showPdf3, setShowPdf3] = useState(false);
     const [showPdf4, setShowPdf4] = useState(false);
     const [showPdf5, setShowPdf5] = useState(false);
-    const notify = () => toast("Downloading The Notes",{autoClose:1000,transition:null});
+    const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
 
     return(
         <div className="container mt-4">
