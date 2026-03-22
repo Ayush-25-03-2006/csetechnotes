@@ -4,6 +4,7 @@ import combinational from "./De/CombinationalCircuit.pdf";
 import sequential from "./De/SequentialCircuits.pdf";
 import question from "./De/DCTOP25QUESANS.pdf";
 import { use, useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 function De() {
     const [showPdf1, setShowPdf1] = useState(false);
@@ -11,6 +12,7 @@ function De() {
     const [showPdf3, setShowPdf3] = useState(false);
     const [showPdf4, setShowPdf4] = useState(false);
     const [showPdf5, setShowPdf5] = useState(false);
+    const notify = () => toast("Downloading The Notes",{autoClose:1000,transition:null});
 
     return(
         <div className="container mt-4">
@@ -21,6 +23,7 @@ function De() {
                       href={bool}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -46,6 +49,7 @@ function De() {
                       href={gate}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -71,6 +75,7 @@ function De() {
                       href={combinational}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -96,6 +101,7 @@ function De() {
                       href={sequential}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -122,6 +128,7 @@ function De() {
                       href={question}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -141,6 +148,7 @@ function De() {
                         ></iframe>
                       </div>
                     )}
+                    <ToastContainer position="top-center"/>
                 </div>
     )
 }
