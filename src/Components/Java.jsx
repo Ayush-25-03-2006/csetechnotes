@@ -33,7 +33,7 @@ function Java() {
               ></iframe>
             </div>
           )}
-          <ToastContainer/>
+          <ToastContainer position="top-center"/>
       </div>
     )
 }
