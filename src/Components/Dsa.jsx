@@ -65,6 +65,7 @@ function Dsa() {
       download
       className="btn btn-primary btn-lg mb-4"
       onClick={notify}
+      onDoubleClick={notify}
     >
       Download PDF
     </a>
