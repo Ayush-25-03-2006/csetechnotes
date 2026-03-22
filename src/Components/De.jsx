@@ -4,7 +4,7 @@ import combinational from "./De/CombinationalCircuit.pdf";
 import sequential from "./De/SequentialCircuits.pdf";
 import question from "./De/DCTOP25QUESANS.pdf";
 import { useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify';
 
 function De() {
     const [showPdf1, setShowPdf1] = useState(false);
