@@ -37,7 +37,7 @@ function Os() {
                           ></iframe>
                         </div>
                       )}
-                      <ToastContainer position="top-center"/>
+                      <ToastContainer position="top-center" style={{backgroundColor:"black"}}/>
                     </div>
     )
 }
