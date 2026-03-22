@@ -1,7 +1,9 @@
 import { useState } from "react";
 import os from "./Os/Osnotes.pdf";
+import { ToastContainer, toast } from 'react-toastify';
 function Os() {
     const [showPdf1, setShowPdf1] = useState(false);
+    const notify = () => toast("Opening The Notes");
     return (
         <div className="container mt-4">
                 <u><h3 >Topic Wise Notes Content</h3></u>
@@ -12,11 +14,13 @@ function Os() {
                         href={os}
                         download
                         className="btn btn-primary btn-lg mb-4"
+                        onClick={notify}
                       >
                         Download PDF
                       </a>
                 
                       <button
+
                         className="btn btn-success btn-lg mb-4 ms-3"
                         onClick={() => setShowPdf1(!showPdf1)}
                       >
@@ -33,6 +37,7 @@ function Os() {
                           ></iframe>
                         </div>
                       )}
+                      <ToastContainer />
                     </div>
     )
 }
