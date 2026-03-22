@@ -1,3 +1,4 @@
+import introduction from "./Dsa/introduction&OverviewtoDSA.pdf";
 import ll1 from "./Dsa/LINKEDLIST1.pdf";
 import ll2 from "./Dsa/linkedlist2.pdf";
 import ll3 from "./Dsa/linkedlist3.pdf";
@@ -50,12 +51,40 @@ function Dsa() {
     const [showPdf19, setShowPdf19] = useState(false);
 
     const [showPdf20, setShowPdf20] = useState(false);
+    
+    const [showPdf21,setShowPdf21] = useState(false);
 
     const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null}); 
         return (
-<div className="container mt-4">
-  <u><h3 >Topic Wise Notes Content</h3></u>
-  <hr/>
+    <div className="container mt-4">
+    <u><h3 >Topic Wise Notes Content</h3></u>
+    <hr />
+    <h3 className="mb-4">1. Introduction & Overview Of Dsa</h3>
+    <a
+      href={introduction}
+      download
+      className="btn btn-primary btn-lg mb-4"
+      onClick={notify}
+    >
+      Download PDF
+    </a>
+    <button
+      className="btn btn-success btn-lg mb-4 ms-3"
+      onClick={() => setShowPdf21(!showPdf21)}
+    >
+      {showPdf21 ? "Hide Notes" : "Show Notes"}
+    </button>
+    {showPdf21 && (
+      <div className="mt-3">
+        <iframe
+          src={introduction}
+          width="70%"
+          height="200px"
+          title="OOPS Notes"
+        ></iframe>
+      </div>
+    )}
+  <hr />
   <h1> # Linked List</h1>
   <hr />
     <h3 className="mb-4">1. Linked List In C</h3>
