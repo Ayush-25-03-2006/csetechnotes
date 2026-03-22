@@ -24,6 +24,7 @@ import sort4 from "./Dsa/Sorting&Searching.pdf";
 import question from "./Dsa/DSATOP30QUES-ANS.pdf";
 
 import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 function Dsa() {
     const [showPdf1, setShowPdf1] = useState(false);
     const [showPdf2, setShowPdf2] = useState(false);
@@ -49,6 +50,8 @@ function Dsa() {
     const [showPdf19, setShowPdf19] = useState(false);
 
     const [showPdf20, setShowPdf20] = useState(false);
+
+    const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null}); 
         return (
 <div className="container mt-4">
   <u><h3 >Topic Wise Notes Content</h3></u>
@@ -60,6 +63,7 @@ function Dsa() {
       href={ll1}
       download
       className="btn btn-primary btn-lg mb-4"
+      onClick={notify}
     >
       Download PDF
     </a>
@@ -86,6 +90,7 @@ function Dsa() {
             href={ll2}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -114,6 +119,7 @@ function Dsa() {
             href={ll3}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -142,6 +148,7 @@ function Dsa() {
             href={ll4}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -198,6 +205,7 @@ function Dsa() {
             href={ll6}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -226,6 +234,7 @@ function Dsa() {
             href={ll7}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -254,6 +263,7 @@ function Dsa() {
             href={ll8}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -284,6 +294,7 @@ function Dsa() {
             href={stack1}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -312,6 +323,7 @@ function Dsa() {
             href={stack2}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -340,6 +352,7 @@ function Dsa() {
             href={stack3}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -368,6 +381,7 @@ function Dsa() {
             href={stack4}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -398,6 +412,7 @@ function Dsa() {
             href={queue1}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -426,6 +441,7 @@ function Dsa() {
             href={queue2}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -454,6 +470,7 @@ function Dsa() {
             href={queue3}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -483,6 +500,7 @@ function Dsa() {
             href={sort1}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -511,6 +529,7 @@ function Dsa() {
             href={sort2}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -539,6 +558,7 @@ function Dsa() {
             href={sort3}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -567,6 +587,7 @@ function Dsa() {
             href={sort4}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -597,6 +618,7 @@ function Dsa() {
             href={question}
             download
             className="btn btn-primary btn-lg mb-3"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -618,6 +640,7 @@ function Dsa() {
               ></iframe>
             </div>
           )}
+      <ToastContainer position="top-center"/>
   </div>
     )
 }

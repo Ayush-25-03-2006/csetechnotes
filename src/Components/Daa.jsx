@@ -6,6 +6,7 @@ import dynamic from "./Daa/DynamicProgramming.pdf";
 import question from "./Daa/DAATOP30QUES-ANS.pdf";
 
 import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 function Daa() {
     const [showPdf1, setShowPdf1] = useState(false);
     const [showPdf2, setShowPdf2] = useState(false);
@@ -13,6 +14,8 @@ function Daa() {
     const [showPdf4, setShowPdf4] = useState(false);
     const [showPdf5, setShowPdf5] = useState(false);
     const [showPdf6, setShowPdf6] = useState(false);
+
+    const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
     return(
         <div className="container mt-4">
               <u><h3 >Topic Wise Notes Content</h3></u>
@@ -23,6 +26,7 @@ function Daa() {
                 href={algo}
                 download
                 className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
               >
                 Download PDF
               </a>
@@ -51,6 +55,7 @@ function Daa() {
                 href={sort}
                 download
                 className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
               >
                 Download PDF
               </a>
@@ -79,6 +84,7 @@ function Daa() {
                 href={graph}
                 download
                 className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
               >
                 Download PDF
               </a>
@@ -107,6 +113,7 @@ function Daa() {
                 href={greedy}
                 download
                 className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
               >
                 Download PDF
               </a>
@@ -135,6 +142,7 @@ function Daa() {
                 href={dynamic}
                 download
                 className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
               >
                 Download PDF
               </a>
@@ -165,6 +173,7 @@ function Daa() {
                 href={question}
                 download
                 className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
               >
                 Download PDF
               </a>
@@ -186,6 +195,7 @@ function Daa() {
                   ></iframe>
                 </div>
               )}
+              <ToastContainer position="top-center"/>
             </div>
     )
 }

@@ -2,10 +2,13 @@ import ermodel from "./Dbms/ERModel.pdf";
 import relationalmodel from "./Dbms/RelationalModel.pdf";
 import functionaldependency from "./Dbms/FunctionalDependency.pdf";
 import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 function Dbms() {
     const [showPdf1, setShowPdf1] = useState(false);
     const [showPdf2, setShowPdf2] = useState(false);
     const [showPdf3, setShowPdf3] = useState(false);
+
+    const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
     return(
 
         <div className="container mt-4">
@@ -16,6 +19,7 @@ function Dbms() {
               href={ermodel}
               download
               className="btn btn-primary btn-lg mb-4"
+              onClick={notify}
             >
               Download PDF
             </a>
@@ -41,6 +45,7 @@ function Dbms() {
               href={relationalmodel}
               download
               className="btn btn-primary btn-lg mb-4"
+              onClick={notify}
             >
               Download PDF
             </a>
@@ -66,6 +71,7 @@ function Dbms() {
               href={functionaldependency}
               download
               className="btn btn-primary btn-lg mb-4"
+              onClick={notify}
             >
               Download PDF
             </a>
@@ -85,6 +91,7 @@ function Dbms() {
                 ></iframe>
               </div>
             )}
+            <ToastContainer/>
         </div>
     )
 }

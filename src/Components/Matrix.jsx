@@ -22,6 +22,7 @@ import vector2 from "./Matrix/VECTORCALCULUSPART2lineintegral.pdf";
 import vectorquestion from "./Matrix/VECTORCALCULUSpyq.pdf";
 import question1 from "./Matrix/MATHSIMPORTANTQUESTIONSSOLUTION.pdf";
 import question2 from "./Matrix/MATHSTOP30QUESTIONS2023-24.pdf";
+import { ToastContainer, toast } from 'react-toastify';
 
 function Matrix() {
     const [showPdf1, setShowPdf1] = useState(false);
@@ -46,6 +47,7 @@ function Matrix() {
     const [showPdf20, setShowPdf20] = useState(false);
     const [showPdf21, setShowPdf21] = useState(false);
     const [showPdf22, setShowPdf22] = useState(false);
+    const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
     return(
         <div className="container mt-4">
                   <u><h3 >Topic Wise Notes Content</h3></u>
@@ -57,6 +59,7 @@ function Matrix() {
                       href={matrixnotes}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -82,6 +85,7 @@ function Matrix() {
                       href={questionmatrix}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -110,6 +114,7 @@ function Matrix() {
                       href={integration2}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -134,6 +139,7 @@ function Matrix() {
                       href={calculus1}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -159,6 +165,7 @@ function Matrix() {
                       href={integration}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -184,6 +191,7 @@ function Matrix() {
                       href={betagamma1ques}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -209,6 +217,7 @@ function Matrix() {
                       href={betagamma2ques}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -236,6 +245,7 @@ function Matrix() {
                       href={calculus2}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -261,6 +271,7 @@ function Matrix() {
                       href={taylor1}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -286,6 +297,7 @@ function Matrix() {
                       href={taylor}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -311,6 +323,7 @@ function Matrix() {
                       href={maxmin}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -336,6 +349,7 @@ function Matrix() {
                       href={limit}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -361,6 +375,7 @@ function Matrix() {
                       href={continuity}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -386,6 +401,7 @@ function Matrix() {
                       href={indeterminant}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -413,6 +429,7 @@ function Matrix() {
                       href={limitcontinuity}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -438,6 +455,7 @@ function Matrix() {
                       href={partial}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -463,6 +481,7 @@ function Matrix() {
                       href={multivariable}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -490,6 +509,7 @@ function Matrix() {
                       href={vector1}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -515,6 +535,7 @@ function Matrix() {
                       href={vector2}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -540,6 +561,7 @@ function Matrix() {
                       href={vectorquestion}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -567,6 +589,7 @@ function Matrix() {
                       href={question1}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -592,6 +615,7 @@ function Matrix() {
                       href={question2}
                       download
                       className="btn btn-primary btn-lg mb-4"
+                      onClick={notify}
                     >
                       Download PDF
                     </a>
@@ -611,6 +635,7 @@ function Matrix() {
                         ></iframe>
                       </div>
                     )}
+                  <ToastContainer position="top-center"/>
                 </div>
     )
 }

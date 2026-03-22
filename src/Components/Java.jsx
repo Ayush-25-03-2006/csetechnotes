@@ -1,7 +1,9 @@
 import { useState } from "react";
 import java from "./Java/javanotes.pdf";
+import { toast, ToastContainer } from "react-toastify";
 function Java() {
     const [showPdf1, setShowPdf1] = useState(false);
+    const notify = () => toast("Downloading Notes For You",{autoClose:1000, transition:null}) 
     return(
         <div className="container mt-4">
         <u><h3 >Topic Wise Notes Content</h3></u>
@@ -11,6 +13,7 @@ function Java() {
             href={java}
             download
             className="btn btn-primary btn-lg mb-4"
+            onClick={notify}
           >
             Download PDF
           </a>
@@ -30,6 +33,7 @@ function Java() {
               ></iframe>
             </div>
           )}
+          <ToastContainer/>
       </div>
     )
 }

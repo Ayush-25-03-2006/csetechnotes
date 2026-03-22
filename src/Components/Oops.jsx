@@ -11,6 +11,7 @@ import TypesOfInheritance from "./Oops/TYPESOFINHERITANCE.pdf";
 import Polymorphism from "./Oops/POLYMORPHISM.pdf";
 import FriendFunctionInlineFunction from "./Oops/FRIENDFUNCTIONINLINEFUNCTION.pdf";
 import question from "./Oops/OOPsTOP25QUES&ANS.pdf";
+import { toast, ToastContainer } from "react-toastify";
 function Oops() {
 
   const [showPdf1, setShowPdf1] = useState(false);
@@ -27,6 +28,7 @@ function Oops() {
 
   const [showPdf12, setShowPdf12] = useState(false);
 
+  const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
   return (
     <div className="container mt-4">
       <u><h3 >Topic Wise Notes Content</h3></u>
@@ -37,6 +39,7 @@ function Oops() {
         href={OopsBasic}
         download
         className="btn btn-primary btn-lg mb-4"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -65,6 +68,7 @@ function Oops() {
         href={classObject}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -93,6 +97,7 @@ function Oops() {
         href={OopsBasic2}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -121,6 +126,7 @@ function Oops() {
         href={Constructor}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -149,6 +155,7 @@ function Oops() {
         href={CopyConstructor}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -177,6 +184,7 @@ function Oops() {
         href={Destructor}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -205,6 +213,7 @@ function Oops() {
         href={Encapsulation}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -233,6 +242,7 @@ function Oops() {
         href={Inheritance}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -261,6 +271,7 @@ function Oops() {
         href={TypesOfInheritance}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -289,6 +300,7 @@ function Oops() {
         href={Polymorphism}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -317,6 +329,7 @@ function Oops() {
         href={FriendFunctionInlineFunction}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -347,6 +360,7 @@ function Oops() {
         href={question}
         download
         className="btn btn-primary btn-lg mb-3"
+        onClick={notify}
       >
         Download PDF
       </a>
@@ -368,7 +382,7 @@ function Oops() {
           ></iframe>
         </div>
       )}
-      <hr />
+      <ToastContainer position="top-center"/>
     </div>
     
   );
