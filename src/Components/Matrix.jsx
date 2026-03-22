@@ -76,6 +76,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -102,6 +103,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -131,6 +133,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -156,6 +159,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -182,6 +186,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -208,6 +213,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -234,6 +240,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -262,6 +269,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -288,6 +296,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -314,6 +323,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -340,6 +350,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -366,6 +377,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -392,6 +404,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -418,6 +431,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -446,6 +460,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -472,6 +487,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -498,6 +514,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -526,6 +543,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -552,6 +570,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -578,6 +597,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -606,6 +626,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}
@@ -632,6 +653,7 @@ function Matrix() {
                           width="70%"
                           height="200px"
                           title="OOPS Notes"
+                          onLoad={() => toast.success("Notes Loaded Successfully...")}
                         ></iframe>
                       </div>
                     )}

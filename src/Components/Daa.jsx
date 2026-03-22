@@ -45,6 +45,7 @@ function Daa() {
                     width="70%"
                     height="200px"
                     title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...")}
                   ></iframe>
                 </div>
               )}
@@ -74,6 +75,7 @@ function Daa() {
                     width="70%"
                     height="200px"
                     title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...")}
                   ></iframe>
                 </div>
               )}
@@ -103,6 +105,7 @@ function Daa() {
                     width="70%"
                     height="200px"
                     title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...")}
                   ></iframe>
                 </div>
               )}
@@ -132,6 +135,7 @@ function Daa() {
                     width="70%"
                     height="200px"
                     title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...")}
                   ></iframe>
                 </div>
               )}
@@ -161,6 +165,7 @@ function Daa() {
                     width="70%"
                     height="200px"
                     title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...")}
                   ></iframe>
                 </div>
               )}
@@ -192,6 +197,7 @@ function Daa() {
                     width="70%"
                     height="200px"
                     title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...")}
                   ></iframe>
                 </div>
               )}
