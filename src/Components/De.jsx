@@ -43,6 +43,7 @@ function De() {
                         ></iframe>
                       </div>
                     )}
+                    <ToastContainer position="top-center"/>
                     <hr />
                     <h3 className="mb-4">2. Implementation Of All Gates Using NAND & NOR</h3>
                     <a
