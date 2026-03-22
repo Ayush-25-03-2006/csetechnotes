@@ -81,7 +81,7 @@ function Dsa() {
           width="70%"
           height="200px"
           title="OOPS Notes"
-          onClick={notify}
+          onLoad={() => toast.success("Notes Loaded Successfully...")}
         ></iframe>
       </div>
     )}
