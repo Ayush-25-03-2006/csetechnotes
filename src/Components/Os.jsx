@@ -3,7 +3,7 @@ import os from "./Os/Osnotes.pdf";
 import { ToastContainer, toast } from 'react-toastify';
 function Os() {
     const [showPdf1, setShowPdf1] = useState(false);
-    const notify = () => toast("Opening The Notes");
+    const notify = () => toast("Downloading The Notes",{autoClose:1000});
     return (
         <div className="container mt-4">
                 <u><h3 >Topic Wise Notes Content</h3></u>
