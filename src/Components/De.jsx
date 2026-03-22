@@ -3,7 +3,7 @@ import gate from "./De/ImplementallgatesusingNAND&NOR.pdf";
 import combinational from "./De/CombinationalCircuit.pdf";
 import sequential from "./De/SequentialCircuits.pdf";
 import question from "./De/DCTOP25QUESANS.pdf";
-import { use, useState } from "react";
+import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 
 function De() {
@@ -43,7 +43,6 @@ function De() {
                         ></iframe>
                       </div>
                     )}
-                    <ToastContainer position="top-center"/>
                     <hr />
                     <h3 className="mb-4">2. Implementation Of All Gates Using NAND & NOR</h3>
                     <a
