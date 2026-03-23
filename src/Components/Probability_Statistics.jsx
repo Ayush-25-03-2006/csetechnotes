@@ -311,7 +311,7 @@ function Probability_Statistics() {
                 {showPdf9 ? "Hide Notes" : "Show Notes"}
               </button>
         
-              {setShowPdf9 && (
+              {showPdf9 && (
                 <div className="mt-3">
                   <iframe
                     src={binomial}
