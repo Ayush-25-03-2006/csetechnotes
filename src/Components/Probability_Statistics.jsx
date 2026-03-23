@@ -15,6 +15,16 @@ import normal from "./Probability&Statistics/NORMAL DISTRIBUTION.pdf";
 import exponential from "./Probability&Statistics/EXPONENTIAL DISTRIBUTION.pdf";
 import gamma from "./Probability&Statistics/GAMMA DISTRIBUTION.pdf";
 
+import statistics from "./Probability&Statistics/BASIC STATISTICS.pdf";
+import moment from "./Probability&Statistics/MOMENT OF DISCRETE RANDOM VARIABLES.pdf";
+import chebyshev from "./Probability&Statistics/CHEBYSHEV'S INEQUALITY.pdf";
+import discrete2 from "./Probability&Statistics/2--D DISCRETE RANDOM VARIABLES.pdf";
+import continous3 from "./Probability&Statistics/2--D CONTINUOUS RANDOM VARIABLES.pdf";
+import variance from "./Probability&Statistics/MEAN & VARIANCE OF 2--D RANDOM VARIABLES.pdf";
+import correlation from "./Probability&Statistics/CORRELATION AND REGRESSION.pdf";
+import curve from "./Probability&Statistics/CURVE FITTING.pdf";
+import question from "./Probability&Statistics/MATHS TOP 30 QUES-ANS.pdf";
+
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 function Probability_Statistics() {
@@ -44,7 +54,6 @@ function Probability_Statistics() {
     const [showPdf23, setShowPdf23] = useState(false);
     const [showPdf24, setShowPdf24] = useState(false);
     const [showPdf25, setShowPdf25] = useState(false);
-    const [showPdf26, setShowPdf26] = useState(false);
 
     const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
     return (
@@ -525,6 +534,280 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={gamma}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr />
+              <h1># Statistics</h1>
+              <hr/>
+              <h3 className="mb-4">1. Basic Statistics</h3>
+        
+              <a
+                href={statistics}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf17(!showPdf17)}
+              >
+                {showPdf17 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf17 && (
+                <div className="mt-3">
+                  <iframe
+                    src={statistics}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h3 className="mb-4">2. Moment Of Discrete Random Variable</h3>
+        
+              <a
+                href={moment}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf18(!showPdf18)}
+              >
+                {showPdf18 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf18 && (
+                <div className="mt-3">
+                  <iframe
+                    src={moment}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h3 className="mb-4">3. Chebyshev's Inequality</h3>
+        
+              <a
+                href={chebyshev}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf19(!showPdf19)}
+              >
+                {showPdf19 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf19 && (
+                <div className="mt-3">
+                  <iframe
+                    src={chebyshev}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h3 className="mb-4">4. 2-D Discrete Random Variable</h3>
+        
+              <a
+                href={discrete2}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf20(!showPdf20)}
+              >
+                {showPdf20 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf20 && (
+                <div className="mt-3">
+                  <iframe
+                    src={discrete2}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h3 className="mb-4">5. 2-D Continous Random Variable</h3>
+        
+              <a
+                href={continous3}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf21(!showPdf21)}
+              >
+                {showPdf21 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf21 && (
+                <div className="mt-3">
+                  <iframe
+                    src={continous3}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h3 className="mb-4">6. Mean & Variance 2-D Random Variable</h3>
+        
+              <a
+                href={variance}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf22(!showPdf22)}
+              >
+                {showPdf22 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf22 && (
+                <div className="mt-3">
+                  <iframe
+                    src={variance}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h3 className="mb-4">7. Correlation & Regression</h3>
+        
+              <a
+                href={correlation}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf23(!showPdf23)}
+              >
+                {showPdf23 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf23 && (
+                <div className="mt-3">
+                  <iframe
+                    src={correlation}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h3 className="mb-4">8. Curve Fitting</h3>
+        
+              <a
+                href={curve}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf24(!showPdf24)}
+              >
+                {showPdf24 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf24 && (
+                <div className="mt-3">
+                  <iframe
+                    src={curve}
+                    width="70%"
+                    height="200px"
+                    title="OOPS Notes"
+                    onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                  ></iframe>
+                </div>
+              )}
+              <hr/>
+              <h1 style={{color:"crimson"}}>@ Important Question</h1>
+              <hr />
+              <h3 className="mb-4">1. Top 30 Question & Answer</h3>
+        
+              <a
+                href={question}
+                download
+                className="btn btn-primary btn-lg mb-4"
+                onClick={notify}
+              >
+                Download PDF
+              </a>
+        
+              <button
+                className="btn btn-success btn-lg mb-4 ms-3"
+                onClick={() => setShowPdf25(!showPdf25)}
+              >
+                {showPdf25 ? "Hide Notes" : "Show Notes"}
+              </button>
+        
+              {showPdf25 && (
+                <div className="mt-3">
+                  <iframe
+                    src={question}
                     width="70%"
                     height="200px"
                     title="OOPS Notes"
