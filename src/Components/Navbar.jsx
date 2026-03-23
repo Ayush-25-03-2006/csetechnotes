@@ -27,7 +27,7 @@ function Navbar() {
                         <li className="nav-item"><Link className="nav-link" to="/Networking">CN</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Oops">OOPS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Matrix">Matrix</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Ps">Probability</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Ps">Probability & Statistics</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Dc">Differential Calculus</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Discrete">Discrete</Link></li>
                     </ul>

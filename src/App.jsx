@@ -10,6 +10,7 @@ import Os from './Components/Os'
 import De from './Components/De'
 import Matrix from './Components/Matrix'
 import Java from './Components/Java'
+import Probability_Statistics from './Components/Probability_Statistics'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/De" element={<De/>}/>
           <Route path="/Matrix" element={<Matrix/>}/>
           <Route path="/Java" element={<Java/>}/>
+          <Route path='/Ps' element={<Probability_Statistics/>}/>
         </Routes>
 
       </div>
