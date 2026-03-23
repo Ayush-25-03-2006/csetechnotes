@@ -45,7 +45,7 @@ function Probability_Statistics() {
                 </div>
               )}
               {/* <hr/>
-              <h3 className="mb-4">1. Probability Part-II</h3>
+              <h3 className="mb-4">2. Probability Part-II</h3>
         
               <a
                 href={probability2}
@@ -75,7 +75,7 @@ function Probability_Statistics() {
                 </div>
               )} */}
               <hr/>
-              <h3 className="mb-4">1. Probability Part-III</h3>
+              <h3 className="mb-4">3. Probability Part-III</h3>
         
               <a
                 href={probability3}
