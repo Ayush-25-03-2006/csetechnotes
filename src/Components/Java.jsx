@@ -8,7 +8,7 @@ function Java() {
         <div className="container mt-4">
         <u><h3 >Topic Wise Notes Content</h3></u>
         <hr />
-          <h3 className="mb-4">1. Java Notes</h3>
+          <h3 className="mb-4">1. Java Notes India</h3>
           <a
             href={java}
             download
