@@ -700,7 +700,7 @@ function Dc() {
                 ></iframe>
               </div>
             )}
-            <ToastContainer/>
+            <ToastContainer position="top-center" theme="dark"/>
         </div>
     )
 }
