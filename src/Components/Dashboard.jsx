@@ -28,13 +28,13 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
+            <div className="card mb-3" style={{maxWidth: "540px"}}>
+                <div className="row g-0">
+                    <div className="col-md-4">
                         <img src={c} class="img-fluid rounded-start" alt="..."/>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
+                    <div className="col-md-8">
+                        <div className="card-body">
                         <Link to="/" className="btn btn-primary mb-2 btn-lg">
                             C
                         </Link>
