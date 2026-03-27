@@ -28,21 +28,6 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
-            <div className="card mb-3" style={{maxWidth: "540px"}}>
-                <div className="row g-0">
-                    <div className="col-md-4">
-                        <img src={c} class="img-fluid rounded-start" alt="..."/>
-                    </div>
-                    <div className="col-md-8">
-                        <div className="card-body">
-                        <Link to="/" className="btn btn-primary mb-2 btn-lg">
-                            C
-                        </Link>
-                        <h3 style={{ color: "white" }}>C Programming</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className="col">
                 <div className="card">
                     <img src={dsa} className="card-img-top" alt="Data Structure & Algorithm" />
