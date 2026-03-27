@@ -132,6 +132,7 @@ function Dc() {
                 ></iframe>
               </div>
             )}
+            <hr />
             <h3 className="mb-4">4. Leibnitz's Theorem</h3>
             <a
               href={leibnitz}
