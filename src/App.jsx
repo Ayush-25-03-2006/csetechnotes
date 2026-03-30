@@ -12,8 +12,8 @@ import Matrix from './Components/Matrix'
 import Java from './Components/Java'
 import Probability_Statistics from './Components/Probability_Statistics'
 import Dc from './Components/Dc'
-import C from './Components/c'
 import Discrete from './Components/Discrete'
+import C from './Components/c'
 
 function App() {
   return (
