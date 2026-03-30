@@ -33,6 +33,7 @@ function App() {
           <Route path="/Java" element={<Java/>}/>
           <Route path='/Ps' element={<Probability_Statistics/>}/>
           <Route path='/Dc' element={<Dc/>}/>
+          <Route path='/Discrete'/>
         </Routes>
 
       </div>
