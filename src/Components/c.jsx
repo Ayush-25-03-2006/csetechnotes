@@ -19,11 +19,11 @@ function C() {
             >Download Pdf</a>
             <button
                 className="btn btn-success btn-lg mb-4 ms-3"
-                onClick={() => setShowPdf2(!showPdf2)}
+                onClick={() => setShowPdf1(!showPdf1)}
             >
-                {showPdf2 ? "Hide Notes" : "Show Notes"}
+                {showPdf1 ? "Hide Notes" : "Show Notes"}
             </button>
-            {showPdf2 && (
+            {showPdf1 && (
                 <div
                     className="mt-3">
                         <iframe src={question1} 
@@ -56,7 +56,7 @@ function C() {
                         ></iframe>
                     </div>
             )}
-            <ToastContainer/>
+            <ToastContainer position="top-center" theme="dark"/>
         </div>
     )
 }

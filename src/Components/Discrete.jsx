@@ -152,7 +152,7 @@ function Discrete() {
         <hr />
         <h1 style={{color: "crimson"}}>@ Important Question</h1>
         <hr />
-        <h3 className="mb-4">6. Homogeneous Equation</h3>
+        <h3 className="mb-4">1. Top 30 Question Of Discrete Mathematics</h3>
         <a
           href={question}
           download
@@ -177,7 +177,7 @@ function Discrete() {
             ></iframe>
           </div>
         )}
-        <ToastContainer/>
+        <ToastContainer position="top-center" theme="dark"/>
     </div>
     )
 }
