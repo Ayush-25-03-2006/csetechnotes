@@ -57,7 +57,7 @@ function C() {
                     </div>
             )}
             <hr />
-            <button><a href="">Play Quiz</a></button>
+            {/* <button><a href="">Play Quiz</a></button> */}
             <ToastContainer position="top-center" theme="dark"/>
         </div>
     )
