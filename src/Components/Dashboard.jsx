@@ -23,7 +23,7 @@ function Dashboard() {
                     <p>Programming</p>
                 </Link>
 
-                <Link to="/Cn" className="card">
+                <Link to="/Networking" className="card">
                     <i className="bi bi-hdd-network"></i>
                     <p>Computer Networks</p>
                 </Link>
