@@ -56,8 +56,6 @@ function C() {
                         ></iframe>
                     </div>
             )}
-            <hr />
-            {/* <button><a href="">Play Quiz</a></button> */}
             <ToastContainer position="top-center" theme="dark"/>
         </div>
     )
