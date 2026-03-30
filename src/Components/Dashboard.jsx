@@ -13,7 +13,7 @@ function Dashboard() {
 
             <div className="category-grid">
 
-                <Link to="/Maths" className="card">
+                <Link to="/Mathematics" className="card">
                     <i className="bi bi-calculator"></i>
                     <p>Mathematics</p>
                 </Link>

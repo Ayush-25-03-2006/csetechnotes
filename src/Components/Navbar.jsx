@@ -18,7 +18,7 @@ function Navbar() {
                 <div className="nav-scroll">
                     <ul className="navbar-nav flex-row">
                         <li className="nav-item"><Link className="nav-link" to="/"><i className="bi bi-house-fill"></i></Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Maths">Mathematics</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Mathematics">Mathematics</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/c">C</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Dsa">DSA</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Daa">DAA</Link></li>

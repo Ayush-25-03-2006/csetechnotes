@@ -14,12 +14,13 @@ import Probability_Statistics from './Components/Probability_Statistics'
 import Dc from './Components/Dc'
 import Discrete from './Components/Discrete'
 import C from './Components/c'
+import Mathematics from './Components/Mathematics'
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <h1 style={{color:"black"}}>Hello Developers, Have Eager To Learn !</h1>
+        <h1 style={{color:"black", backgroundColor:"burlywood", borderRadius:"50px"}}>Hello Engineer's, Have Eager To Learn !</h1>
         <Navbar/>
 
         <Routes>
@@ -37,6 +38,7 @@ function App() {
           <Route path='/Dc' element={<Dc/>}/>
           <Route path='/Discrete' element={<Discrete/>}/>
           <Route path='/C' element={<C/>}/>
+          <Route path='/Mathematics' element={<Mathematics/>}/>
         </Routes>
       </div>
     </BrowserRouter>
