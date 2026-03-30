@@ -9,7 +9,7 @@ function C() {
     const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
     return (
         <div className="container mt-4">
-            <u><h1>Topic Wise Notes</h1></u>
+            <u><h3>Topic Wise Notes</h3></u>
             <hr />
             <h3 className="mb-4">1. PPS Top 30 Question & Answer</h3>
             <a href={question1}
