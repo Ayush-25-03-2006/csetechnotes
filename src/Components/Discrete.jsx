@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import set from "set.pdf";
+import setinmath from "set.pdf";
 import relation from "RELATION.pdf";
 import func from "FUNCTION.pdf";
 import logic from "Propositional Logic.pdf";
@@ -22,7 +22,7 @@ function Discrete() {
         <u><h3>Topic Wise Notes Content</h3></u>
         <hr />
         <h3 className="mb-4">1. Sets</h3>
-        <a href={set}
+        <a href={setinmath}
             download
             className="btn btn-primary btn-lg mb-4"
             onClick={notify}
@@ -38,7 +38,7 @@ function Discrete() {
         {showPdf1 && (
             <div
                 className="mt-3">
-                    <iframe src={set} 
+                    <iframe src={setinmath} 
                         width="70%"
                         height="200px"
                         onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
