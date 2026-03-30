@@ -13,6 +13,7 @@ import Java from './Components/Java'
 import Probability_Statistics from './Components/Probability_Statistics'
 import Dc from './Components/Dc'
 import C from './Components/c'
+import Discrete from './Components/Discrete'
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/Java" element={<Java/>}/>
           <Route path='/Ps' element={<Probability_Statistics/>}/>
           <Route path='/Dc' element={<Dc/>}/>
-          <Route path='/Discrete'/>
+          <Route path='/Discrete' element={<Discrete/>}/>
           <Route path='/C' element={<C/>}/>
         </Routes>
       </div>
