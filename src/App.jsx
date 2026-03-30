@@ -15,6 +15,7 @@ import Dc from './Components/Dc'
 import Discrete from './Components/Discrete'
 import C from './Components/c'
 import Mathematics from './Components/Mathematics'
+import Programming from './Components/Programming'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/Discrete' element={<Discrete/>}/>
           <Route path='/C' element={<C/>}/>
           <Route path='/Mathematics' element={<Mathematics/>}/>
+          <Route path='/Programming' element={<Programming/>}/>
         </Routes>
       </div>
     </BrowserRouter>
