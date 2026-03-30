@@ -1,0 +1,57 @@
+.math-container {
+    padding: 30px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+/* Title */
+.math-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Icon */
+.card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(135deg, #0d6efd, #4dabf7);
+    color: white;
+}
+
+.card:hover i {
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .math-title {
+        font-size: 1.8rem;
+    }
+}
