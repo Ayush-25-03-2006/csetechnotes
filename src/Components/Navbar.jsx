@@ -5,33 +5,31 @@ import "./Navbar.css";
 function Navbar() {
 
     useEffect(() => {
-        document.body.style.backgroundColor = "#121212"
-        document.body.style.color = "white"
+        document.body.style.background = "linear-gradient(135deg, #e3f2fd, #ffffff)";
+        document.body.style.color = "black"
+        
     }, [])
 
     return (
-        <nav className="navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-dark" >
             <div className="container-fluid">
 
                 {/* Scrollable Menu */}
                 <div className="nav-scroll">
                     <ul className="navbar-nav flex-row">
                         <li className="nav-item"><Link className="nav-link" to="/"><i className="bi bi-house-fill"></i></Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/C">C</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/c">C</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Dsa">DSA</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Daa">DAA</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Dbms">DBMS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/De">DE</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Os">OS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Java">JAVA</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Networking">CN</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Oops">OOPS</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Matrix">Matrix</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Ps">Probability & Statistics</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Dc">Differential Calculus</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Discrete">Discrete</Link></li>
+
                     </ul>
                 </div>
+
             </div>
         </nav>
     )

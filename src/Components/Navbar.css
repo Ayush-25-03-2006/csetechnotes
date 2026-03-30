@@ -1,24 +1,49 @@
+/* Navbar background same theme as dashboard */
+.navbar {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+/* Scroll container */
 .nav-scroll {
     overflow-x: auto;
     white-space: nowrap;
-    scrollbar-width: none; /* Firefox */
 }
 
+/* Remove scrollbar (optional clean UI) */
 .nav-scroll::-webkit-scrollbar {
-    display: none; /* Chrome */
+    display: none;
 }
 
-.navbar-nav .nav-link {
+/* Nav items */
+.navbar-nav {
+    gap: 15px;
+}
+
+/* Links */
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
     padding: 8px 15px;
-    white-space: nowrap;
-}
-.nav-item :hover {
-    color: rgb(85, 161, 106);
-}
-.navbar {
-    border-radius: 50px; /* change value as you like */
-    margin: 10px; /*  optional for spacing */
-    background: linear-gradient(90deg,#1f4150,#2f5562,#2c5364);
-
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
+/* Hover effect */
+.nav-link:hover {
+    background: #0d6efd;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+/* Active look (optional) */
+.nav-link.active {
+    background: #0d6efd;
+    color: white !important;
+}
+
+/* Icon style */
+.nav-link i {
+    font-size: 18px;
+}
