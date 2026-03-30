@@ -60,7 +60,7 @@ function Probability_Statistics() {
         <div className="container mt-4">
               <u><h3 >Topic Wise Notes Content</h3></u>
             <hr/>
-              <h1># Probability</h1>
+              <h1 style={{color:"black"}}># Probability</h1>
             <hr />
               <h3 className="mb-4">1. Probability Part-I</h3>
 
@@ -542,7 +542,7 @@ function Probability_Statistics() {
                 </div>
               )}
               <hr />
-              <h1># Statistics</h1>
+              <h1 style={{color:"black"}}># Statistics</h1>
               <hr/>
               <h3 className="mb-4">1. Basic Statistics</h3>
         
