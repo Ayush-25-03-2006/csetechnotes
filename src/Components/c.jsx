@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import question1 from "PPS TOP 30 QUESTIONS (2023-24)❓.pdf";
-import question2 from "PPS UPDATED PYQ++++ QUES-ANS.pdf";
+import question1 from "./C/PPS TOP 30 QUESTIONS (2023-24)❓.pdf";
+import question2 from "./C/PPS UPDATED PYQ++++ QUES-ANS.pdf";
 
 function C() {
     const [showPdf1, setShowPdf1] = useState(false);

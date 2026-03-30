@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import setinmath from "set.pdf";
-import relation from "RELATION.pdf";
-import func from "FUNCTION.pdf";
-import logic from "Propositional Logic.pdf";
-import graph from "Graph Theory in Discrete Mathematics.pdf";
-import question from "DISCRETE MATHEMATICS TOP 30 QUES-ANS.pdf";
+import setinmath from "./Discrete/set.pdf";
+import relation from "./Discrete/RELATION.pdf";
+import func from "./Discrete/FUNCTION.pdf";
+import logic from "./Discrete/Propositional Logic.pdf";
+import graph from "./Discrete/Graph Theory in Discrete Mathematics.pdf";
+import question from "./Discrete/DISCRETE MATHEMATICS TOP 30 QUES-ANS.pdf";
 
 function Discrete() {
     const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
