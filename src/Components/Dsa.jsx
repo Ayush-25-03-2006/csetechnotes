@@ -86,7 +86,7 @@ function Dsa() {
       </div>
     )}
   <hr />
-  <h1> # Linked List</h1>
+  <h1 style={{color:"black"}}> # Linked List</h1>
   <hr />
     <h3 className="mb-4">1. Linked List In C</h3>
     <a
@@ -323,7 +323,7 @@ function Dsa() {
             </div>
           )}
           <hr />
-          <h1> # Stack </h1>
+          <h1 style={{color:"black"}}> # Stack </h1>
                           <hr />
            <h3 className="mb-4">1. Implementation Of Stack using Array In C (Creating & Displaying)</h3>
     
@@ -445,7 +445,7 @@ function Dsa() {
             </div>
           )}
           <hr />
-          <h1> # Queue</h1>
+          <h1 style={{color:"black"}}> # Queue</h1>
           <hr />
            <h3 className="mb-4">1. Implementation Of Queue using Array In C (Create & Display)</h3>
     
@@ -537,7 +537,7 @@ function Dsa() {
             </div>
           )}
           <hr />
-          <h1># Searching & Sorting Algorithm's</h1>
+          <h1 style={{color:"black"}}># Searching & Sorting Algorithm's</h1>
           <hr />
            <h3 className="mb-4">1. Quick Sort</h3>
           <a
