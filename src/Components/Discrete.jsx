@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import set from "SETS.pdf";
+import set from "set.pdf";
 import relation from "RELATION.pdf";
 import func from "FUNCTION.pdf";
 import logic from "Propositional Logic.pdf";
