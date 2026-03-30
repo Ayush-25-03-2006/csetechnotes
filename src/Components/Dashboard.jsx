@@ -18,24 +18,9 @@ function Dashboard() {
                     <p>Mathematics</p>
                 </Link>
 
-                <Link to="/C" className="card">
-                    <i className="bi bi-c-square"></i>
-                    <p>C Programming</p>
-                </Link>
-
-                <Link to="/Java" className="card">
-                    <i className="bi bi-cup-hot"></i>
-                    <p>Java Programming</p>
-                </Link>
-
-                <Link to="/Dsa" className="card">
-                    <i className="bi bi-diagram-3"></i>
-                    <p>Data Structures</p>
-                </Link>
-
-                <Link to="/Daa" className="card">
-                    <i className="bi bi-graph-up-arrow"></i>
-                    <p>DAA</p>
+                <Link to="/Programming" className="card programming-card">
+                    <i className="bi bi-code-slash"></i>
+                    <p>Programming</p>
                 </Link>
 
                 <Link to="/Cn" className="card">

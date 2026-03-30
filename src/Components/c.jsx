@@ -11,8 +11,8 @@ function C() {
         <div className="container mt-4">
             <u><h3>Topic Wise Notes Content</h3></u>
             <hr />
-            <h3 className="mb-4">1. PPS Top 30 Question & Answer</h3>
-            <a href={question1}
+            <h3 className="mb-4">1. PPS Updated Question & Answer</h3>
+            <a href={question2}
                 download
                 className="btn btn-primary btn-lg mb-4"
                 onClick={notify}
@@ -26,7 +26,7 @@ function C() {
             {showPdf1 && (
                 <div
                     className="mt-3">
-                        <iframe src={question1} 
+                        <iframe src={question2} 
                             width="70%"
                             height="200px"
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
@@ -34,8 +34,8 @@ function C() {
                     </div>
             )}
             <hr />
-            <h3 className="mb-4">2. PPS Updated Question & Answer</h3>
-            <a href={question2}
+            <h3 className="mb-4">2. PPS Top 30 Question & Answer</h3>
+            <a href={question1}
                 download
                 className="btn btn-primary btn-lg mb-4"
                 onClick={notify}
@@ -49,7 +49,7 @@ function C() {
             {showPdf2 && (
                 <div
                     className="mt-3">
-                        <iframe src={question2} 
+                        <iframe src={question1} 
                             width="70%"
                             height="200px"
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
