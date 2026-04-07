@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <h1 style={{color:"black", backgroundColor:"burlywood", borderRadius:"5px"}}>Hello Engineer's, Have Eager To Learn !</h1>
+        <h1 style={{color:"black", backgroundColor:"burlywood"}}>Hello Engineer's, Have Eager To Learn !</h1>
         <Navbar/>
 
         <Routes>
