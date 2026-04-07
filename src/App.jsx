@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
       <div>
         <h1 style={{color:"black", backgroundColor:"burlywood"}}>Hello Engineer's, Have Eager To Learn !</h1>
-        {/* <Navbar/> */}
+        <Navbar/>
 
         <Routes>
           <Route path='/' element={<Dashboard />} />
