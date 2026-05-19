@@ -3,7 +3,7 @@ import ll1 from "./Dsa/LINKEDLIST1.pdf";
 import ll2 from "./Dsa/linkedlist2.pdf";
 import ll3 from "./Dsa/linkedlist3.pdf";
 import ll4 from "./Dsa/linkedlist4.pdf";
-// import ll5 from "./Dsa/linkedlist5.pdf";
+import ll5 from "./Dsa/Linked List Part (deletion).pdf";
 import ll6 from "./Dsa/linkedlist6.pdf";
 import ll7 from "./Dsa/linkedlist7.pdf";
 import ll8 from "./Dsa/linkedlist8.pdf";
@@ -210,8 +210,8 @@ function Dsa() {
               ></iframe>
             </div>
           )}
-  {/* <hr />
-           <h3 className="mb-4">5. Linked List In C Part 5</h3>
+  <hr />
+           <h3 className="mb-4">5. Linked List In C (Deletion)</h3>
     
           <a
             href={ll5}
@@ -237,7 +237,7 @@ function Dsa() {
                 title="OOPS Notes"
               ></iframe>
             </div>
-          )} */}
+          )}
   <hr />
            <h3 className="mb-4">6. Circular Singly Linked List In C (Create & Display Of Node)</h3>
     

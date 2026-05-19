@@ -16,6 +16,9 @@ import Discrete from './Components/Discrete'
 import C from './Components/c'
 import Mathematics from './Components/Mathematics'
 import Programming from './Components/Programming'
+import Toc from './Components/Toc'
+import Ai from './Components/Ai'
+import Se from './Components/Se'
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
           <Route path='/C' element={<C/>}/>
           <Route path='/Mathematics' element={<Mathematics/>}/>
           <Route path='/Programming' element={<Programming/>}/>
+          <Route path='/Toc' element={<Toc/>}/>
+          <Route path='/Ai' element={<Ai/>}/>
+          <Route path='/Se' element={<Se/>}/>
         </Routes>
       </div>
     </BrowserRouter>

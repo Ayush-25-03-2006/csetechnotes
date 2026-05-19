@@ -52,7 +52,20 @@ function Dashboard() {
                     <p>DBMS</p>
                 </Link>
 
-                
+                <Link to="/Toc" className="card">
+                     <i className="bi bi-diagram-3"></i>
+                    <p>Theory Of Computation</p>
+                </Link>
+
+                <Link to="/Ai" className="card">
+                    <i className="bi bi-robot"></i>
+                    <p>Artificial Intelligence</p>
+                </Link>
+
+                <Link to="/Se" className="card">
+                    <i className="bi bi-laptop"></i>
+                    <p>Software Engineering</p>
+                </Link>
 
             </div>
         </div>
