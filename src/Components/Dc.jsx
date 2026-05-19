@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import limit from "./DifferentialCalculus/LIMIT.pdf";
 import continuity from "./DifferentialCalculus/CONTINUITY&DIFFERENTIABILITY.pdf";
@@ -50,8 +50,14 @@ function Dc() {
     const [showPdf22, setShowPdf22] = useState(false);
     const [showPdf23, setShowPdf23] = useState(false);
     const [showPdf24, setShowPdf24] = useState(false);
+
+    useEffect(() => {
+      document.title = "Differential Calculus"
+    })
     return (
         <div className="container mt-4">
+          <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>Differential Calculus</h2>
+          <hr />
             <u><h3>Topic Wise Notes Content</h3></u>
             <hr />
             <h3 className="mb-4">1. Limit</h3>
@@ -73,7 +79,7 @@ function Dc() {
                     className="mt-3">
                         <iframe src={limit} 
                             width="70%"
-                            height="200px"
+                            height="300px"
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>
@@ -99,7 +105,7 @@ function Dc() {
                 <iframe
                   src={continuity}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -126,7 +132,7 @@ function Dc() {
                 <iframe
                   src={successive}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -153,7 +159,7 @@ function Dc() {
                 <iframe
                   src={leibnitz}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -180,7 +186,7 @@ function Dc() {
                 <iframe
                   src={differential}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -207,7 +213,7 @@ function Dc() {
                 <iframe
                   src={homogeneous}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -234,7 +240,7 @@ function Dc() {
                 <iframe
                   src={linear}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -261,7 +267,7 @@ function Dc() {
                 <iframe
                   src={bernoulli}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -288,7 +294,7 @@ function Dc() {
                 <iframe
                   src={exact}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -315,7 +321,7 @@ function Dc() {
                 <iframe
                   src={reducible}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -342,7 +348,7 @@ function Dc() {
                 <iframe
                   src={equation1}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -369,7 +375,7 @@ function Dc() {
                 <iframe
                   src={equation2}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -396,7 +402,7 @@ function Dc() {
                 <iframe
                   src={clairauts}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -423,7 +429,7 @@ function Dc() {
                 <iframe
                   src={complementary}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -450,7 +456,7 @@ function Dc() {
                 <iframe
                   src={complete}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -477,7 +483,7 @@ function Dc() {
                 <iframe
                   src={method}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -504,7 +510,7 @@ function Dc() {
                 <iframe
                   src={caughy}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -531,7 +537,7 @@ function Dc() {
                 <iframe
                   src={solution}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -558,7 +564,7 @@ function Dc() {
                 <iframe
                   src={limit1}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -585,7 +591,7 @@ function Dc() {
                 <iframe
                   src={partial}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -612,7 +618,7 @@ function Dc() {
                 <iframe
                   src={euler}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -639,7 +645,7 @@ function Dc() {
                 <iframe
                   src={maxima}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -666,7 +672,7 @@ function Dc() {
                 <iframe
                   src={taylor}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -695,7 +701,7 @@ function Dc() {
                 <iframe
                   src={question1}
                   width="70%"
-                  height="200px"
+                  height="300px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>

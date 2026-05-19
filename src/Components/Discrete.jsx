@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import setinmath from "./Discrete/set.pdf";
 import relation from "./Discrete/RELATION.pdf";
@@ -17,8 +17,13 @@ function Discrete() {
     const [showPdf5, setShowPdf5] = useState(false);
     const [showPdf6, setShowPdf6] = useState(false);
 
+    useEffect(() => {
+      document.title = "Discrete Mathematics"
+    })
     return (
         <div className="container mt-4">
+        <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>Discrete Mathematics</h2>
+        <hr />
         <u><h3>Topic Wise Notes Content</h3></u>
         <hr />
         <h3 className="mb-4">1. Sets</h3>
@@ -40,7 +45,7 @@ function Discrete() {
                 className="mt-3">
                     <iframe src={setinmath} 
                         width="70%"
-                        height="200px"
+                        height="300px"
                         onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                     ></iframe>
                 </div>
@@ -66,7 +71,7 @@ function Discrete() {
             <iframe
               src={relation}
               width="70%"
-              height="200px"
+              height="300px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -92,7 +97,7 @@ function Discrete() {
             <iframe
               src={func}
               width="70%"
-              height="200px"
+              height="300px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -118,7 +123,7 @@ function Discrete() {
             <iframe
               src={logic}
               width="70%"
-              height="200px"
+              height="300px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -144,7 +149,7 @@ function Discrete() {
             <iframe
               src={graph}
               width="70%"
-              height="200px"
+              height="300px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -172,7 +177,7 @@ function Discrete() {
             <iframe
               src={question}
               width="70%"
-              height="200px"
+              height="300px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>

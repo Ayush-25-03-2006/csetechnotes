@@ -5,7 +5,7 @@ import greedy from "./Daa/GreedyAlgorithms.pdf";
 import dynamic from "./Daa/DynamicProgramming.pdf";
 import question from "./Daa/DAATOP30QUES-ANS.pdf";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 function Daa() {
     const [showPdf1, setShowPdf1] = useState(false);
@@ -16,8 +16,14 @@ function Daa() {
     const [showPdf6, setShowPdf6] = useState(false);
 
     const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
+
+    useEffect(() => {
+        document.title = "Design & Analysis Of Algorithm"
+      })
     return(
         <div className="container mt-4">
+        <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>Design & Analysis Of Algorithm</h2>
+          <hr />
               <u><h3 >Topic Wise Notes Content</h3></u>
             <hr/>
               <h3 className="mb-4">1. Algorithm & Asymptotic Notation</h3>
@@ -43,7 +49,7 @@ function Daa() {
                   <iframe
                     src={algo}
                     width="70%"
-                    height="200px"
+                    height="300px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -73,7 +79,7 @@ function Daa() {
                   <iframe
                     src={sort}
                     width="70%"
-                    height="200px"
+                    height="300px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -103,7 +109,7 @@ function Daa() {
                   <iframe
                     src={graph}
                     width="70%"
-                    height="200px"
+                    height="300px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -133,7 +139,7 @@ function Daa() {
                   <iframe
                     src={greedy}
                     width="70%"
-                    height="200px"
+                    height="300px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -163,7 +169,7 @@ function Daa() {
                   <iframe
                     src={dynamic}
                     width="70%"
-                    height="200px"
+                    height="300px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -195,7 +201,7 @@ function Daa() {
                   <iframe
                     src={question}
                     width="70%"
-                    height="200px"
+                    height="300px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>

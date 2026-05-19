@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import imagenotes from "./Images/digital notes.webp";
 import "./Dashboard.css";
+import { useEffect } from "react";
 
 function Dashboard() {
+    useEffect(() => {
+        document.title = "Learn Computer Science"
+    })
     return (
         <div className="dashboard-container">
 

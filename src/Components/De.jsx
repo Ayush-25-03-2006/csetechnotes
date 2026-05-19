@@ -3,7 +3,7 @@ import gate from "./De/ImplementallgatesusingNAND&NOR.pdf";
 import combinational from "./De/CombinationalCircuit.pdf";
 import sequential from "./De/SequentialCircuits.pdf";
 import question from "./De/DCTOP25QUESANS.pdf";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 
 function De() {
@@ -14,8 +14,13 @@ function De() {
     const [showPdf5, setShowPdf5] = useState(false);
     const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
 
+    useEffect(() => {
+      document.title = "Digital Electronics"
+    })
     return(
         <div className="container mt-4">
+          <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>Digital Electronics</h2>
+          <hr />
                   <u><h3 >Topic Wise Notes Content</h3></u>
                   <hr />
                     <h3 className="mb-4">1. Boolean Algebra, Logical Gates & K-Map</h3>
@@ -38,7 +43,7 @@ function De() {
                         <iframe
                           src={bool}
                           width="70%"
-                          height="200px"
+                          height="300px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
@@ -65,7 +70,7 @@ function De() {
                         <iframe
                           src={gate}
                           width="70%"
-                          height="200px"
+                          height="300px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
@@ -92,7 +97,7 @@ function De() {
                         <iframe
                           src={combinational}
                           width="70%"
-                          height="200px"
+                          height="300px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
@@ -119,7 +124,7 @@ function De() {
                         <iframe
                           src={sequential}
                           width="70%"
-                          height="200px"
+                          height="300px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
@@ -147,7 +152,7 @@ function De() {
                         <iframe
                           src={question}
                           width="70%"
-                          height="200px"
+                          height="300px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>

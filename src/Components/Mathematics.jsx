@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Mathematics.css";
+import { useEffect } from "react";
 
 function Mathematics() {
+    useEffect(() => {
+        document.title = "Mathematics"
+    })
     return (
         <div className="math-container">
 

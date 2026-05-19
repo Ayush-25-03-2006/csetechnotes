@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Programming.css";
+import { useEffect } from "react";
 
 function Programming() {
+    useEffect(() => {
+        document.title = "Programming"
+    })
     return (
         <div className="programming-container">
 

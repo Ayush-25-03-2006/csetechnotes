@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classObject from "./Oops/CLASS&OBJECTpart1.pdf";
 import OopsBasic from "./Oops/BASICC++.pdf";
 import OopsBasic2 from "./Oops/CLASS&OBJECTpart2.pdf";
@@ -29,8 +29,14 @@ function Oops() {
   const [showPdf12, setShowPdf12] = useState(false);
 
   const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
+
+  useEffect(() => {
+    document.title = "Object Oriented Programming System"
+  })
   return (
     <div className="container mt-4">
+    <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>Object Oriented Programming System</h2>
+    <hr />
       <u><h3 >Topic Wise Notes Content</h3></u>
     <hr/>
       <h3 className="mb-4">1. OOPS Basic in C++</h3>
@@ -56,7 +62,7 @@ function Oops() {
           <iframe
             src={OopsBasic}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -86,7 +92,7 @@ function Oops() {
           <iframe
             src={classObject}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -116,7 +122,7 @@ function Oops() {
           <iframe
             src={OopsBasic2}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -146,7 +152,7 @@ function Oops() {
           <iframe
             src={Constructor}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -176,7 +182,7 @@ function Oops() {
           <iframe
             src={CopyConstructor}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -206,7 +212,7 @@ function Oops() {
           <iframe
             src={Destructor}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -236,7 +242,7 @@ function Oops() {
           <iframe
             src={Encapsulation}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -266,7 +272,7 @@ function Oops() {
           <iframe
             src={Inheritance}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -296,7 +302,7 @@ function Oops() {
           <iframe
             src={TypesOfInheritance}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -326,7 +332,7 @@ function Oops() {
           <iframe
             src={Polymorphism}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -356,7 +362,7 @@ function Oops() {
           <iframe
             src={FriendFunctionInlineFunction}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -388,7 +394,7 @@ function Oops() {
           <iframe
             src={question}
             width="70%"
-            height="200px"
+            height="300px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import question1 from "./C/PPS TOP 30 QUESTIONS (2023-24)❓.pdf";
 import question2 from "./C/PPS UPDATED PYQ++++ QUES-ANS.pdf";
@@ -7,8 +7,14 @@ function C() {
     const [showPdf1, setShowPdf1] = useState(false);
     const [showPdf2, setShowPdf2] = useState(false);
     const notify = () => toast("Downloading Notes For You",{autoClose:1000,transition:null});
+
+    useEffect(() => {
+        document.title = "C Programming"
+      })
     return (
         <div className="container mt-4">
+        <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>C Programming</h2>
+          <hr />
             <u><h3>Topic Wise Notes Content</h3></u>
             <hr />
             <h3 className="mb-4">1. PPS Updated Question & Answer</h3>
@@ -28,7 +34,7 @@ function C() {
                     className="mt-3">
                         <iframe src={question2} 
                             width="70%"
-                            height="200px"
+                            height="300px"
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>
@@ -51,7 +57,7 @@ function C() {
                     className="mt-3">
                         <iframe src={question1} 
                             width="70%"
-                            height="200px"
+                            height="300px"
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>
