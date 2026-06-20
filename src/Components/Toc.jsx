@@ -8,7 +8,7 @@ function Toc() {
 
     const [showPdf1, setShowPdf1] = useState(false);
 
-    useEffect(() => {
+    useEffect(() => {    
         document.title = "Theory Of Computation";
     }, []);
 
