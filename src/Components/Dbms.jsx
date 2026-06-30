@@ -3,6 +3,7 @@ import relationalmodel from "./Dbms/RelationalModel.pdf";
 import functionaldependency from "./Dbms/FunctionalDependency.pdf";
 import normalization from "./Dbms/Normalization.pdf";
 import question1 from "./Dbms/DBMS TOP 30 QUES-ANS.pdf"
+import index from "./Dbms/Indexing.pdf"
 
 import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
@@ -13,6 +14,7 @@ function Dbms() {
     const [showPdf3, setShowPdf3] = useState(false);
     const [showPdf4, setShowPdf4] = useState(false);
     const [showPdf5, setShowPdf5] = useState(false);
+    const [showPdf6, setShowPdf6] = useState(false);
 
     useEffect(() => {
       document.title = "Database Management System"
@@ -134,6 +136,33 @@ function Dbms() {
               </div>
             )}
             <hr />
+            <hr />
+            <h3 className="mb-4">5. Indexing</h3>
+            <a
+              href={index}
+              download
+              className="btn btn-primary btn-lg mb-4"
+              onClick={notify}
+            >
+              Download PDF
+            </a>
+            <button
+              className="btn btn-success btn-lg mb-4 ms-3"
+              onClick={() => setShowPdf6(!showPdf6)}
+            >
+              {showPdf6 ? "Hide Notes" : "Show Notes"}
+            </button>
+            {showPdf6 && (
+              <div className="mt-3">
+                <iframe
+                  src={index}
+                  width="70%"
+                  height="300px"
+                  title="OOPS Notes"
+                  onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                ></iframe>
+              </div>
+            )}
             <h1 style={{color:"crimson"}}>@ Important Questions</h1>
             <hr />
             <h3 className="mb-4">1. Dbms Top 30 Questions</h3>

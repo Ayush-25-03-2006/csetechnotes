@@ -19,6 +19,10 @@ import Programming from './Components/Programming'
 import Toc from './Components/Toc'
 import Ai from './Components/Ai'
 import Se from './Components/Se'
+import Quiz from './Components/Quiz'
+import Dsa_quiz from './Components/Dsa_Quiz'
+import Programming_Quiz from './Components/Programming_Quiz'
+import Os_quiz from './Components/Os_Quiz'
 
 function App() {
   return (
@@ -47,10 +51,14 @@ function App() {
           <Route path='/Toc' element={<Toc/>}/>
           <Route path='/Ai' element={<Ai/>}/>
           <Route path='/Se' element={<Se/>}/>
+          <Route path='/quiz' element={<Quiz/>}/>
+          <Route path='/dsaquiz' element={<Dsa_quiz/>}/>
+          <Route path='/programmingquiz' element={<Programming_Quiz/>}/>
+          <Route path='/osquiz' element={<Os_quiz/>}/>
         </Routes>
       </div>
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;
