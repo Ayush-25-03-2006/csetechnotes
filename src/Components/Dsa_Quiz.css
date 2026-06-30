@@ -1,34 +1,103 @@
-.contain {
-    width: 600px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* Container */
+.contain{
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
 }
 
-.question {
-    font-size: 20px;
-    font-weight: bold;
+/* Question */
+.question{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 30px 0 15px;
+    color: #222;
+    line-height: 1.6;
 }
 
-.option {
+/* Option Buttons */
+.option{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    background: white;
+    color: #222;
+    font-size: 18px;
     text-align: left;
-    padding: 12px;
-    border: 1px solid #ccc;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
 }
-.option:hover{
-    background-color: rgb(77, 77, 231);
+
+.option:hover:not(:disabled){
+    background: #0d6efd;
     color: white;
 }
 
-.correct {
-    background-color: green !important;
-    color: white !important;
+.option:disabled{
+    cursor: default;
 }
 
-.wrong {
-    background-color: red !important;
+/* Correct Answer */
+.correct{
+    background: green !important;
     color: white !important;
+    border-color: #198754 !important;
+}
+
+/* Wrong Answer */
+.wrong{
+    background: red !important;
+    color: white !important;
+    border-color: #dc3545 !important;
+}
+
+/* Tablet */
+@media (max-width:768px){
+
+    .contain{
+        width:95%;
+        padding:18px;
+    }
+
+    .question{
+        font-size:20px;
+    }
+
+    .option{
+        font-size:17px;
+        padding:14px;
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+
+    .contain{
+        width:98%;
+        padding:12px;
+        margin:10px auto;
+    }
+
+    .question{
+        font-size:18px;
+        line-height:1.5;
+    }
+
+    .option{
+        font-size:16px;
+        padding:12px;
+        margin:8px 0;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    hr{
+        margin:20px 0 !important;
+    }
 }
