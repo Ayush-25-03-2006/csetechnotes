@@ -28,7 +28,7 @@ function Programming() {
                     <p>Data Structures</p>
                 </Link>
 
-                <Link to="/Daa" className="card">
+                <Link to="/daaquiz" className="card">
                     <i className="bi bi-graph-up-arrow"></i>
                     <p>DAA</p>
                 </Link>
