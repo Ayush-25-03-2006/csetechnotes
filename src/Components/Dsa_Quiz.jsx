@@ -423,11 +423,11 @@ function Dsa_quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if (index !== correctAnswer1 && "vibrate" in navigator) {
+                            if(index !== correctAnswer1 && "vibrate" in navigator){
                                 navigator.vibrate(200);
                             }
-                            setSelected1(index);
-                        }}
+                            setSelected1(index);}}
+                        disabled={selected1 !== null}
                     >
                         {option}
                     </button>
@@ -448,8 +448,8 @@ function Dsa_quiz() {
                             if (index !== correctAnswer2 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected2(index);
-                        }}
+                            setSelected2(index)}}
+                        disabled={selected2 !== null}
                     >
                         {option}
                     </button>
@@ -470,8 +470,8 @@ function Dsa_quiz() {
                             if (index !== correctAnswer3 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected3(index);
-                        }}
+                            setSelected3(index)}}
+                        disabled={selected3 !== null}
                     >
                         {option}
                     </button>
@@ -494,6 +494,7 @@ function Dsa_quiz() {
                             }
                             setSelected4(index);
                         }}
+                        disabled={selected4 !== null}
                     >
                         {option}
                     </button>
@@ -519,6 +520,7 @@ function Dsa_quiz() {
                             }
                             setSelected5(index);
                         }}
+                        disabled={selected5 !== null}
                     >
                         {option}
                     </button>
@@ -544,6 +546,7 @@ function Dsa_quiz() {
                             }
                             setSelected6(index);
                         }}
+                        disabled={selected6 !== null}
                     >
                         {option}
                     </button>
@@ -569,6 +572,7 @@ function Dsa_quiz() {
                             }
                             setSelected7(index);
                         }}
+                        disabled={selected7 !== null}
                     >
                         {option}
                     </button>
@@ -594,6 +598,7 @@ function Dsa_quiz() {
                             }
                             setSelected8(index);
                         }}
+                        disabled={selected8 !== null}
                     >
                         {option}
                     </button>
@@ -619,6 +624,7 @@ function Dsa_quiz() {
                             }
                             setSelected9(index);
                         }}
+                        disabled={selected9 !== null}
                     >
                         {option}
                     </button>
@@ -642,8 +648,8 @@ function Dsa_quiz() {
                             if (index !== correctAnswer10 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected10(index);
-                        }}
+                            setSelected10(index)}}
+                            disabled={selected10 !== null}
                     >
                         {option}
                     </button>
@@ -669,6 +675,7 @@ function Dsa_quiz() {
                             }
                             setSelected11(index);
                         }}
+                        disabled={selected11 !== null}
                     >
                         {option}
                     </button>
@@ -694,6 +701,7 @@ function Dsa_quiz() {
                             }
                             setSelected12(index);
                         }}
+                        disabled={selected12 !== null}
                     >
                         {option}
                     </button>
@@ -719,6 +727,7 @@ function Dsa_quiz() {
                             }
                             setSelected13(index);
                         }}
+                        disabled={selected13 !== null}
                     >
                         {option}
                     </button>
@@ -744,6 +753,7 @@ function Dsa_quiz() {
                             }
                             setSelected14(index);
                         }}
+                        disabled={selected14 !== null}
                     >
                         {option}
                     </button>
@@ -769,6 +779,7 @@ function Dsa_quiz() {
                             }
                             setSelected15(index);
                         }}
+                        disabled={selected15 !== null}
                     >
                         {option}
                     </button>
@@ -794,6 +805,7 @@ function Dsa_quiz() {
                             }
                             setSelected16(index);
                         }}
+                        disabled={selected16 !== null}
                     >
                         {option}
                     </button>
@@ -819,6 +831,7 @@ function Dsa_quiz() {
                             }
                             setSelected17(index);
                         }}
+                        disabled={selected17 !== null}
                     >
                         {option}
                     </button>
@@ -844,6 +857,7 @@ function Dsa_quiz() {
                             }
                             setSelected18(index);
                         }}
+                        disabled={selected18 !== null}
                     >
                         {option}
                     </button>
@@ -869,6 +883,7 @@ function Dsa_quiz() {
                             }
                             setSelected19(index);
                         }}
+                        disabled={selected19 !== null}
                     >
                         {option}
                     </button>
@@ -894,6 +909,7 @@ function Dsa_quiz() {
                             }
                             setSelected20(index);
                         }}
+                        disabled={selected20 !== null}
                     >
                         {option}
                     </button>
@@ -919,6 +935,7 @@ function Dsa_quiz() {
                             }
                             setSelected21(index);
                         }}
+                        disabled={selected21 !== null}
                     >
                         {option}
                     </button>
@@ -944,6 +961,7 @@ function Dsa_quiz() {
                             }
                             setSelected22(index);
                         }}
+                        disabled={selected22 !== null}
                     >
                         {option}
                     </button>
@@ -969,6 +987,7 @@ function Dsa_quiz() {
                             }
                             setSelected23(index);
                         }}
+                        disabled={selected23 !== null}
                     >
                         {option}
                     </button>
@@ -994,6 +1013,7 @@ function Dsa_quiz() {
                             }
                             setSelected24(index);
                         }}
+                        disabled={selected24 !== null}
                     >
                         {option}
                     </button>
@@ -1019,6 +1039,7 @@ function Dsa_quiz() {
                             }
                             setSelected25(index);
                         }}
+                        disabled={selected25 !== null}
 
                     >
                         {option}
@@ -1045,6 +1066,7 @@ function Dsa_quiz() {
                             }
                             setSelected26(index);
                         }}
+                        disabled={selected26 !== null}
 
                     >
                         {option}
@@ -1071,6 +1093,7 @@ function Dsa_quiz() {
                             }
                             setSelected27(index);
                         }}
+                        disabled={selected27 !== null}
                     >
                         {option}
                     </button>
@@ -1096,6 +1119,7 @@ function Dsa_quiz() {
                             }
                             setSelected28(index);
                         }}
+                        disabled={selected28 !== null}
                     >
                         {option}
                     </button>
@@ -1121,6 +1145,7 @@ function Dsa_quiz() {
                             }
                             setSelected29(index);
                         }}
+                        disabled={selected29 !== null}
                     >
                         {option}
                     </button>
@@ -1146,6 +1171,7 @@ function Dsa_quiz() {
                             }
                             setSelected30(index);
                         }}
+                        disabled={selected30 !== null}
 
                     >
                         {option}
@@ -1172,6 +1198,7 @@ function Dsa_quiz() {
                             }
                             setSelected31(index);
                         }}
+                        disabled={selected31 !== null}
                     >
                         {option}
                     </button>
@@ -1197,6 +1224,7 @@ function Dsa_quiz() {
                             }
                             setSelected32(index);
                         }}
+                        disabled={selected32 !== null}
                     >
                         {option}
                     </button>
@@ -1222,6 +1250,7 @@ function Dsa_quiz() {
                             }
                             setSelected33(index);
                         }}
+                        disabled={selected33 !== null}
                     >
                         {option}
                     </button>
@@ -1247,6 +1276,7 @@ function Dsa_quiz() {
                             }
                             setSelected34(index);
                         }}
+                        disabled={selected34 !== null}
                     >
                         {option}
                     </button>
@@ -1272,6 +1302,7 @@ function Dsa_quiz() {
                             }
                             setSelected35(index);
                         }}
+                        disabled={selected35 !== null}
 
                     >
                         {option}
