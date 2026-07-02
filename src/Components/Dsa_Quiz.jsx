@@ -422,8 +422,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected1(index)}
-                        disabled={selected1 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer1 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected1(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -440,8 +444,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected2(index)}
-                        disabled={selected2 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer2 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected2(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -458,8 +466,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected3(index)}
-                        disabled={selected3 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer3 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected3(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -476,8 +488,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected4(index)}
-                        disabled={selected4 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer4 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected4(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -497,8 +513,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected5(index)}
-                        disabled={selected5 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer5 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected5(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -518,8 +538,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected6(index)}
-                        disabled={selected6 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer6 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected6(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -539,8 +563,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected7(index)}
-                        disabled={selected7 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer7 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected7(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -560,8 +588,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected8(index)}
-                        disabled={selected8 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer8 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected8(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -581,8 +613,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected9(index)}
-                        disabled={selected9 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer9 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected9(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -602,8 +638,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected10(index)}
-                        disabled={selected10 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer10 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected10(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -623,8 +663,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected11(index)}
-                        disabled={selected11 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer11 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected11(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -644,8 +688,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected12(index)}
-                        disabled={selected12 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer12 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected12(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -665,8 +713,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected13(index)}
-                        disabled={selected13 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer13 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected13(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -686,8 +738,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected14(index)}
-                        disabled={selected14 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer14 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected14(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -707,8 +763,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected15(index)}
-                        disabled={selected15 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer15 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected15(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -728,8 +788,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected16(index)}
-                        disabled={selected16 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer16 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected16(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -749,8 +813,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected17(index)}
-                        disabled={selected17 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer17 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected17(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -770,8 +838,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected18(index)}
-                        disabled={selected18 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer18 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected18(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -791,8 +863,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected19(index)}
-                        disabled={selected19 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer19 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected19(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -812,8 +888,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected20(index)}
-                        disabled={selected20 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer20 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected20(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -833,8 +913,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected21(index)}
-                        disabled={selected21 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer21 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected21(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -854,8 +938,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected22(index)}
-                        disabled={selected22 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer22 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected22(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -875,8 +963,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected23(index)}
-                        disabled={selected23 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer23 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected23(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -896,8 +988,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected24(index)}
-                        disabled={selected24 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer24 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected24(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -917,8 +1013,13 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected25(index)}
-                        disabled={selected25 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer25 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected25(index);
+                        }}
+
                     >
                         {option}
                     </button>
@@ -938,8 +1039,13 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected26(index)}
-                        disabled={selected26 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer26 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected26(index);
+                        }}
+
                     >
                         {option}
                     </button>
@@ -959,8 +1065,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected27(index)}
-                        disabled={selected27 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer27 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected27(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -980,8 +1090,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected28(index)}
-                        disabled={selected28 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer28 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected28(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -1001,8 +1115,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected29(index)}
-                        disabled={selected29 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer29 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected29(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -1022,8 +1140,13 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected30(index)}
-                        disabled={selected30 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer30 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected30(index);
+                        }}
+
                     >
                         {option}
                     </button>
@@ -1043,8 +1166,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected31(index)}
-                        disabled={selected31 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer31 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected31(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -1064,8 +1191,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected32(index)}
-                        disabled={selected32 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer32 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected32(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -1085,8 +1216,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected33(index)}
-                        disabled={selected33 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer33 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected33(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -1106,8 +1241,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected34(index)}
-                        disabled={selected34 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer34 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected34(index);
+                        }}
                     >
                         {option}
                     </button>
@@ -1127,8 +1266,13 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected35(index)}
-                        disabled={selected35 !== null}
+                        onClick={() => {
+                            if (index !== correctAnswer35 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected35(index);
+                        }}
+
                     >
                         {option}
                     </button>
@@ -1148,7 +1292,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected36(index)}
+                        onClick={() => {
+                            if (index !== correctAnswer36 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected36(index);
+                        }}
                         disabled={selected36 !== null}
                     >
                         {option}
@@ -1169,7 +1318,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected37(index)}
+                        onClick={() => {
+                            if (index !== correctAnswer37 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected37(index);
+                        }}
                         disabled={selected37 !== null}
                     >
                         {option}
@@ -1190,7 +1344,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected38(index)}
+                        onClick={() => {
+                            if (index !== correctAnswer38 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected38(index);
+                        }}
                         disabled={selected38 !== null}
                     >
                         {option}
@@ -1211,7 +1370,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected39(index)}
+                        onClick={() => {
+                            if (index !== correctAnswer39 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected39(index);
+                        }}
                         disabled={selected39 !== null}
                     >
                         {option}
@@ -1232,7 +1396,12 @@ function Dsa_quiz() {
                                     : ""
                             : ""
                             }`}
-                        onClick={() => setSelected40(index)}
+                        onClick={() => {
+                            if (index !== correctAnswer40 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected40(index);
+                        }}
                         disabled={selected40 !== null}
                     >
                         {option}
