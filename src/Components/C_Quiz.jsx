@@ -1361,7 +1361,7 @@ int main(){
                     ? "correct"
                     : index === selected32
                         ? "wrong"
-                        : ""
+                        : ''
                 : ""
             }`}
             onClick={() => {
