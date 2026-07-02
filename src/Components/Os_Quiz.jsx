@@ -663,7 +663,7 @@ function Os_quiz() {
                     </button>
                 ))}
                 <p className="question">
-                    11. A page fault occurs when:
+                    11. A page fault occurs when ?
                 </p>
 
                 {options11.map((option, index) => (
