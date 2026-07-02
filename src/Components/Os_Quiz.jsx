@@ -7,6 +7,14 @@ function Os_quiz() {
         document.title = "Os Quiz"
     });
 
+    const [submitted, setSubmitted] = useState(false);
+    const [finalScore, setFinalScore] = useState(0);
+
+    function submit() {
+        setFinalScore(score);
+        setSubmitted(true);
+    }
+
     const [selected1, setSelected1] = useState(null);
     const [selected2, setSelected2] = useState(null);
     const [selected3, setSelected3] = useState(null);
@@ -370,6 +378,32 @@ function Os_quiz() {
         "D) Busy Waiting"
     ];
 
+    const selectedAnswers = [
+        selected1, selected2, selected3, selected4, selected5,
+        selected6, selected7, selected8, selected9, selected10,
+        selected11, selected12, selected13, selected14, selected15,
+        selected16, selected17, selected18, selected19, selected20,
+        selected21, selected22, selected23, selected24, selected25,
+        selected26, selected27, selected28, selected29, selected30,
+        selected31, selected32, selected33, selected34, selected35,
+        selected36, selected37, selected38, selected39, selected40
+    ];
+
+    const correctAnswers = [
+        correctAnswer1, correctAnswer2, correctAnswer3, correctAnswer4, correctAnswer5,
+        correctAnswer6, correctAnswer7, correctAnswer8, correctAnswer9, correctAnswer10,
+        correctAnswer11, correctAnswer12, correctAnswer13, correctAnswer14, correctAnswer15,
+        correctAnswer16, correctAnswer17, correctAnswer18, correctAnswer19, correctAnswer20,
+        correctAnswer21, correctAnswer22, correctAnswer23, correctAnswer24, correctAnswer25,
+        correctAnswer26, correctAnswer27, correctAnswer28, correctAnswer29, correctAnswer30,
+        correctAnswer31, correctAnswer32, correctAnswer33, correctAnswer34, correctAnswer35,
+        correctAnswer36, correctAnswer37, correctAnswer38, correctAnswer39, correctAnswer40
+    ];
+
+    const score = selectedAnswers.reduce((total, answer, index) => {
+        return total + (answer === correctAnswers[index] ? 1 : 0)
+    }, 0);
+
     return (
         <>
             <div className="contain">
@@ -592,665 +626,705 @@ function Os_quiz() {
                         {option}
                     </button>
                 ))}
-            <p className="question">
-                11. A page fault occurs when:
-            </p>
+                <p className="question">
+                    11. A page fault occurs when:
+                </p>
 
-            {options11.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected11 !== null
-                        ? index === correctAnswer11
-                            ? "correct"
-                            : index === selected11
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected11(index)}
-                    disabled={selected11 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options11.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected11 !== null
+                            ? index === correctAnswer11
+                                ? "correct"
+                                : index === selected11
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected11(index)}
+                        disabled={selected11 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                12. Thrashing mainly occurs because:
-            </p>
+                <p className="question">
+                    12. Thrashing mainly occurs because:
+                </p>
 
-            {options12.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected12 !== null
-                        ? index === correctAnswer12
-                            ? "correct"
-                            : index === selected12
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected12(index)}
-                    disabled={selected12 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options12.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected12 !== null
+                            ? index === correctAnswer12
+                                ? "correct"
+                                : index === selected12
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected12(index)}
+                        disabled={selected12 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                13. Which of the following is not a necessary condition for deadlock?
-            </p>
+                <p className="question">
+                    13. Which of the following is not a necessary condition for deadlock?
+                </p>
 
-            {options13.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected13 !== null
-                        ? index === correctAnswer13
-                            ? "correct"
-                            : index === selected13
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected13(index)}
-                    disabled={selected13 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options13.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected13 !== null
+                            ? index === correctAnswer13
+                                ? "correct"
+                                : index === selected13
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected13(index)}
+                        disabled={selected13 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                14. P1=(AT=0, BT=7), P2=(AT=2, BT=3), P3=(AT=4, BT=1). Using SRTF scheduling, which process finishes last?
-            </p>
+                <p className="question">
+                    14. P1=(AT=0, BT=7), P2=(AT=2, BT=3), P3=(AT=4, BT=1). Using SRTF scheduling, which process finishes last?
+                </p>
 
-            {options14.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected14 !== null
-                        ? index === correctAnswer14
-                            ? "correct"
-                            : index === selected14
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected14(index)}
-                    disabled={selected14 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options14.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected14 !== null
+                            ? index === correctAnswer14
+                                ? "correct"
+                                : index === selected14
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected14(index)}
+                        disabled={selected14 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                15. The primary purpose of a semaphore is:
-            </p>
+                <p className="question">
+                    15. The primary purpose of a semaphore is:
+                </p>
 
-            {options15.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected15 !== null
-                        ? index === correctAnswer15
-                            ? "correct"
-                            : index === selected15
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected15(index)}
-                    disabled={selected15 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options15.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected15 !== null
+                            ? index === correctAnswer15
+                                ? "correct"
+                                : index === selected15
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected15(index)}
+                        disabled={selected15 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                16. Binary Semaphore can have values:
-            </p>
+                <p className="question">
+                    16. Binary Semaphore can have values:
+                </p>
 
-            {options16.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected16 !== null
-                        ? index === correctAnswer16
-                            ? "correct"
-                            : index === selected16
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected16(index)}
-                    disabled={selected16 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options16.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected16 !== null
+                            ? index === correctAnswer16
+                                ? "correct"
+                                : index === selected16
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected16(index)}
+                        disabled={selected16 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                17. Peterson's Algorithm guarantees:
-            </p>
+                <p className="question">
+                    17. Peterson's Algorithm guarantees:
+                </p>
 
-            {options17.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected17 !== null
-                        ? index === correctAnswer17
-                            ? "correct"
-                            : index === selected17
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected17(index)}
-                    disabled={selected17 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options17.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected17 !== null
+                            ? index === correctAnswer17
+                                ? "correct"
+                                : index === selected17
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected17(index)}
+                        disabled={selected17 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                18. Which CPU scheduling algorithm generally gives the best response time in interactive systems?
-            </p>
+                <p className="question">
+                    18. Which CPU scheduling algorithm generally gives the best response time in interactive systems?
+                </p>
 
-            {options18.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected18 !== null
-                        ? index === correctAnswer18
-                            ? "correct"
-                            : index === selected18
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected18(index)}
-                    disabled={selected18 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options18.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected18 !== null
+                            ? index === correctAnswer18
+                                ? "correct"
+                                : index === selected18
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected18(index)}
+                        disabled={selected18 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                19. Processes have priorities: P1=3, P2=1, P3=2 (smaller number means higher priority). All arrive together. Which execution order is correct?
-            </p>
+                <p className="question">
+                    19. Processes have priorities: P1=3, P2=1, P3=2 (smaller number means higher priority). All arrive together. Which execution order is correct?
+                </p>
 
-            {options19.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected19 !== null
-                        ? index === correctAnswer19
-                            ? "correct"
-                            : index === selected19
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected19(index)}
-                    disabled={selected19 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options19.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected19 !== null
+                            ? index === correctAnswer19
+                                ? "correct"
+                                : index === selected19
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected19(index)}
+                        disabled={selected19 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                20. Which scheduling algorithm can suffer from starvation without aging?
-            </p>
+                <p className="question">
+                    20. Which scheduling algorithm can suffer from starvation without aging?
+                </p>
 
-            {options20.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected20 !== null
-                        ? index === correctAnswer20
-                            ? "correct"
-                            : index === selected20
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected20(index)}
-                    disabled={selected20 !== null}
-                >
-                    {option}
-                </button>
-            ))}
-            <p className="question">
-                21. Page reference string: 1, 2, 3, 2, 4, 1, 5, 2. Number of frames = 3. Using FIFO page replacement, total page faults are:
-            </p>
+                {options20.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected20 !== null
+                            ? index === correctAnswer20
+                                ? "correct"
+                                : index === selected20
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected20(index)}
+                        disabled={selected20 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+                <p className="question">
+                    21. Page reference string: 1, 2, 3, 2, 4, 1, 5, 2. Number of frames = 3. Using FIFO page replacement, total page faults are:
+                </p>
 
-            {options21.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected21 !== null
-                        ? index === correctAnswer21
-                            ? "correct"
-                            : index === selected21
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected21(index)}
-                    disabled={selected21 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options21.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected21 !== null
+                            ? index === correctAnswer21
+                                ? "correct"
+                                : index === selected21
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected21(index)}
+                        disabled={selected21 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                22. Reference string: 7, 0, 1, 2, 0, 3, 0. Frames = 3. Using LRU algorithm, page faults are:
-            </p>
+                <p className="question">
+                    22. Reference string: 7, 0, 1, 2, 0, 3, 0. Frames = 3. Using LRU algorithm, page faults are:
+                </p>
 
-            {options22.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected22 !== null
-                        ? index === correctAnswer22
-                            ? "correct"
-                            : index === selected22
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected22(index)}
-                    disabled={selected22 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options22.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected22 !== null
+                            ? index === correctAnswer22
+                                ? "correct"
+                                : index === selected22
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected22(index)}
+                        disabled={selected22 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                23. Which memory allocation strategy usually leaves the smallest leftover hole?
-            </p>
+                <p className="question">
+                    23. Which memory allocation strategy usually leaves the smallest leftover hole?
+                </p>
 
-            {options23.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected23 !== null
-                        ? index === correctAnswer23
-                            ? "correct"
-                            : index === selected23
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected23(index)}
-                    disabled={selected23 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options23.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected23 !== null
+                            ? index === correctAnswer23
+                                ? "correct"
+                                : index === selected23
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected23(index)}
+                        disabled={selected23 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                24. Compaction is mainly useful in:
-            </p>
+                <p className="question">
+                    24. Compaction is mainly useful in:
+                </p>
 
-            {options24.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected24 !== null
-                        ? index === correctAnswer24
-                            ? "correct"
-                            : index === selected24
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected24(index)}
-                    disabled={selected24 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options24.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected24 !== null
+                            ? index === correctAnswer24
+                                ? "correct"
+                                : index === selected24
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected24(index)}
+                        disabled={selected24 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                25. A process has 5 pages. Initially no pages are in memory. Minimum possible page faults are:
-            </p>
+                <p className="question">
+                    25. A process has 5 pages. Initially no pages are in memory. Minimum possible page faults are:
+                </p>
 
-            {options25.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected25 !== null
-                        ? index === correctAnswer25
-                            ? "correct"
-                            : index === selected25
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected25(index)}
-                    disabled={selected25 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options25.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected25 !== null
+                            ? index === correctAnswer25
+                                ? "correct"
+                                : index === selected25
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected25(index)}
+                        disabled={selected25 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                26. Context switching overhead mainly involves saving and restoring:
-            </p>
+                <p className="question">
+                    26. Context switching overhead mainly involves saving and restoring:
+                </p>
 
-            {options26.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected26 !== null
-                        ? index === correctAnswer26
-                            ? "correct"
-                            : index === selected26
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected26(index)}
-                    disabled={selected26 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options26.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected26 !== null
+                            ? index === correctAnswer26
+                                ? "correct"
+                                : index === selected26
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected26(index)}
+                        disabled={selected26 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                27. Which scheduling criterion measures how quickly the CPU starts executing a process after arrival?
-            </p>
+                <p className="question">
+                    27. Which scheduling criterion measures how quickly the CPU starts executing a process after arrival?
+                </p>
 
-            {options27.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected27 !== null
-                        ? index === correctAnswer27
-                            ? "correct"
-                            : index === selected27
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected27(index)}
-                    disabled={selected27 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options27.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected27 !== null
+                            ? index === correctAnswer27
+                                ? "correct"
+                                : index === selected27
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected27(index)}
+                        disabled={selected27 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                28. Reference string: 2, 3, 2, 1, 5, 2, 4, 5. Frames = 3. Using Optimal Page Replacement, total page faults are:
-            </p>
+                <p className="question">
+                    28. Reference string: 2, 3, 2, 1, 5, 2, 4, 5. Frames = 3. Using Optimal Page Replacement, total page faults are:
+                </p>
 
-            {options28.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected28 !== null
-                        ? index === correctAnswer28
-                            ? "correct"
-                            : index === selected28
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected28(index)}
-                    disabled={selected28 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options28.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected28 !== null
+                            ? index === correctAnswer28
+                                ? "correct"
+                                : index === selected28
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected28(index)}
+                        disabled={selected28 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                29. A system has a page size of 1 KB. The logical address generated is 3076. The page number is:
-            </p>
+                <p className="question">
+                    29. A system has a page size of 1 KB. The logical address generated is 3076. The page number is:
+                </p>
 
-            {options29.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected29 !== null
-                        ? index === correctAnswer29
-                            ? "correct"
-                            : index === selected29
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected29(index)}
-                    disabled={selected29 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options29.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected29 !== null
+                            ? index === correctAnswer29
+                                ? "correct"
+                                : index === selected29
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected29(index)}
+                        disabled={selected29 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                30. The purpose of aging in scheduling is to:
-            </p>
+                <p className="question">
+                    30. The purpose of aging in scheduling is to:
+                </p>
 
-            {options30.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected30 !== null
-                        ? index === correctAnswer30
-                            ? "correct"
-                            : index === selected30
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected30(index)}
-                    disabled={selected30 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options30.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected30 !== null
+                            ? index === correctAnswer30
+                                ? "correct"
+                                : index === selected30
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected30(index)}
+                        disabled={selected30 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                31. A page size is 4 KB. Offset field requires:
-            </p>
+                <p className="question">
+                    31. A page size is 4 KB. Offset field requires:
+                </p>
 
-            {options31.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected31 !== null
-                        ? index === correctAnswer31
-                            ? "correct"
-                            : index === selected31
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected31(index)}
-                    disabled={selected31 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options31.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected31 !== null
+                            ? index === correctAnswer31
+                                ? "correct"
+                                : index === selected31
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected31(index)}
+                        disabled={selected31 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                32. Available memory holes are: 100 KB, 250 KB, 300 KB, 600 KB. Processes arrive in order: 212 KB, 417 KB, 112 KB. Using First Fit, the second process is allocated to:
-            </p>
+                <p className="question">
+                    32. Available memory holes are: 100 KB, 250 KB, 300 KB, 600 KB. Processes arrive in order: 212 KB, 417 KB, 112 KB. Using First Fit, the second process is allocated to:
+                </p>
 
-            {options32.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected32 !== null
-                        ? index === correctAnswer32
-                            ? "correct"
-                            : index === selected32
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected32(index)}
-                    disabled={selected32 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options32.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected32 !== null
+                            ? index === correctAnswer32
+                                ? "correct"
+                                : index === selected32
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected32(index)}
+                        disabled={selected32 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                33. Which of the following is an advantage of kernel-level threads over user-level threads?
-            </p>
+                <p className="question">
+                    33. Which of the following is an advantage of kernel-level threads over user-level threads?
+                </p>
 
-            {options33.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected33 !== null
-                        ? index === correctAnswer33
-                            ? "correct"
-                            : index === selected33
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected33(index)}
-                    disabled={selected33 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options33.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected33 !== null
+                            ? index === correctAnswer33
+                                ? "correct"
+                                : index === selected33
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected33(index)}
+                        disabled={selected33 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                34. Which CPU scheduling algorithm is preemptive by design?
-            </p>
+                <p className="question">
+                    34. Which CPU scheduling algorithm is preemptive by design?
+                </p>
 
-            {options34.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected34 !== null
-                        ? index === correctAnswer34
-                            ? "correct"
-                            : index === selected34
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected34(index)}
-                    disabled={selected34 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options34.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected34 !== null
+                            ? index === correctAnswer34
+                                ? "correct"
+                                : index === selected34
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected34(index)}
+                        disabled={selected34 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                35. A process arrives at time 5 ms and completes at time 18 ms. Its Turnaround Time is:
-            </p>
+                <p className="question">
+                    35. A process arrives at time 5 ms and completes at time 18 ms. Its Turnaround Time is:
+                </p>
 
-            {options35.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected35 !== null
-                        ? index === correctAnswer35
-                            ? "correct"
-                            : index === selected35
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected35(index)}
-                    disabled={selected35 !== null}
-                >
-                    {option}
-                </button>
-            ))}
-            <p className="question">
-                36. Which statement regarding virtual memory is correct?
-            </p>
+                {options35.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected35 !== null
+                            ? index === correctAnswer35
+                                ? "correct"
+                                : index === selected35
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected35(index)}
+                        disabled={selected35 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+                <p className="question">
+                    36. Which statement regarding virtual memory is correct?
+                </p>
 
-            {options36.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected36 !== null
-                        ? index === correctAnswer36
-                            ? "correct"
-                            : index === selected36
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected36(index)}
-                    disabled={selected36 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options36.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected36 !== null
+                            ? index === correctAnswer36
+                                ? "correct"
+                                : index === selected36
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected36(index)}
+                        disabled={selected36 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                37. A process has higher priority but is waiting for I/O. CPU is free. The scheduler should:
-            </p>
+                <p className="question">
+                    37. A process has higher priority but is waiting for I/O. CPU is free. The scheduler should:
+                </p>
 
-            {options37.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected37 !== null
-                        ? index === correctAnswer37
-                            ? "correct"
-                            : index === selected37
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected37(index)}
-                    disabled={selected37 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options37.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected37 !== null
+                            ? index === correctAnswer37
+                                ? "correct"
+                                : index === selected37
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected37(index)}
+                        disabled={selected37 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                38. A process has Burst Time = 9 ms and Turnaround Time = 15 ms. Its Waiting Time is:
-            </p>
+                <p className="question">
+                    38. A process has Burst Time = 9 ms and Turnaround Time = 15 ms. Its Waiting Time is:
+                </p>
 
-            {options38.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected38 !== null
-                        ? index === correctAnswer38
-                            ? "correct"
-                            : index === selected38
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected38(index)}
-                    disabled={selected38 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options38.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected38 !== null
+                            ? index === correctAnswer38
+                                ? "correct"
+                                : index === selected38
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected38(index)}
+                        disabled={selected38 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                39. Which memory allocation strategy attempts to use the largest available hole first?
-            </p>
+                <p className="question">
+                    39. Which memory allocation strategy attempts to use the largest available hole first?
+                </p>
 
-            {options39.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected39 !== null
-                        ? index === correctAnswer39
-                            ? "correct"
-                            : index === selected39
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected39(index)}
-                    disabled={selected39 !== null}
-                >
-                    {option}
-                </button>
-            ))}
+                {options39.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected39 !== null
+                            ? index === correctAnswer39
+                                ? "correct"
+                                : index === selected39
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected39(index)}
+                        disabled={selected39 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
 
-            <p className="question">
-                40. A system spends most of its time swapping pages instead of executing processes. This situation is called:
-            </p>
+                <p className="question">
+                    40. A system spends most of its time swapping pages instead of executing processes. This situation is called:
+                </p>
 
-            {options40.map((option, index) => (
-                <button
-                    key={index}
-                    className={`btn option ${selected40 !== null
-                        ? index === correctAnswer40
-                            ? "correct"
-                            : index === selected40
-                                ? "wrong"
-                                : ""
-                        : ""
-                        }`}
-                    onClick={() => setSelected40(index)}
-                    disabled={selected40 !== null}
-                >
-                    {option}
-                </button>
-            ))}
-            <hr style={{ border: "5px solid blue", margin:"40px"}} />
-        </div>
+                {options40.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected40 !== null
+                            ? index === correctAnswer40
+                                ? "correct"
+                                : index === selected40
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => setSelected40(index)}
+                        disabled={selected40 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+            </div>
+            <button
+                className="btn btn-success"
+                style={{ margin: "20px 0" }}
+                onClick={submit}
+            >
+                Submit Quiz
+            </button>
+            {submitted && (
+                <>
+                    <div style={{ fontSize: "30px", color: "green" }}>
+                        [ Result : {finalScore} / 40 ]
+                    </div>
+
+                    <div style={{ fontSize: "30px", color: "green" }}>
+                        [ Accuracy : {((finalScore / 40) * 100).toFixed(2)} % ]
+                    </div>
+
+                    <div
+                        className={
+                            finalScore >= 30
+                                ? "excellent"
+                                : finalScore >= 25
+                                    ? "good"
+                                    : finalScore > 20
+                                        ? "average"
+                                        : "failed"
+                        }
+                    >
+                        [
+                        {finalScore >= 30
+                            ? " Well Done!"
+                            : finalScore >= 25
+                                ? " Good!"
+                                : finalScore > 20
+                                    ? " Ok!"
+                                    : " Failed!"}
+                        ]
+                    </div>
+                </>
+            )}
+            <hr style={{ border: "5px solid blue", margin: "40px" }} />
         </>
     );
 }

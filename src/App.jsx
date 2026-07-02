@@ -24,6 +24,7 @@ import Dsa_quiz from './Components/Dsa_Quiz'
 import Programming_Quiz from './Components/Programming_Quiz'
 import Os_quiz from './Components/Os_Quiz'
 import Daa_quiz from './Components/Daa_Quiz'
+import De_Quiz from './Components/De_Quiz'
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           <Route path='/programmingquiz' element={<Programming_Quiz/>}/>
           <Route path='/osquiz' element={<Os_quiz/>}/>
           <Route path='/daaquiz' element={<Daa_quiz/>}/>
+          <Route path='/dequiz' element={<De_Quiz/>}/>
         </Routes>
       </div>
     </BrowserRouter>

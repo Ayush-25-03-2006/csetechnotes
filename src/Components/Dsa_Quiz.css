@@ -57,6 +57,30 @@
     border-color: #dc3545 !important;
 }
 
+.excellent {
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+}
+
+.good {
+    font-size: 30px;
+    color: limegreen;
+    font-weight: bold;
+}
+
+.average {
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+
+.failed {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
 /* Tablet */
 @media (max-width:768px){
 

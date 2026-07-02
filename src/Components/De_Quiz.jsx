@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Dsa_Quiz.css";
 
-function Dsa_quiz() {
-
-    useEffect(() => {
-        document.title = "Dsa Quiz"
-    });
+function De_Quiz() {
 
     const [submitted, setSubmitted] = useState(false);
     const [finalScore, setFinalScore] = useState(0);
@@ -14,6 +10,10 @@ function Dsa_quiz() {
         setFinalScore(score);
         setSubmitted(true);
     }
+
+    useEffect(() => {
+        document.title = "De Quiz"
+    });
 
     const [selected1, setSelected1] = useState(null);
     const [selected2, setSelected2] = useState(null);
@@ -58,324 +58,324 @@ function Dsa_quiz() {
 
     // here index is provided start from 0 to n -1
     const correctAnswer1 = 3;
-    const correctAnswer2 = 3;
-    const correctAnswer3 = 1;
+    const correctAnswer2 = 2;
+    const correctAnswer3 = 2;
     const correctAnswer4 = 1;
-    const correctAnswer5 = 1;
-    const correctAnswer6 = 2;
+    const correctAnswer5 = 2;
+    const correctAnswer6 = 1;
     const correctAnswer7 = 2;
-    const correctAnswer8 = 3;
-    const correctAnswer9 = 2;
+    const correctAnswer8 = 1;
+    const correctAnswer9 = 1;
     const correctAnswer10 = 2;
     const correctAnswer11 = 1;
     const correctAnswer12 = 1;
     const correctAnswer13 = 1;
-    const correctAnswer14 = 1;
-    const correctAnswer15 = 2;
+    const correctAnswer14 = 2;
+    const correctAnswer15 = 1;
     const correctAnswer16 = 1;
-    const correctAnswer17 = 2;
-    const correctAnswer18 = 1;
-    const correctAnswer19 = 0;
+    const correctAnswer17 = 1;
+    const correctAnswer18 = 2;
+    const correctAnswer19 = 1;
     const correctAnswer20 = 1;
     const correctAnswer21 = 1;
-    const correctAnswer22 = 3;
-    const correctAnswer23 = 1;
+    const correctAnswer22 = 2;
+    const correctAnswer23 = 2;
     const correctAnswer24 = 3;
-    const correctAnswer25 = 2;
-    const correctAnswer26 = 2;
-    const correctAnswer27 = 0;
-    const correctAnswer28 = 3;
+    const correctAnswer25 = 1;
+    const correctAnswer26 = 0;
+    const correctAnswer27 = 2;
+    const correctAnswer28 = 1;
     const correctAnswer29 = 1;
     const correctAnswer30 = 1;
     const correctAnswer31 = 0;
     const correctAnswer32 = 1;
-    const correctAnswer33 = 0;
+    const correctAnswer33 = 1;
     const correctAnswer34 = 1;
-    const correctAnswer35 = 0;
+    const correctAnswer35 = 2;
     const correctAnswer36 = 2;
-    const correctAnswer37 = 3;
-    const correctAnswer38 = 2;
-    const correctAnswer39 = 1;
+    const correctAnswer37 = 2;
+    const correctAnswer38 = 1;
+    const correctAnswer39 = 2;
     const correctAnswer40 = 1;
 
     const options1 = [
-        "A) O(1)",
-        "B) O(log n)",
-        "C) O(n²)",
-        "D) O(n)"
+        "A) XOR",
+        "B) NOR",
+        "C) NAND",
+        "D) Both B and C"
     ];
 
     const options2 = [
-        "A) Insert at beginning",
-        "B) Delete first node",
-        "C) Insert after a given node",
-        "D) Delete last node"
-    ]
+        "A) B",
+        "B) A",
+        "C) A + B",
+        "D) AB"
+    ];
 
     const options3 = [
-        "A) Two data fields",
-        "B) One extra pointer",
-        "C) Parent pointer",
-        "D) Height information"
-    ]
+        "A) 8",
+        "B) 12",
+        "C) 16",
+        "D) 32"
+    ];
 
     const options4 = [
-        "A) Head points to itself",
-        "B) Head becomes NULL",
-        "C) Tail becomes NULL only",
-        "D) Data becomes zero"
-    ]
+        "A) Absorption Law",
+        "B) De Morgan's First Law",
+        "C) Complement Law",
+        "D) Consensus Law"
+    ];
 
     const options5 = [
-        "A) 20",
-        "B) 30",
-        "C) 40",
-        "D) 25"
-    ]
+        "A) NAND",
+        "B) XOR",
+        "C) NOR",
+        "D) OR"
+    ];
 
     const options6 = [
-        "A) 36",
-        "B) 48",
-        "C) 60",
-        "D) 72"
-    ]
+        "A) 2 inputs, 1 output",
+        "B) 2 inputs, 2 outputs",
+        "C) 3 inputs, 2 outputs",
+        "D) 3 inputs, 1 output"
+    ];
 
     const options7 = [
-        "A) TOP = -1",
-        "B) TOP = MAX",
-        "C) TOP = MAX − 1",
-        "D) TOP = 0"
-    ]
+        "A) A + B",
+        "B) A ⊕ B",
+        "C) AB",
+        "D) A ⊙ B"
+    ];
 
     const options8 = [
-        "A) LL Rotation",
-        "B) RR Rotation",
-        "C) LR Rotation",
-        "D) RL Rotation"
+        "A) Half Adder",
+        "B) Full Adder",
+        "C) Decoder",
+        "D) Comparator"
     ];
 
     const options9 = [
-        "A) Stack Overflow",
-        "B) Memory Leakage",
-        "C) False Overflow",
-        "D) Underflow only"
+        "A) One Half Adder",
+        "B) Two Half Adders and one OR gate",
+        "C) One XOR gate",
+        "D) One NAND gate"
     ];
 
     const options10 = [
-        "A) front == rear",
-        "B) rear == n − 1",
-        "C) (rear + 1) % n == front",
-        "D) front == -1"
+        "A) Decoder",
+        "B) Encoder",
+        "C) Multiplexer",
+        "D) Demultiplexer"
     ];
 
     const options11 = [
-        "A) Searching",
-        "B) Enqueue",
-        "C) Sorting",
-        "D) Traversal"
+        "A) 2 selection lines",
+        "B) 3 selection lines",
+        "C) 4 selection lines",
+        "D) 8 selection lines"
     ];
 
     const options12 = [
-        "A) Array is reverse sorted",
-        "B) Array is already sorted (optimized version)",
-        "C) All elements are distinct",
-        "D) Array size is prime"
+        "A) Encoder",
+        "B) Decoder",
+        "C) Comparator",
+        "D) Register"
     ];
 
     const options13 = [
-        "A) Bubble Sort",
-        "B) Selection Sort",
-        "C) Insertion Sort",
-        "D) Merge Sort"
+        "A) Many-to-One operation",
+        "B) One-to-Many operation",
+        "C) Binary Addition",
+        "D) Binary Comparison"
     ];
 
     const options14 = [
-        "A) 4, 5",
-        "B) 5, 4",
-        "C) 5, 5",
-        "D) 4, 4"
+        "A) Multiplexer",
+        "B) Decoder",
+        "C) Comparator",
+        "D) Encoder"
     ];
 
     const options15 = [
-        "A) Quick Sort",
-        "B) Heap Sort",
-        "C) Merge Sort",
-        "D) Selection Sort"
+        "A) Have no outputs",
+        "B) Use memory elements",
+        "C) Do not use logic gates",
+        "D) Have only one input"
     ];
 
     const options16 = [
-        "A) Pivot divides array equally every time",
-        "B) Pivot is always the smallest or largest element",
-        "C) Duplicate elements exist",
-        "D) Array size is even"
+        "A) Flip-Flop",
+        "B) Latch",
+        "C) Counter",
+        "D) Register"
     ];
 
     const options17 = [
-        "A) O(n)",
-        "B) O(log n)",
-        "C) O(n log n)",
-        "D) O(n²)"
+        "A) Level Triggered",
+        "B) Edge Triggered",
+        "C) Asynchronous only",
+        "D) Memory-less"
     ];
 
     const options18 = [
-        "A) It uses recursion only",
-        "B) It creates temporary arrays during merging",
-        "C) It uses linked lists",
-        "D) It stores pivot elements"
+        "A) D Flip-Flop",
+        "B) JK Flip-Flop",
+        "C) SR Flip-Flop",
+        "D) T Flip-Flop"
     ];
 
     const options19 = [
-        "A) 1",
-        "B) 2",
-        "C) 3",
-        "D) 4"
+        "A) D Flip-Flop",
+        "B) JK Flip-Flop",
+        "C) T Flip-Flop",
+        "D) RS Flip-Flop"
     ];
 
     const options20 = [
-        "A) 1",
-        "B) 2",
-        "C) 3",
-        "D) Depends on the height"
+        "A) Comparator",
+        "B) Counter",
+        "C) Decoder",
+        "D) Multiplexer"
     ];
 
     const options21 = [
-        "A) Left child > Parent",
-        "B) Parent ≥ Both Children",
-        "C) Right child ≥ Parent",
-        "D) Parent < Left Child"
+        "A) Both inputs are same",
+        "B) Inputs are different",
+        "C) Both inputs are LOW",
+        "D) Both inputs are HIGH"
     ];
 
     const options22 = [
-        "A) Inorder",
-        "B) Preorder",
-        "C) Postorder",
-        "D) None of these"
+        "A) NAND",
+        "B) NOR",
+        "C) XNOR",
+        "D) OR"
     ];
 
     const options23 = [
-        "A) Binary Search Tree",
-        "B) Complete Binary Tree",
-        "C) AVL Tree",
-        "D) Threaded Tree"
+        "A) 16",
+        "B) 24",
+        "C) 32",
+        "D) 64"
     ];
 
     const options24 = [
-        "A) Merge Sort",
-        "B) Insertion Sort",
-        "C) Bubble Sort",
-        "D) Quick Sort"
+        "A) 2",
+        "B) 3",
+        "C) 4",
+        "D) 6"
     ];
 
     const options25 = [
-        "A) Internal nodes only",
-        "B) Root node only",
-        "C) Leaf nodes only",
-        "D) Every node"
+        "A) Identity Law",
+        "B) Idempotent Law",
+        "C) Complement Law",
+        "D) Consensus Law"
     ];
 
     const options26 = [
-        "A) Queue",
-        "B) Heap",
-        "C) Stack",
-        "D) Linked List"
+        "A) Absorption Law",
+        "B) Identity Law",
+        "C) Distributive Law",
+        "D) De Morgan's Law"
     ];
 
     const options27 = [
-        "A) Bubble Sort (optimized)",
-        "B) Selection Sort",
-        "C) Quick Sort (first element pivot)",
-        "D) Heap Sort"
+        "A) Full Adder",
+        "B) Multiplexer",
+        "C) Register",
+        "D) Decoder"
     ];
 
     const options28 = [
-        "A) Push",
-        "B) Pop",
-        "C) Peek",
-        "D) Insert at Middle"
+        "A) n",
+        "B) 2ⁿ",
+        "C) n²",
+        "D) 2ⁿ⁻¹"
     ];
 
     const options29 = [
-        "A) The entire array becomes sorted",
-        "B) Two sorted subarrays are combined into one sorted subarray",
-        "C) Pivot is placed in its correct position",
-        "D) Heap property is maintained"
+        "A) 2",
+        "B) 3",
+        "C) 4",
+        "D) 5"
     ];
 
     const options30 = [
-        "A) Smaller height",
-        "B) Linked leaf nodes",
-        "C) Fewer keys",
-        "D) Binary search property"
+        "A) Half Adders only",
+        "B) Full Adders in series",
+        "C) Decoders",
+        "D) Multiplexers"
     ];
 
     const options31 = [
-        "A) Overflow occurs and the node splits",
-        "B) Nothing happens",
-        "C) Root is deleted",
-        "D) Tree becomes AVL"
+        "A) Flip-Flop",
+        "B) Multiplexer",
+        "C) Decoder",
+        "D) Comparator"
     ];
 
     const options32 = [
-        "A) 4 children",
-        "B) 5 children",
-        "C) 6 children",
-        "D) 8 children"
+        "A) At any time",
+        "B) Only with the clock pulse",
+        "C) Only with reset",
+        "D) Only with enable signal"
     ];
 
     const options33 = [
-        "A) LL",
-        "B) RR",
-        "C) LR",
-        "D) RL"
+        "A) Level Triggering",
+        "B) Edge Triggering",
+        "C) Pulse Triggering",
+        "D) Delay Triggering"
     ];
 
     const options34 = [
-        "A) 10",
-        "B) 20",
-        "C) 30",
-        "D) None of these"
+        "A) 5",
+        "B) 6",
+        "C) 7",
+        "D) 8"
     ];
 
     const options35 = [
-        "A) 7",
-        "B) 8",
-        "C) 9",
-        "D) 0"
+        "A) XOR",
+        "B) OR",
+        "C) NOT",
+        "D) XNOR"
     ];
 
     const options36 = [
         "A) 0",
         "B) 1",
-        "C) 4",
-        "D) 9"
+        "C) A",
+        "D) A'"
     ];
 
     const options37 = [
-        "A) Linear Probing",
-        "B) Separate Chaining",
-        "C) Quadratic Probing",
-        "D) Both B and C"
+        "A) SR Flip-Flop",
+        "B) JK Flip-Flop",
+        "C) D Flip-Flop",
+        "D) T Flip-Flop"
     ];
 
     const options38 = [
-        "A) 0.60",
-        "B) 0.70",
-        "C) 0.75",
-        "D) 0.80"
+        "A) Edge Triggered",
+        "B) Level Triggered",
+        "C) Dynamic Memory",
+        "D) Non-memory Device"
     ];
 
     const options39 = [
-        "A) Internal nodes store complete records",
-        "B) Leaf nodes are linked sequentially",
-        "C) Every key appears only once",
-        "D) Root must always contain two keys"
+        "A) 2",
+        "B) 3",
+        "C) 4",
+        "D) 5"
     ];
 
     const options40 = [
-        "A) Binary Search Tree",
-        "B) AVL Tree",
-        "C) Hash Table",
-        "D) Linear Search"
+        "A) Truth Table",
+        "B) Karnaugh Map (K-Map)",
+        "C) Flowchart",
+        "D) State Diagram"
     ];
 
     const selectedAnswers = [
@@ -401,14 +401,28 @@ function Dsa_quiz() {
     ];
 
     const score = selectedAnswers.reduce((total, answer, index) => {
-        return total + (answer === correctAnswers[index] ? 1 : 0)
+        return total + (answer === correctAnswers[index] ? 1 : 0);
     }, 0);
+
+    let res = "";
+    if (score >= 30) {
+        res = "Well Done !";
+    }
+    else if (score >= 25 && score < 30) {
+        res = "Good ! "
+    }
+    else if (score > 20 && score < 25) {
+        res = "Ok !";
+    }
+    else {
+        res = "Failed ! "
+    }
 
     return (
         <>
             <div className="contain">
                 <p className="question">
-                    1. In a singly linked list having only a head pointer, the worst-case time complexity of deleting the last node is:
+                    1. Which logic gate is known as the universal gate?
                 </p>
 
                 {options1.map((option, index) => (
@@ -428,10 +442,14 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
-                <p className="question">2. Which operation on a singly linked list cannot be performed in O(1) time without additional information?
+
+                <p className="question">
+                    2. The Boolean expression A + A'B simplifies to:
                 </p>
+
                 {options2.map((option, index) => (
-                    <button key={index}
+                    <button
+                        key={index}
                         className={`btn option ${selected2 !== null
                             ? index === correctAnswer2
                                 ? "correct"
@@ -446,10 +464,14 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
-                <p className="question">3. A doubly linked list requires more memory because each node stores:
+
+                <p className="question">
+                    3. How many cells are present in a 4-variable Karnaugh Map?
                 </p>
+
                 {options3.map((option, index) => (
-                    <button key={index}
+                    <button
+                        key={index}
                         className={`btn option ${selected3 !== null
                             ? index === correctAnswer3
                                 ? "correct"
@@ -464,10 +486,14 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
-                <p className="question"> 4. If a linked list has only one node, deleting that node should result in:
+
+                <p className="question">
+                    4. Which Boolean law is represented by (AB)' = A' + B'?
                 </p>
+
                 {options4.map((option, index) => (
-                    <button key={index}
+                    <button
+                        key={index}
                         className={`btn option ${selected4 !== null
                             ? index === correctAnswer4
                                 ? "correct"
@@ -482,8 +508,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    5. A BST is constructed by inserting the keys 40, 20, 60, 10, 30, 50, 70, 25. After inserting 27, which node becomes unbalanced first in an AVL Tree?
+                    5. Which gate gives HIGH output only when all inputs are LOW?
                 </p>
 
                 {options5.map((option, index) => (
@@ -503,8 +530,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    6. A stack contains 12, 24, 36, 48 (bottom to top). After POP, PUSH(60), PUSH(72), POP, the top element is:
+                    6. A Half Adder has:
                 </p>
 
                 {options6.map((option, index) => (
@@ -524,8 +552,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    7. Overflow in an array implementation of stack occurs when:
+                    7. The Carry output of a Half Adder is:
                 </p>
 
                 {options7.map((option, index) => (
@@ -545,8 +574,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    8. An AVL tree becomes unbalanced due to insertion in the left subtree of the right child. Which rotation is required?
+                    8. Which circuit can add three 1-bit binary numbers?
                 </p>
 
                 {options8.map((option, index) => (
@@ -566,8 +596,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    9. In a linear queue implemented using an array, repeated dequeue operations may lead to:
+                    9. A Full Adder can be implemented using:
                 </p>
 
                 {options9.map((option, index) => (
@@ -587,8 +618,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    10. Which condition correctly represents a full circular queue of size n?
+                    10. Which combinational circuit selects one input from many inputs?
                 </p>
 
                 {options10.map((option, index) => (
@@ -608,8 +640,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    11. Which operation in a queue always has O(1) time complexity in an array implementation?
+                    11. An 8:1 Multiplexer requires:
                 </p>
 
                 {options11.map((option, index) => (
@@ -629,8 +662,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    12. Bubble Sort performs best when:
+                    12. Which combinational circuit converts binary information into one active output?
                 </p>
 
                 {options12.map((option, index) => (
@@ -651,7 +685,7 @@ function Dsa_quiz() {
                     </button>
                 ))}
                 <p className="question">
-                    13. Which sorting algorithm performs the minimum number of swaps in the worst case?
+                    13. A Demultiplexer performs:
                 </p>
 
                 {options13.map((option, index) => (
@@ -671,8 +705,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    14. A B-Tree of order 5 can contain at most ______ children and ______ keys in one node.
+                    14. Which circuit compares two binary numbers?
                 </p>
 
                 {options14.map((option, index) => (
@@ -692,8 +727,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    15. Which sorting algorithm is both stable and based on Divide and Conquer?
+                    15. Sequential circuits differ from combinational circuits because they:
                 </p>
 
                 {options15.map((option, index) => (
@@ -713,8 +749,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    16. Quick Sort gives worst-case performance when:
+                    16. Which memory element is level-triggered?
                 </p>
 
                 {options16.map((option, index) => (
@@ -734,8 +771,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    17. The average time complexity of Quick Sort is:
+                    17. Flip-Flops are generally:
                 </p>
 
                 {options17.map((option, index) => (
@@ -755,8 +793,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    18. Merge Sort requires extra memory because:
+                    18. Which Flip-Flop has an invalid state?
                 </p>
 
                 {options18.map((option, index) => (
@@ -776,8 +815,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    19. Insert the keys 15, 8, 22, 5, 10, 18, 30, 25, 23 into a B-Tree of order 4. How many keys will be present in the root after all insertions?
+                    19. Which Flip-Flop removes the invalid state of the SR Flip-Flop?
                 </p>
 
                 {options19.map((option, index) => (
@@ -797,8 +837,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    20. The maximum number of children of any node in a binary heap is:
+                    20. The T Flip-Flop is mainly used in:
                 </p>
 
                 {options20.map((option, index) => (
@@ -818,8 +859,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    21. A Max Heap satisfies which property?
+                    21. The output of an XOR gate is HIGH when:
                 </p>
 
                 {options21.map((option, index) => (
@@ -839,8 +881,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    22. Which traversal of a binary heap always produces a sorted sequence?
+                    22. Which gate is the complement of XOR?
                 </p>
 
                 {options22.map((option, index) => (
@@ -861,7 +904,7 @@ function Dsa_quiz() {
                     </button>
                 ))}
                 <p className="question">
-                    23. Heap Sort is based on which data structure?
+                    23. A Boolean function with 5 variables requires how many K-map cells?
                 </p>
 
                 {options23.map((option, index) => (
@@ -881,8 +924,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    24. Which of the following sorting algorithms is not stable?
+                    24. The maximum number of variables handled by a standard single K-map is:
                 </p>
 
                 {options24.map((option, index) => (
@@ -902,8 +946,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    25. In a B+ Tree, where are the actual data records stored?
+                    25. Which law states A + A = A?
                 </p>
 
                 {options25.map((option, index) => (
@@ -923,8 +968,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    26. Which of the following data structures is best suited for recursive function calls?
+                    26. Which Boolean law is used to simplify A + AB?
                 </p>
 
                 {options26.map((option, index) => (
@@ -944,8 +990,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    27. If the input array is already sorted, which algorithm generally performs the fewest comparisons?
+                    27. Which of the following is NOT a combinational circuit?
                 </p>
 
                 {options27.map((option, index) => (
@@ -965,8 +1012,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    28. Which operation is not supported directly by the Stack ADT?
+                    28. The number of outputs of an n-to-2ⁿ decoder is:
                 </p>
 
                 {options28.map((option, index) => (
@@ -986,8 +1034,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    29. In Merge Sort, after every merge operation:
+                    29. In a Full Subtractor, the number of inputs is:
                 </p>
 
                 {options29.map((option, index) => (
@@ -1007,8 +1056,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    30. Which property makes a B+ Tree more efficient than a B-Tree for range queries?
+                    30. Ripple Carry Adder is formed by connecting:
                 </p>
 
                 {options30.map((option, index) => (
@@ -1028,8 +1078,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    31. A B-Tree of order 4 has a node containing 3 keys. Another key is inserted into the same node. What happens?
+                    31. Which device stores one bit of information?
                 </p>
 
                 {options31.map((option, index) => (
@@ -1049,8 +1100,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    32. A B+ Tree of order 5 can have a maximum of:
+                    32. In synchronous sequential circuits, the output changes:
                 </p>
 
                 {options32.map((option, index) => (
@@ -1070,8 +1122,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    33. Consider the AVL Tree obtained after inserting 30, 20, 10. Which rotation is required?
+                    33. Which triggering changes output only at the instant of clock transition?
                 </p>
 
                 {options33.map((option, index) => (
@@ -1091,8 +1144,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    34. Insert the keys 10, 20, 30 into an AVL Tree. The root after balancing becomes:
+                    34. If a circuit has 64 input combinations, the number of input variables is:
                 </p>
 
                 {options34.map((option, index) => (
@@ -1112,8 +1166,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    35. In Linear Probing, the hash function is h(k)=k mod 10. Insert the keys 27, 37, 47, 57. The key 57 will be stored at index:
+                    35. Which gate requires the minimum number of NAND gates for implementation?
                 </p>
 
                 {options35.map((option, index) => (
@@ -1133,8 +1188,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    36. Using Quadratic Probing with h(k)=k mod 11, insert 22, 33, 44. The key 44 will finally occupy:
+                    36. The Boolean expression A · 1 is equal to:
                 </p>
 
                 {options36.map((option, index) => (
@@ -1154,8 +1210,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    37. Which collision resolution technique generally avoids primary clustering?
+                    37. Which Flip-Flop is known as the Data Flip-Flop?
                 </p>
 
                 {options37.map((option, index) => (
@@ -1175,8 +1232,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    38. If a hash table has 20 slots and currently stores 15 records, the load factor is:
+                    38. A latch is:
                 </p>
 
                 {options38.map((option, index) => (
@@ -1196,8 +1254,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    39. Which statement about B+ Trees is correct?
+                    39. The minimum number of select lines required for a 16:1 Multiplexer is:
                 </p>
 
                 {options39.map((option, index) => (
@@ -1217,8 +1276,9 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    40. Which data structure guarantees O(log n) search, insertion, and deletion in the worst case?
+                    40. Which technique is primarily used to minimize Boolean expressions in Digital Electronics?
                 </p>
 
                 {options40.map((option, index) => (
@@ -1238,7 +1298,7 @@ function Dsa_quiz() {
                         {option}
                     </button>
                 ))}
-            </div>
+            </div >
             <button
                 className="btn btn-success"
                 style={{ margin: "20px 0" }}
@@ -1284,4 +1344,4 @@ function Dsa_quiz() {
     );
 }
 
-export default Dsa_quiz;
+export default De_Quiz;

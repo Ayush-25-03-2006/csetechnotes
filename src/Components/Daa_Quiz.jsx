@@ -7,6 +7,14 @@ function Daa_quiz() {
         document.title = "Daa Quiz"
     });
 
+    const [submitted, setSubmitted] = useState(false);
+    const [finalScore, setFinalScore] = useState(0);
+
+    function submit() {
+        setFinalScore(score);
+        setSubmitted(true);
+    }
+
     const [selected1, setSelected1] = useState(null);
     const [selected2, setSelected2] = useState(null);
     const [selected3, setSelected3] = useState(null);
@@ -369,6 +377,32 @@ function Daa_quiz() {
         "C) Heap Sort",
         "D) Selection Sort"
     ];
+
+    const selectedAnswers = [
+        selected1, selected2, selected3, selected4, selected5,
+        selected6, selected7, selected8, selected9, selected10,
+        selected11, selected12, selected13, selected14, selected15,
+        selected16, selected17, selected18, selected19, selected20,
+        selected21, selected22, selected23, selected24, selected25,
+        selected26, selected27, selected28, selected29, selected30,
+        selected31, selected32, selected33, selected34, selected35,
+        selected36, selected37, selected38, selected39, selected40
+    ];
+
+    const correctAnswers = [
+        correctAnswer1, correctAnswer2, correctAnswer3, correctAnswer4, correctAnswer5,
+        correctAnswer6, correctAnswer7, correctAnswer8, correctAnswer9, correctAnswer10,
+        correctAnswer11, correctAnswer12, correctAnswer13, correctAnswer14, correctAnswer15,
+        correctAnswer16, correctAnswer17, correctAnswer18, correctAnswer19, correctAnswer20,
+        correctAnswer21, correctAnswer22, correctAnswer23, correctAnswer24, correctAnswer25,
+        correctAnswer26, correctAnswer27, correctAnswer28, correctAnswer29, correctAnswer30,
+        correctAnswer31, correctAnswer32, correctAnswer33, correctAnswer34, correctAnswer35,
+        correctAnswer36, correctAnswer37, correctAnswer38, correctAnswer39, correctAnswer40
+    ];
+
+    const score = selectedAnswers.reduce((total, answer, index) => {
+        return total + (answer === correctAnswers[index] ? 1 : 0)
+    }, 0);
 
     return (
         <>
@@ -1291,6 +1325,46 @@ function Daa_quiz() {
                     </button>
                 ))}
             </div >
+            <button
+                className="btn btn-success"
+                style={{ margin: "20px 0" }}
+                onClick={submit}
+            >
+                Submit Quiz
+            </button>
+            {submitted && (
+                <>
+                    <div style={{ fontSize: "30px", color: "green" }}>
+                        [ Result : {finalScore} / 40 ]
+                    </div>
+
+                    <div style={{ fontSize: "30px", color: "green" }}>
+                        [ Accuracy : {((finalScore / 40) * 100).toFixed(2)} % ]
+                    </div>
+
+                    <div
+                        className={
+                            finalScore >= 30
+                                ? "excellent"
+                                : finalScore >= 25
+                                    ? "good"
+                                    : finalScore > 20
+                                        ? "average"
+                                        : "failed"
+                        }
+                    >
+                        [
+                        {finalScore >= 30
+                            ? " Well Done!"
+                            : finalScore >= 25
+                                ? " Good!"
+                                : finalScore > 20
+                                    ? " Ok!"
+                                    : " Failed!"}
+                        ]
+                    </div>
+                </>
+            )}
             <hr style={{ border: "5px solid blue", margin: "40px" }} />
         </>
     );
