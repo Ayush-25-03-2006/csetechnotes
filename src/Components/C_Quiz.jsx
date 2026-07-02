@@ -292,10 +292,10 @@ const options26 = [
 ];
 
 const options27 = [
-    "A. 6",
-    "B. 9",
-    "C. 3",
-    "D. Undefined behavior"
+    "A. 6 10 5",
+    "B. 7 10 4",
+    "C. 7 11 5",
+    "D. 7 11 4"
 ];
 
 const options28 = [
@@ -1167,14 +1167,20 @@ int main()
     ))}
 
     <p className="question">
-        27. What will be the output of the following C program?
+        27. What is the output of the following C program?
         <pre>{`#include<stdio.h>
+
+#include<stdio.h>
 
 int main()
 {
-    int i = 1;
-    printf("%d", i++ + i++ + i++);
-    return 0;
+    int a=15;
+    int x=5;
+    int y=a++ - x++;
+    int z=y++ - x++;
+    printf("%d ",x);
+    printf("%d ",y);
+    printf("%d",z);
 }`}</pre>
     </p>
 
