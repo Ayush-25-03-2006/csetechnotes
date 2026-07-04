@@ -1821,7 +1821,7 @@ printf("%d", sizeof(a) / sizeof(a[2]));`}</pre>
                                 ? " Good!"
                                 : finalScore > 20
                                     ? " Ok!"
-                                    : " Failed!"}
+                                    : " Improve Yourself!"}
                         ]
                     </div>
                 </>

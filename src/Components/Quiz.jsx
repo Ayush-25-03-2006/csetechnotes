@@ -21,11 +21,6 @@ function Quiz() {
         <div className="dashboard-container">
             <div className="category-grid">
 
-                <Link to="/mathematicsquiz" className="card">
-                    <i className="bi bi-calculator"></i>
-                    <p>Mathematics</p>
-                </Link>
-
                 <Link to="/programmingquiz" className="card programming-card">
                     <i className="bi bi-code-slash"></i>
                     <p>Programming</p>
@@ -39,11 +34,6 @@ function Quiz() {
                 <Link to="/osquiz" className="card">
                     <i className="bi bi-cpu"></i>
                     <p>Operating System</p>
-                </Link>
-
-                <Link to="/oopsquiz" className="card">
-                    <i className="bi bi-boxes"></i>
-                    <p>OOPs</p>
                 </Link>
 
                 <Link to="/dequiz" className="card">

@@ -23,6 +23,11 @@ function Programming_Quiz() {
                     <p>Java Programming</p>
                 </Link>
 
+                <Link to="/oopsquiz" className="card">
+                    <i className="bi bi-boxes"></i>
+                    <p>OOPs</p>
+                </Link>
+
                 <Link to="/dsaquiz" className="card">
                     <i className="bi bi-diagram-3-fill"></i>
                     <p>Data Structures</p>

@@ -26,6 +26,7 @@ import Os_quiz from './Components/Os_Quiz'
 import Daa_quiz from './Components/Daa_Quiz'
 import De_Quiz from './Components/De_Quiz'
 import C_quiz from './Components/C_Quiz'
+import Dbms_quiz from './Components/Dbms_Quiz'
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
           <Route path='/daaquiz' element={<Daa_quiz/>}/>
           <Route path='/dequiz' element={<De_Quiz/>}/>
           <Route path='/cquiz' element={<C_quiz/>}/>
+          <Route path='/dbmsquiz' element={<Dbms_quiz/>}/>
         </Routes>
       </div>
     </BrowserRouter>

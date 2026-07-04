@@ -1524,7 +1524,7 @@ function Os_quiz() {
                                 ? " Good!"
                                 : finalScore > 20
                                     ? " Ok!"
-                                    : " Failed!"}
+                                    : " Improve Yourself!"}
                         ]
                     </div>
                 </>
