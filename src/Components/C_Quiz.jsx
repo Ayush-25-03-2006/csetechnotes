@@ -117,8 +117,8 @@ const correctAnswer45 = 1;
 ];
 
 const options2 = [
-    "A. volatile",
-    "B. typedef",
+    "A. struct",
+    "B. double",
     "C. printf",
     "D. union"
 ];
