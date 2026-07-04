@@ -38,11 +38,6 @@ function Dashboard() {
                         <p>Operating System</p>
                     </Link>
 
-                    <Link to="/Oops" className="card">
-                        <i className="bi bi-boxes"></i>
-                        <p>OOPs</p>
-                    </Link>
-
                     <Link to="/De" className="card">
                         <i className="bi bi-cpu-fill"></i>
                         <p>Digital Electronics</p>

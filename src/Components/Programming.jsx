@@ -23,6 +23,11 @@ function Programming() {
                     <p>Java Programming</p>
                 </Link>
 
+                <Link to="/Oops" className="card">
+                        <i className="bi bi-boxes"></i>
+                        <p>OOPs</p>
+                </Link>
+
                 <Link to="/Dsa" className="card">
                     <i className="bi bi-diagram-3-fill"></i>
                     <p>Data Structures</p>
