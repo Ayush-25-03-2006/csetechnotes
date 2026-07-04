@@ -972,7 +972,7 @@ function Dbms_quiz() {
 ))}
 
 <p className="question">
-    22. If R(A, B, C, D) has FDs A -{`&gt`} B, A -{`&gt`} C, then the candidate key is:
+    22. If R(A, B, C, D) has FDs A &rarr; B, A &rarr; C, then the candidate key is:
 </p>
 
 {options22.map((option, index) => (
