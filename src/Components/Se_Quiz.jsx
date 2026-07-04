@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Dsa_Quiz.css";
 
-function De_Quiz() {
+function Se_Quiz() {
 
     const [submitted, setSubmitted] = useState(false);
     const [finalScore, setFinalScore] = useState(0);
@@ -12,7 +12,7 @@ function De_Quiz() {
     }
 
     useEffect(() => {
-        document.title = "De Quiz"
+        document.title = "Se Quiz"
     });
 
     const [selected1, setSelected1] = useState(null);
@@ -57,10 +57,12 @@ function De_Quiz() {
     const [selected40, setSelected40] = useState(null);
 
     // here index is provided start from 0 to n -1
-    const correctAnswer1 = 3;
-    const correctAnswer2 = 2;
+    // Correct Answers (0-based index)
+
+    const correctAnswer1 = 2;
+    const correctAnswer2 = 1;
     const correctAnswer3 = 2;
-    const correctAnswer4 = 1;
+    const correctAnswer4 = 0;
     const correctAnswer5 = 2;
     const correctAnswer6 = 1;
     const correctAnswer7 = 2;
@@ -68,316 +70,319 @@ function De_Quiz() {
     const correctAnswer9 = 1;
     const correctAnswer10 = 2;
     const correctAnswer11 = 1;
-    const correctAnswer12 = 1;
-    const correctAnswer13 = 1;
+    const correctAnswer12 = 3;
+    const correctAnswer13 = 2;
     const correctAnswer14 = 2;
     const correctAnswer15 = 1;
-    const correctAnswer16 = 1;
-    const correctAnswer17 = 1;
-    const correctAnswer18 = 2;
+    const correctAnswer16 = 2;
+    const correctAnswer17 = 3;
+    const correctAnswer18 = 1;
     const correctAnswer19 = 1;
     const correctAnswer20 = 1;
-    const correctAnswer21 = 1;
-    const correctAnswer22 = 2;
-    const correctAnswer23 = 2;
-    const correctAnswer24 = 3;
+
+    const correctAnswer21 = 0;
+    const correctAnswer22 = 3;
+    const correctAnswer23 = 1;
+    const correctAnswer24 = 2;
     const correctAnswer25 = 1;
-    const correctAnswer26 = 0;
-    const correctAnswer27 = 2;
-    const correctAnswer28 = 1;
-    const correctAnswer29 = 1;
-    const correctAnswer30 = 1;
-    const correctAnswer31 = 0;
-    const correctAnswer32 = 1;
+    const correctAnswer26 = 2;
+    const correctAnswer27 = 1;
+    const correctAnswer28 = 2;
+    const correctAnswer29 = 2;
+    const correctAnswer30 = 2;
+    const correctAnswer31 = 1;
+    const correctAnswer32 = 2;
     const correctAnswer33 = 1;
     const correctAnswer34 = 1;
     const correctAnswer35 = 2;
-    const correctAnswer36 = 2;
-    const correctAnswer37 = 2;
-    const correctAnswer38 = 1;
+    const correctAnswer36 = 1;
+    const correctAnswer37 = 1;
+    const correctAnswer38 = 2;
     const correctAnswer39 = 2;
-    const correctAnswer40 = 1;
+    const correctAnswer40 = 3;
+
+
+    // Options
 
     const options1 = [
-        "A) XOR",
-        "B) NOR",
-        "C) NAND",
-        "D) Both B and C"
+        "Spiral Model",
+        "Agile Model",
+        "Waterfall Model",
+        "Prototyping Model"
     ];
 
     const options2 = [
-        "A) B",
-        "B) A",
-        "C) A + B",
-        "D) AB"
+        "Coding",
+        "Risk Analysis",
+        "Maintenance",
+        "Documentation"
     ];
 
     const options3 = [
-        "A) 8",
-        "B) 12",
-        "C) 16",
-        "D) 32"
+        "DFD",
+        "ER Diagram",
+        "SRS",
+        "Test Plan"
     ];
 
     const options4 = [
-        "A) Absorption Law",
-        "B) De Morgan's First Law",
-        "C) Complement Law",
-        "D) Consensus Law"
+        "Functional Cohesion",
+        "Coincidental Cohesion",
+        "Logical Cohesion",
+        "Procedural Cohesion"
     ];
 
     const options5 = [
-        "A) NAND",
-        "B) XOR",
-        "C) NOR",
-        "D) OR"
+        "Stamp Coupling",
+        "Common Coupling",
+        "Data Coupling",
+        "Control Coupling"
     ];
 
     const options6 = [
-        "A) 2 inputs, 1 output",
-        "B) 2 inputs, 2 outputs",
-        "C) 3 inputs, 2 outputs",
-        "D) 3 inputs, 1 output"
+        "Integrated CASE",
+        "Lower CASE",
+        "Upper CASE",
+        "Hybrid CASE"
     ];
 
     const options7 = [
-        "A) A + B",
-        "B) A ⊕ B",
-        "C) AB",
-        "D) A ⊙ B"
+        "Final deployment stage",
+        "Requirement document",
+        "Short development iteration",
+        "Software testing phase"
     ];
 
     const options8 = [
-        "A) Half Adder",
-        "B) Full Adder",
-        "C) Decoder",
-        "D) Comparator"
+        "Waterfall Model",
+        "Prototyping Model",
+        "V-Model",
+        "RAD Model"
     ];
 
     const options9 = [
-        "A) One Half Adder",
-        "B) Two Half Adders and one OR gate",
-        "C) One XOR gate",
-        "D) One NAND gate"
+        "Software Quality",
+        "Software Cost and Effort",
+        "Database Size",
+        "Cyclomatic Complexity"
     ];
 
     const options10 = [
-        "A) Decoder",
-        "B) Encoder",
-        "C) Multiplexer",
-        "D) Demultiplexer"
+        "Level-2 DFD",
+        "Level-1 DFD",
+        "Context Diagram (Level-0)",
+        "Physical DFD"
     ];
 
     const options11 = [
-        "A) 2 selection lines",
-        "B) 3 selection lines",
-        "C) 4 selection lines",
-        "D) 8 selection lines"
+        "Number of Variables",
+        "Number of Independent Paths",
+        "Number of Functions",
+        "Number of Modules"
     ];
 
     const options12 = [
-        "A) Encoder",
-        "B) Decoder",
-        "C) Comparator",
-        "D) Register"
+        "Functional Requirement",
+        "Business Requirement",
+        "User Requirement",
+        "Non-functional Requirement"
     ];
 
     const options13 = [
-        "A) Many-to-One operation",
-        "B) One-to-Many operation",
-        "C) Binary Addition",
-        "D) Binary Comparison"
+        "Data Coupling",
+        "Stamp Coupling",
+        "Content Coupling",
+        "Control Coupling"
     ];
 
     const options14 = [
-        "A) Multiplexer",
-        "B) Decoder",
-        "C) Comparator",
-        "D) Encoder"
+        "Evolutionary Model",
+        "Incremental Model",
+        "Spiral Model",
+        "RAD Model"
     ];
 
     const options15 = [
-        "A) Have no outputs",
-        "B) Use memory elements",
-        "C) Do not use logic gates",
-        "D) Have only one input"
+        "One-time deployment",
+        "Combining all completed increments",
+        "Replacing prototypes",
+        "Only the first increment"
     ];
 
     const options16 = [
-        "A) Flip-Flop",
-        "B) Latch",
-        "C) Counter",
-        "D) Register"
+        "Consistent",
+        "Verifiable",
+        "Ambiguous",
+        "Complete"
     ];
 
     const options17 = [
-        "A) Level Triggered",
-        "B) Edge Triggered",
-        "C) Asynchronous only",
-        "D) Memory-less"
+        "GUI",
+        "Form-based Interface",
+        "Menu-driven Interface",
+        "Command Line Interface"
     ];
 
     const options18 = [
-        "A) D Flip-Flop",
-        "B) JK Flip-Flop",
-        "C) SR Flip-Flop",
-        "D) T Flip-Flop"
+        "Difficult Maintenance",
+        "Better Software Quality",
+        "Increased Complexity",
+        "Reduced Reusability"
     ];
 
     const options19 = [
-        "A) D Flip-Flop",
-        "B) JK Flip-Flop",
-        "C) T Flip-Flop",
-        "D) RS Flip-Flop"
+        "Testing",
+        "Design",
+        "Maintenance",
+        "Deployment"
     ];
 
     const options20 = [
-        "A) Comparator",
-        "B) Counter",
-        "C) Decoder",
-        "D) Multiplexer"
+        "Sprint Backlog",
+        "Product Backlog",
+        "Burndown Chart",
+        "Test Log"
     ];
 
     const options21 = [
-        "A) Both inputs are same",
-        "B) Inputs are different",
-        "C) Both inputs are LOW",
-        "D) Both inputs are HIGH"
+        "Agile Model",
+        "Waterfall Model",
+        "V-Model",
+        "Big Bang Model"
     ];
 
     const options22 = [
-        "A) NAND",
-        "B) NOR",
-        "C) XNOR",
-        "D) OR"
+        "Reliability",
+        "Maintainability",
+        "Security",
+        "Compilation Speed"
     ];
 
     const options23 = [
-        "A) 16",
-        "B) 24",
-        "C) 32",
-        "D) 64"
+        "Basic COCOMO",
+        "Intermediate COCOMO",
+        "Detailed COCOMO only",
+        "Spiral Model"
     ];
 
     const options24 = [
-        "A) 2",
-        "B) 3",
-        "C) 4",
-        "D) 6"
+        "JUnit",
+        "Selenium",
+        "Rational Rose",
+        "Git"
     ];
 
     const options25 = [
-        "A) Identity Law",
-        "B) Idempotent Law",
-        "C) Complement Law",
-        "D) Consensus Law"
+        "Functional Requirement",
+        "User Requirement",
+        "System Requirement",
+        "Interface Requirement"
     ];
 
     const options26 = [
-        "A) Absorption Law",
-        "B) Identity Law",
-        "C) Distributive Law",
-        "D) De Morgan's Law"
+        "Data Coupling",
+        "Common Coupling",
+        "Stamp Coupling",
+        "Content Coupling"
     ];
 
     const options27 = [
-        "A) Full Adder",
-        "B) Multiplexer",
-        "C) Register",
-        "D) Decoder"
+        "Functional Cohesion",
+        "Sequential Cohesion",
+        "Temporal Cohesion",
+        "Communicational Cohesion"
     ];
 
     const options28 = [
-        "A) n",
-        "B) 2ⁿ",
-        "C) n²",
-        "D) 2ⁿ⁻¹"
+        "Unit Testing",
+        "System Testing",
+        "Integration Testing",
+        "Acceptance Testing"
     ];
 
     const options29 = [
-        "A) 2",
-        "B) 3",
-        "C) 4",
-        "D) 5"
+        "Data Store",
+        "External Entity",
+        "Decision Diamond",
+        "Data Flow"
     ];
 
     const options30 = [
-        "A) Half Adders only",
-        "B) Full Adders in series",
-        "C) Decoders",
-        "D) Multiplexers"
+        "Agile Model",
+        "Spiral Model",
+        "Waterfall Model",
+        "Evolutionary Model"
     ];
 
     const options31 = [
-        "A) Flip-Flop",
-        "B) Multiplexer",
-        "C) Decoder",
-        "D) Comparator"
+        "Portability",
+        "Maintainability",
+        "Reliability",
+        "Efficiency"
     ];
 
     const options32 = [
-        "A) At any time",
-        "B) Only with the clock pulse",
-        "C) Only with reset",
-        "D) Only with enable signal"
+        "Number of Nodes",
+        "Number of Edges",
+        "Number of Decision Statements",
+        "Number of Modules"
     ];
 
     const options33 = [
-        "A) Level Triggering",
-        "B) Edge Triggering",
-        "C) Pulse Triggering",
-        "D) Delay Triggering"
+        "CLI",
+        "Menu-driven Interface",
+        "Natural Language Interface",
+        "Voice Interface"
     ];
 
     const options34 = [
-        "A) 5",
-        "B) 6",
-        "C) 7",
-        "D) 8"
+        "Waterfall Model",
+        "Spiral Model",
+        "Incremental Model",
+        "Prototyping Model"
     ];
 
     const options35 = [
-        "A) XOR",
-        "B) OR",
-        "C) NOT",
-        "D) XNOR"
+        "User Manual",
+        "Test Report",
+        "SRS Document",
+        "Maintenance Log"
     ];
 
     const options36 = [
-        "A) 0",
-        "B) 1",
-        "C) A",
-        "D) A'"
+        "Control Coupling",
+        "Common Coupling",
+        "Data Coupling",
+        "External Coupling"
     ];
 
     const options37 = [
-        "A) SR Flip-Flop",
-        "B) JK Flip-Flop",
-        "C) D Flip-Flop",
-        "D) T Flip-Flop"
+        "No customer involvement",
+        "Early clarification of requirements",
+        "Zero documentation required",
+        "No testing required"
     ];
 
     const options38 = [
-        "A) Edge Triggered",
-        "B) Level Triggered",
-        "C) Dynamic Memory",
-        "D) Non-memory Device"
+        "Upper CASE",
+        "Lower CASE",
+        "Integrated CASE",
+        "Standalone CASE"
     ];
 
     const options39 = [
-        "A) 2",
-        "B) 3",
-        "C) 4",
-        "D) 5"
+        "Maintenance",
+        "Deployment",
+        "Testing",
+        "Planning"
     ];
 
     const options40 = [
-        "A) Truth Table",
-        "B) Karnaugh Map (K-Map)",
-        "C) Flowchart",
-        "D) State Diagram"
+        "Low Cohesion and High Coupling",
+        "High Cohesion and High Coupling",
+        "Low Cohesion and Low Coupling",
+        "High Cohesion and Low Coupling"
     ];
-
     const selectedAnswers = [
         selected1, selected2, selected3, selected4, selected5,
         selected6, selected7, selected8, selected9, selected10,
@@ -407,8 +412,9 @@ function De_Quiz() {
     return (
         <>
             <div className="contain">
+
                 <p className="question">
-                    1. Which logic gate is known as the universal gate?
+                    1. Which SDLC model is most suitable when requirements are well-defined and unlikely to change?
                 </p>
 
                 {options1.map((option, index) => (
@@ -423,10 +429,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer1 && "vibrate" in navigator){
+                            if (index !== correctAnswer1 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected1(index);}}
+                            setSelected1(index);
+                        }}
                         disabled={selected1 !== null}
                     >
                         {option}
@@ -434,7 +441,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    2. The Boolean expression A + A'B simplifies to:
+                    2. In the Spiral Model, the most critical activity performed in every iteration is:
                 </p>
 
                 {options2.map((option, index) => (
@@ -449,10 +456,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer2 && "vibrate" in navigator){
+                            if (index !== correctAnswer2 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected2(index);}}
+                            setSelected2(index);
+                        }}
                         disabled={selected2 !== null}
                     >
                         {option}
@@ -460,7 +468,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    3. How many cells are present in a 4-variable Karnaugh Map?
+                    3. Which document acts as an agreement between the customer and the developer?
                 </p>
 
                 {options3.map((option, index) => (
@@ -475,10 +483,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer3 && "vibrate" in navigator){
+                            if (index !== correctAnswer3 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected3(index);}}
+                            setSelected3(index);
+                        }}
                         disabled={selected3 !== null}
                     >
                         {option}
@@ -486,7 +495,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    4. Which Boolean law is represented by (AB)' = A' + B'?
+                    4. Which cohesion is considered the strongest and most desirable?
                 </p>
 
                 {options4.map((option, index) => (
@@ -501,10 +510,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer4 && "vibrate" in navigator){
+                            if (index !== correctAnswer4 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected4(index);}}
+                            setSelected4(index);
+                        }}
                         disabled={selected4 !== null}
                     >
                         {option}
@@ -512,7 +522,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    5. Which gate gives HIGH output only when all inputs are LOW?
+                    5. A software module passes only the required data to another module. This represents:
                 </p>
 
                 {options5.map((option, index) => (
@@ -527,10 +537,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer5 && "vibrate" in navigator){
+                            if (index !== correctAnswer5 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected5(index);}}
+                            setSelected5(index);
+                        }}
                         disabled={selected5 !== null}
                     >
                         {option}
@@ -538,7 +549,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    6. A Half Adder has:
+                    6. Which CASE tool category mainly supports coding, testing and maintenance?
                 </p>
 
                 {options6.map((option, index) => (
@@ -553,10 +564,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer6 && "vibrate" in navigator){
+                            if (index !== correctAnswer6 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected6(index);}}
+                            setSelected6(index);
+                        }}
                         disabled={selected6 !== null}
                     >
                         {option}
@@ -564,7 +576,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    7. The Carry output of a Half Adder is:
+                    7. In Agile development, a Sprint is:
                 </p>
 
                 {options7.map((option, index) => (
@@ -579,10 +591,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer7 && "vibrate" in navigator){
+                            if (index !== correctAnswer7 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected7(index);}}
+                            setSelected7(index);
+                        }}
                         disabled={selected7 !== null}
                     >
                         {option}
@@ -590,7 +603,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    8. Which circuit can add three 1-bit binary numbers?
+                    8. Which model is most appropriate when customer requirements are unclear at the beginning?
                 </p>
 
                 {options8.map((option, index) => (
@@ -605,10 +618,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer8 && "vibrate" in navigator){
+                            if (index !== correctAnswer8 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected8(index);}}
+                            setSelected8(index);
+                        }}
                         disabled={selected8 !== null}
                     >
                         {option}
@@ -616,7 +630,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    9. A Full Adder can be implemented using:
+                    9. The primary objective of COCOMO is to estimate:
                 </p>
 
                 {options9.map((option, index) => (
@@ -631,10 +645,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer9 && "vibrate" in navigator){
+                            if (index !== correctAnswer9 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected9(index);}}
+                            setSelected9(index);
+                        }}
                         disabled={selected9 !== null}
                     >
                         {option}
@@ -642,7 +657,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    10. Which combinational circuit selects one input from many inputs?
+                    10. Which DFD level represents the entire system as a single process?
                 </p>
 
                 {options10.map((option, index) => (
@@ -657,10 +672,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer10 && "vibrate" in navigator){
+                            if (index !== correctAnswer10 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected10(index);}}
+                            setSelected10(index);
+                        }}
                         disabled={selected10 !== null}
                     >
                         {option}
@@ -668,7 +684,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    11. An 8:1 Multiplexer requires:
+                    11. Cyclomatic Complexity mainly indicates:
                 </p>
 
                 {options11.map((option, index) => (
@@ -683,10 +699,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer11 && "vibrate" in navigator){
+                            if (index !== correctAnswer11 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected11(index);}}
+                            setSelected11(index);
+                        }}
                         disabled={selected11 !== null}
                     >
                         {option}
@@ -694,7 +711,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    12. Which combinational circuit converts binary information into one active output?
+                    12. Which requirement specifies system performance, reliability and security?
                 </p>
 
                 {options12.map((option, index) => (
@@ -709,17 +726,19 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer12 && "vibrate" in navigator){
+                            if (index !== correctAnswer12 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected12(index);}}
+                            setSelected12(index);
+                        }}
                         disabled={selected12 !== null}
                     >
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    13. A Demultiplexer performs:
+                    13. Which coupling is considered the worst?
                 </p>
 
                 {options13.map((option, index) => (
@@ -734,10 +753,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer13 && "vibrate" in navigator){
+                            if (index !== correctAnswer13 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected13(index);}}
+                            setSelected13(index);
+                        }}
                         disabled={selected13 !== null}
                     >
                         {option}
@@ -745,7 +765,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    14. Which circuit compares two binary numbers?
+                    14. Which software process model combines the features of Waterfall and Prototyping with risk analysis?
                 </p>
 
                 {options14.map((option, index) => (
@@ -759,11 +779,12 @@ function De_Quiz() {
                                     : ""
                             : ""
                             }`}
-                       onClick={() => {
-                            if(index !== correctAnswer14 && "vibrate" in navigator){
+                        onClick={() => {
+                            if (index !== correctAnswer14 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected14(index);}}
+                            setSelected14(index);
+                        }}
                         disabled={selected14 !== null}
                     >
                         {option}
@@ -771,7 +792,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    15. Sequential circuits differ from combinational circuits because they:
+                    15. In Incremental Development, the final software is obtained by:
                 </p>
 
                 {options15.map((option, index) => (
@@ -786,10 +807,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer15 && "vibrate" in navigator){
+                            if (index !== correctAnswer15 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected15(index);}}
+                            setSelected15(index);
+                        }}
                         disabled={selected15 !== null}
                     >
                         {option}
@@ -797,7 +819,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    16. Which memory element is level-triggered?
+                    16. Which of the following is NOT a characteristic of a good SRS?
                 </p>
 
                 {options16.map((option, index) => (
@@ -811,11 +833,12 @@ function De_Quiz() {
                                     : ""
                             : ""
                             }`}
-                       onClick={() => {
-                            if(index !== correctAnswer16 && "vibrate" in navigator){
+                        onClick={() => {
+                            if (index !== correctAnswer16 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected16(index);}}
+                            setSelected16(index);
+                        }}
                         disabled={selected16 !== null}
                     >
                         {option}
@@ -823,7 +846,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    17. Flip-Flops are generally:
+                    17. Which UI type is most suitable for experienced users who frequently execute commands?
                 </p>
 
                 {options17.map((option, index) => (
@@ -838,10 +861,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer17 && "vibrate" in navigator){
+                            if (index !== correctAnswer17 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected17(index);}}
+                            setSelected17(index);
+                        }}
                         disabled={selected17 !== null}
                     >
                         {option}
@@ -849,7 +873,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    18. Which Flip-Flop has an invalid state?
+                    18. In software design, high cohesion and low coupling generally lead to:
                 </p>
 
                 {options18.map((option, index) => (
@@ -864,10 +888,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer18 && "vibrate" in navigator){
+                            if (index !== correctAnswer18 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected18(index);}}
+                            setSelected18(index);
+                        }}
                         disabled={selected18 !== null}
                     >
                         {option}
@@ -875,7 +900,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    19. Which Flip-Flop removes the invalid state of the SR Flip-Flop?
+                    19. Which phase of SDLC mainly transforms requirements into software architecture and module design?
                 </p>
 
                 {options19.map((option, index) => (
@@ -890,10 +915,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer19 && "vibrate" in navigator){
+                            if (index !== correctAnswer19 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected19(index);}}
+                            setSelected19(index);
+                        }}
                         disabled={selected19 !== null}
                     >
                         {option}
@@ -901,7 +927,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    20. The T Flip-Flop is mainly used in:
+                    20. Which Agile artifact contains the prioritized list of requirements and features?
                 </p>
 
                 {options20.map((option, index) => (
@@ -916,10 +942,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer20 && "vibrate" in navigator){
+                            if (index !== correctAnswer20 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected20(index);}}
+                            setSelected20(index);
+                        }}
                         disabled={selected20 !== null}
                     >
                         {option}
@@ -927,7 +954,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    21. The output of an XOR gate is HIGH when:
+                    21. Which model delivers a working version of the software at the end of each iteration?
                 </p>
 
                 {options21.map((option, index) => (
@@ -942,10 +969,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer21 && "vibrate" in navigator){
+                            if (index !== correctAnswer21 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected21(index);}}
+                            setSelected21(index);
+                        }}
                         disabled={selected21 !== null}
                     >
                         {option}
@@ -953,7 +981,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    22. Which gate is the complement of XOR?
+                    22. Which of the following is NOT a software quality attribute?
                 </p>
 
                 {options22.map((option, index) => (
@@ -968,17 +996,19 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer22 && "vibrate" in navigator){
+                            if (index !== correctAnswer22 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected22(index);}}
+                            setSelected22(index);
+                        }}
                         disabled={selected22 !== null}
                     >
                         {option}
                     </button>
                 ))}
+
                 <p className="question">
-                    23. A Boolean function with 5 variables requires how many K-map cells?
+                    23. The Effort Adjustment Factor (EAF) is used in:
                 </p>
 
                 {options23.map((option, index) => (
@@ -993,10 +1023,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer23 && "vibrate" in navigator){
+                            if (index !== correctAnswer23 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected23(index);}}
+                            setSelected23(index);
+                        }}
                         disabled={selected23 !== null}
                     >
                         {option}
@@ -1004,7 +1035,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    24. The maximum number of variables handled by a standard single K-map is:
+                    24. Which CASE tool is mainly used during system analysis and design?
                 </p>
 
                 {options24.map((option, index) => (
@@ -1019,10 +1050,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer24 && "vibrate" in navigator){
+                            if (index !== correctAnswer24 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected24(index);}}
+                            setSelected24(index);
+                        }}
                         disabled={selected24 !== null}
                     >
                         {option}
@@ -1030,7 +1062,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    25. Which law states A + A = A?
+                    25. Which requirement is written in simple language mainly for customers and end users?
                 </p>
 
                 {options25.map((option, index) => (
@@ -1045,10 +1077,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer25 && "vibrate" in navigator){
+                            if (index !== correctAnswer25 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected25(index);}}
+                            setSelected25(index);
+                        }}
                         disabled={selected25 !== null}
                     >
                         {option}
@@ -1056,7 +1089,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    26. Which Boolean law is used to simplify A + AB?
+                    26. If one module passes a complete record while the called module uses only a few fields, it is:
                 </p>
 
                 {options26.map((option, index) => (
@@ -1071,10 +1104,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer26 && "vibrate" in navigator){
+                            if (index !== correctAnswer26 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected26(index);}}
+                            setSelected26(index);
+                        }}
                         disabled={selected26 !== null}
                     >
                         {option}
@@ -1082,7 +1116,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    27. Which of the following is NOT a combinational circuit?
+                    27. Which cohesion exists when the output of one part becomes the input of another?
                 </p>
 
                 {options27.map((option, index) => (
@@ -1097,10 +1131,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer27 && "vibrate" in navigator){
+                            if (index !== correctAnswer27 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected27(index);}}
+                            setSelected27(index);
+                        }}
                         disabled={selected27 !== null}
                     >
                         {option}
@@ -1108,7 +1143,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    28. The number of outputs of an n-to-2ⁿ decoder is:
+                    28. Which testing is performed after integrating multiple modules?
                 </p>
 
                 {options28.map((option, index) => (
@@ -1123,10 +1158,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer28 && "vibrate" in navigator){
+                            if (index !== correctAnswer28 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected28(index);}}
+                            setSelected28(index);
+                        }}
                         disabled={selected28 !== null}
                     >
                         {option}
@@ -1134,7 +1170,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    29. In a Full Subtractor, the number of inputs is:
+                    29. Which of the following is NOT a component of a DFD?
                 </p>
 
                 {options29.map((option, index) => (
@@ -1149,10 +1185,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer29 && "vibrate" in navigator){
+                            if (index !== correctAnswer29 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected29(index);}}
+                            setSelected29(index);
+                        }}
                         disabled={selected29 !== null}
                     >
                         {option}
@@ -1160,7 +1197,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    30. Ripple Carry Adder is formed by connecting:
+                    30. Which software model is least suitable when requirements change frequently?
                 </p>
 
                 {options30.map((option, index) => (
@@ -1175,10 +1212,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer30 && "vibrate" in navigator){
+                            if (index !== correctAnswer30 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected30(index);}}
+                            setSelected30(index);
+                        }}
                         disabled={selected30 !== null}
                     >
                         {option}
@@ -1186,7 +1224,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    31. Which device stores one bit of information?
+                    31. Which software quality attribute measures the ease of modifying software?
                 </p>
 
                 {options31.map((option, index) => (
@@ -1201,10 +1239,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer31 && "vibrate" in navigator){
+                            if (index !== correctAnswer31 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected31(index);}}
+                            setSelected31(index);
+                        }}
                         disabled={selected31 !== null}
                     >
                         {option}
@@ -1212,7 +1251,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    32. In synchronous sequential circuits, the output changes:
+                    32. In the formula V(G) = D + 1, D represents:
                 </p>
 
                 {options32.map((option, index) => (
@@ -1227,10 +1266,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer32 && "vibrate" in navigator){
+                            if (index !== correctAnswer32 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected32(index);}}
+                            setSelected32(index);
+                        }}
                         disabled={selected32 !== null}
                     >
                         {option}
@@ -1238,7 +1278,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    33. Which triggering changes output only at the instant of clock transition?
+                    33. Which UI type is commonly used in ATM machines?
                 </p>
 
                 {options33.map((option, index) => (
@@ -1253,10 +1293,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer33 && "vibrate" in navigator){
+                            if (index !== correctAnswer33 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected33(index);}}
+                            setSelected33(index);
+                        }}
                         disabled={selected33 !== null}
                     >
                         {option}
@@ -1264,7 +1305,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    34. If a circuit has 64 input combinations, the number of input variables is:
+                    34. Which model is most appropriate for large, high-risk software projects?
                 </p>
 
                 {options34.map((option, index) => (
@@ -1279,10 +1320,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer34 && "vibrate" in navigator){
+                            if (index !== correctAnswer34 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected34(index);}}
+                            setSelected34(index);
+                        }}
                         disabled={selected34 !== null}
                     >
                         {option}
@@ -1290,7 +1332,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    35. Which gate requires the minimum number of NAND gates for implementation?
+                    35. Which document is prepared during the Requirement Analysis phase and used throughout SDLC?
                 </p>
 
                 {options35.map((option, index) => (
@@ -1305,10 +1347,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer35 && "vibrate" in navigator){
+                            if (index !== correctAnswer35 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected35(index);}}
+                            setSelected35(index);
+                        }}
                         disabled={selected35 !== null}
                     >
                         {option}
@@ -1316,7 +1359,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    36. The Boolean expression A · 1 is equal to:
+                    36. Which coupling occurs when multiple modules share the same global data?
                 </p>
 
                 {options36.map((option, index) => (
@@ -1331,10 +1374,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer36 && "vibrate" in navigator){
+                            if (index !== correctAnswer36 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected36(index);}}
+                            setSelected36(index);
+                        }}
                         disabled={selected36 !== null}
                     >
                         {option}
@@ -1342,7 +1386,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    37. Which Flip-Flop is known as the Data Flip-Flop?
+                    37. Which of the following is an advantage of the Prototyping Model?
                 </p>
 
                 {options37.map((option, index) => (
@@ -1357,10 +1401,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer37 && "vibrate" in navigator){
+                            if (index !== correctAnswer37 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected37(index);}}
+                            setSelected37(index);
+                        }}
                         disabled={selected37 !== null}
                     >
                         {option}
@@ -1368,7 +1413,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    38. A latch is:
+                    38. Which CASE tool category supports the complete Software Development Life Cycle?
                 </p>
 
                 {options38.map((option, index) => (
@@ -1383,10 +1428,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer38 && "vibrate" in navigator){
+                            if (index !== correctAnswer38 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected38(index);}}
+                            setSelected38(index);
+                        }}
                         disabled={selected38 !== null}
                     >
                         {option}
@@ -1394,7 +1440,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    39. The minimum number of select lines required for a 16:1 Multiplexer is:
+                    39. Which phase of SDLC ensures that the software satisfies specified requirements before delivery?
                 </p>
 
                 {options39.map((option, index) => (
@@ -1409,10 +1455,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer39 && "vibrate" in navigator){
+                            if (index !== correctAnswer39 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected39(index);}}
+                            setSelected39(index);
+                        }}
                         disabled={selected39 !== null}
                     >
                         {option}
@@ -1420,7 +1467,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    40. Which technique is primarily used to minimize Boolean expressions in Digital Electronics?
+                    40. Which software design principle is generally preferred for developing maintainable software?
                 </p>
 
                 {options40.map((option, index) => (
@@ -1435,10 +1482,11 @@ function De_Quiz() {
                             : ""
                             }`}
                         onClick={() => {
-                            if(index !== correctAnswer40 && "vibrate" in navigator){
+                            if (index !== correctAnswer40 && "vibrate" in navigator) {
                                 navigator.vibrate(200);
                             }
-                            setSelected40(index);}}
+                            setSelected40(index);
+                        }}
                         disabled={selected40 !== null}
                     >
                         {option}
@@ -1490,4 +1538,4 @@ function De_Quiz() {
     );
 }
 
-export default De_Quiz;
+export default Se_Quiz;
