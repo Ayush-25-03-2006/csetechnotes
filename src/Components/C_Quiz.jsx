@@ -118,7 +118,7 @@ const correctAnswer45 = 1;
 
 const options2 = [
     "A. struct",
-    "B. double",
+    "B. while",
     "C. printf",
     "D. union"
 ];
