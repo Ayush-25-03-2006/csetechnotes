@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import imagenotes from "./Images/digital notes.webp";
 import "./Dashboard.css";
 import { useEffect } from "react";
-import VisitorCounter from "../VisitorCounter";
 
 function Dashboard() {
     useEffect(() => {
@@ -16,8 +15,6 @@ function Dashboard() {
                     <img src={imagenotes} alt="notes" className="hero-image" />
                     <h1 className="title">Explore Top Categories</h1>
                 </div>
-
-                <VisitorCounter/>
 
                 <div className="category-grid">
 
