@@ -1,0 +1,23 @@
+.img_abt {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.contain{
+    margin-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+    .img_abt {
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img_abt {
+        width: 400px;
+    }
+}

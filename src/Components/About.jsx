@@ -1,0 +1,11 @@
+import "./About.css";
+import about_page from "./Images/about.jpeg"
+function About() {
+    return (
+        <div className="contain">
+            <img className="img_abt" src={about_page} alt="about page who have created" />
+        </div>
+    );
+}
+
+export default About;

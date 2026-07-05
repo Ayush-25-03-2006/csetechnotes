@@ -32,6 +32,7 @@ import Ai_quiz from './Components/Ai_Quiz'
 import Oops_quiz from './Components/Oops_Quiz'
 import Toc_quiz from './Components/Toc_Quiz'
 import VisitorCounter from './VisitorCounter'
+import About from './Components/about'
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
           <Route path='/aiquiz' element={<Ai_quiz/>}/>
           <Route path='/oopsquiz' element={<Oops_quiz/>}/>
           <Route path='/tocquiz' element={<Toc_quiz/>}/>
+          <Route path='/about' element={<About/>}/>
         </Routes>
       </div>
     </BrowserRouter>

@@ -71,6 +71,13 @@ function Dashboard() {
                     <p>Quiz</p>
                 </Link>
             </div>
+            <hr className="hr" />
+            <div className="cont">
+                <Link to="/about" className="card">
+                    <i className="bi bi-person-circle"></i>
+                    <p>About</p>
+                </Link>
+            </div>
         </>
     );
 }
