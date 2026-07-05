@@ -28,6 +28,9 @@ import De_Quiz from './Components/De_Quiz'
 import C_quiz from './Components/C_Quiz'
 import Dbms_quiz from './Components/Dbms_Quiz'
 import Se_Quiz from './Components/Se_Quiz'
+import Ai_quiz from './Components/Ai_Quiz'
+import Oops_quiz from './Components/Oops_Quiz'
+import Toc_quiz from './Components/Toc_Quiz'
 
 function App() {
   return (
@@ -65,6 +68,9 @@ function App() {
           <Route path='/cquiz' element={<C_quiz/>}/>
           <Route path='/dbmsquiz' element={<Dbms_quiz/>}/>
           <Route path='/sequiz' element={<Se_Quiz/>}/>
+          <Route path='/aiquiz' element={<Ai_quiz/>}/>
+          <Route path='/oopsquiz' element={<Oops_quiz/>}/>
+          <Route path='/tocquiz' element={<Toc_quiz/>}/>
         </Routes>
       </div>
     </BrowserRouter>
