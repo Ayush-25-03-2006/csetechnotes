@@ -32,7 +32,7 @@ import Ai_quiz from './Components/Ai_Quiz'
 import Oops_quiz from './Components/Oops_Quiz'
 import Toc_quiz from './Components/Toc_Quiz'
 import VisitorCounter from './VisitorCounter'
-import About from './Components/about'
+import About from './Components/About'
 
 function App() {
   return (
