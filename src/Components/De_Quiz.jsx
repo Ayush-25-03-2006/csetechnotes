@@ -745,7 +745,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    14. The Boolean function F(A,B,C)=Σm(0,3,5,6) is equivalent to:
+                    14. The Boolean function F(A,B,C)=Σm(0,3,5,6) is equivalent to ?
                 </p>
 
                 {options14.map((option, index) => (
