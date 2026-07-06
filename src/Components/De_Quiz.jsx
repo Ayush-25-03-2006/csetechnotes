@@ -68,9 +68,9 @@ function De_Quiz() {
     const correctAnswer9 = 1;
     const correctAnswer10 = 2;
     const correctAnswer11 = 1;
-    const correctAnswer12 = 1;
+    const correctAnswer12 = 0;
     const correctAnswer13 = 1;
-    const correctAnswer14 = 2;
+    const correctAnswer14 = 1;
     const correctAnswer15 = 1;
     const correctAnswer16 = 1;
     const correctAnswer17 = 1;
@@ -176,10 +176,10 @@ function De_Quiz() {
     ];
 
     const options12 = [
-        "A) Encoder",
-        "B) Decoder",
-        "C) Comparator",
-        "D) Register"
+        "A) A⊕B⊕C",
+        "B) A+B+C",
+        "C) AB+BC+AC",
+        "D) A⊙B⊙C (XNOR)"
     ];
 
     const options13 = [
@@ -190,10 +190,10 @@ function De_Quiz() {
     ];
 
     const options14 = [
-        "A) Multiplexer",
-        "B) Decoder",
-        "C) Comparator",
-        "D) Encoder"
+        "A) A⊕B⊕C",
+        "B) A⊙B⊙C (XNOR)",
+        "C) AB+BC+AC",
+        "D) A+B+C"
     ];
 
     const options15 = [
@@ -694,7 +694,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    12. Which combinational circuit converts binary information into one active output?
+                    12. The Boolean function F(A,B,C)=Σm(1,2,4,7) is equivalent to:
                 </p>
 
                 {options12.map((option, index) => (
@@ -745,7 +745,7 @@ function De_Quiz() {
                 ))}
 
                 <p className="question">
-                    14. Which circuit compares two binary numbers?
+                    14. The Boolean function F(A,B,C)=Σm(0,3,5,6) is equivalent to:
                 </p>
 
                 {options14.map((option, index) => (
