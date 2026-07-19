@@ -66,14 +66,12 @@ function Dashboard() {
             </div>
             <hr className="hr" />
             <div className="cont">
-                <Link to="/quiz" className="card">
+                <Link to="/quiz" className="quiz-card">
                     <i className="bi bi-journal-check"></i>
                     <p>Quiz</p>
                 </Link>
-            </div>
-            <hr className="hr" />
-            <div className="cont">
-                <Link to="/about" className="card">
+                
+                <Link to="/about" className="quiz-card">
                     <i className="bi bi-person-circle"></i>
                     <p>About</p>
                 </Link>
