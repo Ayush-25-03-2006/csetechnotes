@@ -2,10 +2,12 @@ import ermodel from "./Dbms/ERModel.pdf";
 import relationalmodel from "./Dbms/RelationalModel.pdf";
 import functionaldependency from "./Dbms/FunctionalDependency.pdf";
 import normalization from "./Dbms/Normalization.pdf";
-import question1 from "./Dbms/DBMS TOP 30 QUES-ANS.pdf"
-import index from "./Dbms/Indexing.pdf"
+import question1 from "./Dbms/DBMS TOP 30 QUES-ANS.pdf";
+import index from "./Dbms/Indexing.pdf";
+import re from "./Dbms/Relational Algebra.pdf";
+import sql from "./Dbms/SQL.pdf";
 
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 function Dbms() {
 
@@ -15,6 +17,8 @@ function Dbms() {
     const [showPdf4, setShowPdf4] = useState(false);
     const [showPdf5, setShowPdf5] = useState(false);
     const [showPdf6, setShowPdf6] = useState(false);
+    const [showPdf7, setShowPdf7] = useState(false);
+    const [showPdf8, setShowPdf8] = useState(false);
 
     useEffect(() => {
       document.title = "Database Management System"
@@ -136,8 +140,61 @@ function Dbms() {
               </div>
             )}
             <hr />
+            <h3 className="mb-4">5. Relational Algebra</h3>
+            <a
+              href={re}
+              download
+              className="btn btn-primary btn-lg mb-4"
+              onClick={notify}
+            >
+              Download PDF
+            </a>
+            <button
+              className="btn btn-success btn-lg mb-4 ms-3"
+              onClick={() => setShowPdf7(!showPdf7)}
+            >
+              {showPdf7 ? "Hide Notes" : "Show Notes"}
+            </button>
+            {showPdf7 && (
+              <div className="mt-3">
+                <iframe
+                  src={re}
+                  width="70%"
+                  height="300px"
+                  title="OOPS Notes"
+                  onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                ></iframe>
+              </div>
+            )}
             <hr />
-            <h3 className="mb-4">5. Indexing</h3>
+            <h3 className="mb-4">6. SQL </h3>
+            <a
+              href={sql}
+              download
+              className="btn btn-primary btn-lg mb-4"
+              onClick={notify}
+            >
+              Download PDF
+            </a>
+            <button
+              className="btn btn-success btn-lg mb-4 ms-3"
+              onClick={() => setShowPdf8(!showPdf8)}
+            >
+              {showPdf8 ? "Hide Notes" : "Show Notes"}
+            </button>
+            {showPdf8 && (
+              <div className="mt-3">
+                <iframe
+                  src={sql}
+                  width="70%"
+                  height="300px"
+                  title="OOPS Notes"
+                  onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+                ></iframe>
+              </div>
+            )}
+            <hr />
+            <h3 className="mb-4">7. Indexing</h3>
             <a
               href={index}
               download
