@@ -62,6 +62,11 @@ function Dashboard() {
                         <i className="bi bi-laptop"></i>
                         <p>Software Engineering</p>
                     </Link>
+
+                    <Link to="/cd" className="card">
+                        <i className="bi bi-terminal"></i>
+                        <p>Compiler Design</p>
+                    </Link>
                 </div>
             </div>
             <hr className="hr" />

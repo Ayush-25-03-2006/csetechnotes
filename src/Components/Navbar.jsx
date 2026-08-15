@@ -28,6 +28,7 @@ function Navbar() {
                         <li className="nav-item"><Link className="nav-link" to="/Toc">TOC / FLAT</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Ai">AI</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Se">Software Engineering</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/cd">Compiler Design</Link></li>
                     </ul>
                 </div>
 
