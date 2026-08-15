@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import java from "./Java/javanotes.pdf";
 import java1 from "./Java/Java.pdf";
-import java2 from "./Java/Methods in Java.pdf";
-import java3 from "./Java/Basic Programming  in Java.pdf";
+import java3 from "./Java/Methods in Java.pdf";
+import java2 from "./Java/Basic Programming  in Java.pdf";
 import { toast, ToastContainer } from "react-toastify";
 function Java() {
 
@@ -74,7 +74,7 @@ function Java() {
             </div>
           )}
           <hr />
-          <h3 className="mb-4">3. Java Methods</h3>
+          <h3 className="mb-4">3. Java Basic Programs</h3>
           <a
             href={java2}
             download
@@ -100,7 +100,7 @@ function Java() {
             </div>
           )}
           <hr />
-          <h3 className="mb-4">4. Java Basic Programs</h3>
+          <h3 className="mb-4">4. Java Methods</h3>
           <a
             href={java3}
             download
