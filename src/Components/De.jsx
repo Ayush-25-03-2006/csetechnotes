@@ -44,7 +44,6 @@ function De() {
                           src={bool}
                           width="70%"
                           height="300px"
-                          title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
                       </div>
