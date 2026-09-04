@@ -3,18 +3,20 @@ import Network from "./Networking/ComputerNetworkNotes.pdf";
 import { toast, ToastContainer } from "react-toastify";
 import basic from './Networking/Basic of Computer Network.pdf';
 import physical from "./Networking/Physical Layer.pdf";
+import dll from "./Networking/Data Link Layer.pdf";
 
 function Networking() {
 
   const [showPdf1, setShowPdf1] = useState(false);
   const [showPdf2, setShowPdf2] = useState(false);
   const [showPdf3, setShowPdf3] = useState(false);
+  const [showPdf4, setShowPdf4] = useState(false);
 
   const notify = () => toast("Downloading Notes For You", { autoClose: 1000, transition: null });
 
   useEffect(() => {
     document.title = "Computer Network"
-  })
+  });
   return (
     <>
       <div className="container mt-4">
@@ -97,6 +99,33 @@ function Networking() {
           <div className="mt-3">
             <iframe
               src={physical}
+              width="70%"
+              height="300px"
+              title="OOPS Notes"
+              onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
+            ></iframe>
+          </div>
+        )}
+        <hr />
+        <h3 className="mb-4">4. Data Link Layer</h3>
+        <a
+          href={dll}
+          download
+          className="btn btn-primary btn-lg mb-4"
+          onClick={notify}
+        >
+          Download PDF
+        </a>
+        <button
+          className="btn btn-success btn-lg mb-4 ms-3"
+          onClick={() => setShowPdf4(!showPdf4)}
+        >
+          {showPdf4 ? "Hide Notes" : "Show Notes"}
+        </button>
+        {showPdf4 && (
+          <div className="mt-3">
+            <iframe
+              src={dll}
               width="70%"
               height="300px"
               title="OOPS Notes"
