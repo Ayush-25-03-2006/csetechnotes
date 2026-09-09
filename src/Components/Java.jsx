@@ -6,6 +6,8 @@ import java2 from "./Java/Basic Programming  in Java.pdf";
 import java4 from "./Java/Array_List & String.pdf";
 import java5 from "./Java/Class & Object.pdf";
 import java6 from "./Java/Constructor in Java.pdf";
+import java8 from "./Java/Inheritance in Java.pdf";
+import java7 from "./Java/Wrapper Classes.pdf";
 
 import { toast, ToastContainer } from "react-toastify";
 function Java() {
@@ -17,6 +19,8 @@ function Java() {
     const [showPdf5, setShowPdf5] = useState(false);
     const [showPdf6, setShowPdf6] = useState(false);
     const [showPdf7, setShowPdf7] = useState(false);
+    const [showPdf8, setShowPdf8] = useState(false);
+    const [showPdf9, setShowPdf9] = useState(false);
 
     const notify = () => toast("Downloading Notes For You",{autoClose:1000, transition:null}) 
 
@@ -185,7 +189,59 @@ function Java() {
             </div>
           )}
           <hr />
-          <h3 className="mb-4">7. Java Full Notes</h3>
+          <h3 className="mb-4">7. Java Wrapper class </h3>
+          <a
+            href={java7}
+            download
+            className="btn btn-primary btn-lg mb-4"
+            onClick={notify}
+          >
+            Download PDF
+          </a>
+          <button
+            className="btn btn-success btn-lg mb-4 ms-3"
+            onClick={() => setShowPdf8(!showPdf8)}
+          >
+            {showPdf8 ? "Hide Notes" : "Show Notes"}
+          </button>
+          {showPdf8 && (
+            <div className="mt-3">
+              <iframe
+                src={java7}
+                width="70%"
+                height="300px"
+                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+              ></iframe>
+            </div>
+          )}
+          <hr />
+          <h3 className="mb-4">8. Java Inheritance</h3>
+          <a
+            href={java8}
+            download
+            className="btn btn-primary btn-lg mb-4"
+            onClick={notify}
+          >
+            Download PDF
+          </a>
+          <button
+            className="btn btn-success btn-lg mb-4 ms-3"
+            onClick={() => setShowPdf9(!showPdf9)}
+          >
+            {showPdf9 ? "Hide Notes" : "Show Notes"}
+          </button>
+          {showPdf9 && (
+            <div className="mt-3">
+              <iframe
+                src={java8}
+                width="70%"
+                height="300px"
+                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+              ></iframe>
+            </div>
+          )}
+          <hr />
+          <h3 className="mb-4">.9 Java Full Notes</h3>
           <a
             href={java}
             download
