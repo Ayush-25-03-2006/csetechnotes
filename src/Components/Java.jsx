@@ -241,7 +241,7 @@ function Java() {
             </div>
           )}
           <hr />
-          <h3 className="mb-4">.9 Java Full Notes</h3>
+          <h3 className="mb-4">9. Java Full Notes</h3>
           <a
             href={java}
             download
