@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Network from "./Networking/ComputerNetworkNotes.pdf";
 import { toast, ToastContainer } from "react-toastify";
 import basic from './Networking/Basic of Computer Network.pdf';
 import physical from "./Networking/Physical Layer.pdf";
@@ -24,36 +23,7 @@ function Networking() {
         <hr />
         <u><h3 >Topic Wise Notes Content</h3></u>
         <hr />
-        <h3 className="mb-4">1. Computer Network Notes</h3>
-        <a
-          href={Network}
-          download
-          className="btn btn-primary btn-lg mb-4"
-          onClick={notify}
-        >
-          Download PDF
-        </a>
-
-        <button
-          className="btn btn-success btn-lg mb-4 ms-3"
-          onClick={() => setShowPdf1(!showPdf1)}
-        >
-          {showPdf1 ? "Hide Notes" : "Show Notes"}
-        </button>
-
-        {showPdf1 && (
-          <div className="mt-3">
-            <iframe
-              src={Network}
-              width="70%"
-              height="300px"
-              title="OOPS Notes"
-              onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
-            ></iframe>
-          </div>
-        )}
-        <hr />
-        <h3 className="mb-4">2. Basic Of Computer Networking</h3>
+        <h3 className="mb-4">1. Basic Of Computer Networking</h3>
         <a
           href={basic}
           download
@@ -80,7 +50,7 @@ function Networking() {
           </div>
         )}
         <hr />
-        <h3 className="mb-4">3. Physical Layer</h3>
+        <h3 className="mb-4">2. Physical Layer</h3>
         <a
           href={physical}
           download
@@ -107,7 +77,7 @@ function Networking() {
           </div>
         )}
         <hr />
-        <h3 className="mb-4">4. Data Link Layer</h3>
+        <h3 className="mb-4">3. Data Link Layer</h3>
         <a
           href={dll}
           download
