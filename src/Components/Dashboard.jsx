@@ -28,6 +28,7 @@ function Dashboard() {
                         <p>Programming</p>
                     </Link>
 
+
                     <Link to="/Networking" className="card">
                         <i className="bi bi-hdd-network"></i>
                         <p>Computer Networks</p>
@@ -67,10 +68,25 @@ function Dashboard() {
                         <i className="bi bi-terminal"></i>
                         <p>Compiler Design</p>
                     </Link>
+
+                    <Link to="/wit" className="card">
+                        <i className="bi bi-globe"></i>
+                        <p>Web & Internet Technology</p>
+                    </Link>
+
+                    <Link to="/ml" className="card">
+                        <i className="bi bi-bar-chart-line"></i>
+                        <p>Machine Learning</p>
+                    </Link>
                 </div>
             </div>
             <hr className="hr" />
             <div className="cont">
+                <Link to="https://www.akubihar.com/btech-cs-question-papers.html" className="quiz-card">
+                    <i className="bi bi-patch-question"></i>
+                    <p>BEU Question</p>
+                </Link>
+
                 <Link to="/quiz" className="quiz-card">
                     <i className="bi bi-journal-check"></i>
                     <p>Quiz</p>

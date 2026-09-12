@@ -34,6 +34,8 @@ import Toc_quiz from './Components/Toc_Quiz'
 import VisitorCounter from './VisitorCounter'
 import About from './Components/About'
 import CompilerDesign from './Components/CompilerDesign'
+import WebinternetTechnology from './Components/WebInternetTechnology'
+import Ml from './Components/Ml'
 
 function App() {
   return (
@@ -77,6 +79,8 @@ function App() {
           <Route path='/tocquiz' element={<Toc_quiz/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/cd' element={<CompilerDesign/>}/>
+          <Route path='/wit' element={<WebinternetTechnology/>}/>
+          <Route path='/ml' element={<Ml/>}/>
         </Routes>
       </div>
     </BrowserRouter>

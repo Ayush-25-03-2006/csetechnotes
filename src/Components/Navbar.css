@@ -33,7 +33,7 @@
 
 /* Hover effect */
 .nav-link:hover {
-    background: #0d6efd;
+    background: #65a17c;
     color: white !important;
     transform: scale(1.05);
 }

@@ -22,13 +22,15 @@ function Navbar() {
                         <li className="nav-item"><Link className="nav-link" to="/Programming">Programming</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Dbms">DBMS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Networking">Networking</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/De">DE</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/De">Digital Electronics</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Os">OS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Oops">OOPS</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Toc">TOC / FLAT</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Ai">AI</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/Se">Software Engineering</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/cd">Compiler Design</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/wit">Web & Internet Technology</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/ml">Machine Learning</Link></li>
                     </ul>
                 </div>
 

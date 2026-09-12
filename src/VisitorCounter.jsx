@@ -18,7 +18,7 @@ function VisitorCounter() {
 
   return (
     <div style={{ textAlign: "center", margin: "20px 0"}}>
-      <h2 style={{color:"black"}}>👥 You have visited this site {visits} times.</h2>
+      <h2 style={{color:"black", backgroundColor:"#65a17c", height:"50px", justifyContent:"center", alignContent:"center", color:"white"}}>👥 You have visited this site {visits} times.</h2>
     </div>
   );
 }

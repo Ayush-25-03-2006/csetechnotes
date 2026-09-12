@@ -8,6 +8,7 @@ import java5 from "./Java/Class & Object.pdf";
 import java6 from "./Java/Constructor in Java.pdf";
 import java8 from "./Java/Inheritance in Java.pdf";
 import java7 from "./Java/Wrapper Classes.pdf";
+import java9 from "./Java/Polymorphism in Java.pdf";
 
 import { toast, ToastContainer } from "react-toastify";
 function Java() {
@@ -21,6 +22,7 @@ function Java() {
     const [showPdf7, setShowPdf7] = useState(false);
     const [showPdf8, setShowPdf8] = useState(false);
     const [showPdf9, setShowPdf9] = useState(false);
+    const [showPdf10, setShowPdf10] = useState(false);
 
     const notify = () => toast("Downloading Notes For You",{autoClose:1000, transition:null}) 
 
@@ -234,6 +236,32 @@ function Java() {
             <div className="mt-3">
               <iframe
                 src={java8}
+                width="70%"
+                height="300px"
+                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+              ></iframe>
+            </div>
+          )}
+          <hr />
+          <h3 className="mb-4">9. Java Polymorphism</h3>
+          <a
+            href={java9}
+            download
+            className="btn btn-primary btn-lg mb-4"
+            onClick={notify}
+          >
+            Download PDF
+          </a>
+          <button
+            className="btn btn-success btn-lg mb-4 ms-3"
+            onClick={() => setShowPdf10(!showPdf10)}
+          >
+            {showPdf10 ? "Hide Notes" : "Show Notes"}
+          </button>
+          {showPdf10 && (
+            <div className="mt-3">
+              <iframe
+                src={java9}
                 width="70%"
                 height="300px"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
