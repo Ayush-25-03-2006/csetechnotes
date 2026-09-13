@@ -73,16 +73,108 @@
     font-size: 30px;
 }
 
-.chakravyu-btn {   
-    display: inline-block; 
-    padding: 10px 20px; 
+.chakravyu-btn {
+    display: inline-block;
+    padding: 11px 24px;
     margin: 10px;
-    background: linear-gradient(90deg,#70b6de,#895487); 
-    color: white; 
-    text-decoration: none; 
-    z-index: 1;
-    border-radius: 25px; 
-    font-weight: bold; 
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+
+    border-radius: 25px;
+    position: relative;
+    isolation: isolate;
+
+    background: linear-gradient(135deg, #70828c, #961791);
+
+    /* Permanent glow — static, no motion */
+    /* box-shadow:
+        0 0 12px rgba(66, 133, 244, 0.45),
+        0 0 22px rgba(156, 39, 176, 0.35),
+        0 0 32px rgba(255, 64, 129, 0.25); */
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ================================= */
+/* STATIC GLOWING BORDER (no rotation) */
+/* ================================= */
+
+.chakravyu-btn::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 28px;
+
+    background: linear-gradient(
+        135deg,
+        #4285f4,
+        #9c27b0,
+        #c599a8
+    );
+
+    filter: blur(3px) hue-rotate(0deg);
+    opacity: 0.5;
+
+    animation: chakravyuHueRotate 4s linear infinite;
+
+    z-index: -2;
+}
+
+@keyframes chakravyuHueRotate {
+    0% {
+        filter: blur(3px) hue-rotate(0deg);
+    }
+    100% {
+        filter: blur(3px) hue-rotate(360deg);
+    }
+}
+
+/* ================================= */
+/* FIXED BUTTON CENTER */
+/* ================================= */
+
+.chakravyu-btn::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 22px;
+
+    background: linear-gradient(90deg, #7272eb, #bdabc3);
+
+    z-index: -1;
+}
+
+/* ================================= */
+/* HOVER */
+/* ================================= */
+
+.chakravyu-btn:hover {
+    transform: translateY(-4px) scale(1.04);
+/* 
+    box-shadow:
+        0 8px 25px rgba(66, 133, 244, 0.4),
+        0 0 30px rgba(156, 39, 176, 0.4),
+        0 0 45px rgba(255, 64, 129, 0.3); */
+
+    color: white;
+}
+
+.chakravyu-btn:hover::before {
+    filter: blur(4px);
+    opacity: 1;
+}
+
+/* ================================= */
+/* CLICK */
+/* ================================= */
+
+.chakravyu-btn:active {
+    transform: translateY(-1px) scale(0.97);
+
+    box-shadow: 0 3px 10px rgba(66, 133, 244, 0.2);
 }
 
 /* Mobile */

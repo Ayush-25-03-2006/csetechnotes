@@ -14,7 +14,7 @@ function Dashboard() {
 
                 <div className="hero-section">
                     <a target="_blank" href="https://chakravyuai.vercel.app/"><img src={chakravyu} alt="notes" className="hero-image" /></a>
-                    <a href="https://chakravyuai.vercel.app/" target="_blank" className="chakravyu-btn">Chakravyu Ai</a>
+                    <a href="https://chakravyuai.vercel.app/" target="_blank" className="chakravyu-btn">Chakravyu AI</a>
                     <h1 className="title">Explore Top Categories</h1>
                 </div>
 
