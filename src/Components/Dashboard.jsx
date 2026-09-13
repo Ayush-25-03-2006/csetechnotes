@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import imagenotes from "./Images/digital notes.webp";
+// import imagenotes from "./Images/digital notes.webp";
 import chakravyu from "./Images/chakravyu.jpeg";
 import "./Dashboard.css";
 import { useEffect } from "react";
@@ -13,7 +13,7 @@ function Dashboard() {
             <div className="dashboard-container">
 
                 <div className="hero-section">
-                    <img src={imagenotes} alt="notes" className="hero-image" />
+                    <a target="_blank" href="https://chakravyuai.vercel.app/"><img src={chakravyu} alt="notes" className="hero-image" /></a>
                     <a href="https://chakravyuai.vercel.app/" target="_blank" className="chakravyu-btn">Chakravyu Ai</a>
                     <h1 className="title">Explore Top Categories</h1>
                 </div>
