@@ -31,7 +31,6 @@ import Se_Quiz from './Components/Se_Quiz'
 import Ai_quiz from './Components/Ai_Quiz'
 import Oops_quiz from './Components/Oops_Quiz'
 import Toc_quiz from './Components/Toc_Quiz'
-import VisitorCounter from './VisitorCounter'
 import About from './Components/About'
 import CompilerDesign from './Components/CompilerDesign'
 import WebinternetTechnology from './Components/WebInternetTechnology'
@@ -43,8 +42,7 @@ function App() {
       <div>
         <h1 style={{color:"black", backgroundColor:"burlywood"}}>Hello Engineer's, Have Eager To Learn !</h1>
         <Navbar/>
-        <VisitorCounter/>
-
+        
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path="/Dbms" element={<Dbms/>} />
