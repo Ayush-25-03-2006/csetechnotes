@@ -9,6 +9,7 @@ import java6 from "./Java/Constructor in Java.pdf";
 import java8 from "./Java/Inheritance in Java.pdf";
 import java7 from "./Java/Wrapper Classes.pdf";
 import java9 from "./Java/Polymorphism in Java.pdf";
+import java10 from "./Java/Package in java.pdf";
 
 import { toast, ToastContainer } from "react-toastify";
 function Java() {
@@ -23,6 +24,7 @@ function Java() {
     const [showPdf8, setShowPdf8] = useState(false);
     const [showPdf9, setShowPdf9] = useState(false);
     const [showPdf10, setShowPdf10] = useState(false);
+    const [showPdf11, setShowPdf11] = useState(false);
 
     const notify = () => toast("Downloading Notes For You",{autoClose:1000, transition:null}) 
 
@@ -269,7 +271,33 @@ function Java() {
             </div>
           )}
           <hr />
-          <h3 className="mb-4">9. Java Full Notes</h3>
+          <h3 className="mb-4">9. Java Package</h3>
+          <a
+            href={java10}
+            download
+            className="btn btn-primary btn-lg mb-4"
+            onClick={notify}
+          >
+            Download PDF
+          </a>
+          <button
+            className="btn btn-success btn-lg mb-4 ms-3"
+            onClick={() => setShowPdf11(!showPdf11)}
+          >
+            {showPdf11 ? "Hide Notes" : "Show Notes"}
+          </button>
+          {showPdf11 && (
+            <div className="mt-3">
+              <iframe
+                src={java10}
+                width="70%"
+                height="300px"
+                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
+              ></iframe>
+            </div>
+          )}
+          <hr />
+          <h3 className="mb-4">10. Java Full Notes</h3>
           <a
             href={java}
             download
