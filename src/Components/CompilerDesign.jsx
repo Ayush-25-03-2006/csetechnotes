@@ -107,7 +107,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">3. First & Follow</h3>
+                <h3 className="mb-4">A. First & Follow</h3>
                 <a
                     href={com2}
                     download
@@ -134,7 +134,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">4. Types Of Parsing</h3>
+                <h3 className="mb-4">B. Types Of Parsing</h3>
                 <a
                     href={com3}
                     download
@@ -161,7 +161,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">5. LL (1)</h3>
+                <h3 className="mb-4">C. LL (1)</h3>
                 <a
                     href={com4}
                     download
