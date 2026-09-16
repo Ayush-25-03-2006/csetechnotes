@@ -38,7 +38,7 @@ function Se() {
             </h1>
             <hr />
             <h3 className="mb-4">
-                1. Toc Top 30 Questions - Answers
+                1. SE Top 30 Questions - Answers
             </h3>
             <a
                 href={question1}
