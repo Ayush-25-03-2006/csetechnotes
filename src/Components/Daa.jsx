@@ -48,8 +48,8 @@ function Daa() {
                 <div className="mt-3">
                   <iframe
                     src={algo}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -78,8 +78,8 @@ function Daa() {
                 <div className="mt-3">
                   <iframe
                     src={sort}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -108,8 +108,8 @@ function Daa() {
                 <div className="mt-3">
                   <iframe
                     src={graph}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -138,8 +138,8 @@ function Daa() {
                 <div className="mt-3">
                   <iframe
                     src={greedy}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -168,8 +168,8 @@ function Daa() {
                 <div className="mt-3">
                   <iframe
                     src={dynamic}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -200,8 +200,8 @@ function Daa() {
                 <div className="mt-3">
                   <iframe
                     src={question}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>

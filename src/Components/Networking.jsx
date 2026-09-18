@@ -42,8 +42,8 @@ function Networking() {
           <div className="mt-3">
             <iframe
               src={basic}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               title="OOPS Notes"
               onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
             ></iframe>
@@ -69,8 +69,8 @@ function Networking() {
           <div className="mt-3">
             <iframe
               src={physical}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               title="OOPS Notes"
               onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
             ></iframe>
@@ -96,8 +96,8 @@ function Networking() {
           <div className="mt-3">
             <iframe
               src={dll}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               title="OOPS Notes"
               onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
             ></iframe>

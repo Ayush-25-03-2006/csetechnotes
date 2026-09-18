@@ -44,8 +44,8 @@ function Discrete() {
             <div
                 className="mt-3">
                     <iframe src={setinmath} 
-                        width="70%"
-                        height="300px"
+                        width="100%"
+                        height="600px"
                         onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                     ></iframe>
                 </div>
@@ -70,8 +70,8 @@ function Discrete() {
           <div className="mt-3">
             <iframe
               src={relation}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -96,8 +96,8 @@ function Discrete() {
           <div className="mt-3">
             <iframe
               src={func}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -122,8 +122,8 @@ function Discrete() {
           <div className="mt-3">
             <iframe
               src={logic}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -148,8 +148,8 @@ function Discrete() {
           <div className="mt-3">
             <iframe
               src={graph}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -176,8 +176,8 @@ function Discrete() {
           <div className="mt-3">
             <iframe
               src={question}
-              width="70%"
-              height="300px"
+              width="100%"
+              height="600px"
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>

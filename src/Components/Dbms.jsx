@@ -51,8 +51,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={ermodel}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -78,8 +78,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={relationalmodel}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -105,8 +105,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={functionaldependency}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -132,8 +132,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={normalization}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="DBMS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -159,8 +159,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={re}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -186,8 +186,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={sql}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -213,8 +213,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={index}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -241,8 +241,8 @@ function Dbms() {
               <div className="mt-3">
                 <iframe
                   src={question1}
-                  width="70%"
-                  height="300px"
+                  width="100%"
+                  height="600px"
                   title="DBMS Notes"
                   style={{marginBottom:"20px"}}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}

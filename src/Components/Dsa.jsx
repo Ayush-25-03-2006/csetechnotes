@@ -84,8 +84,8 @@ function Dsa() {
       <div className="mt-3">
         <iframe
           src={introduction}
-          width="70%"
-          height="300px"
+          width="100%"
+          height="600px"
           title="OOPS Notes"
           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
         ></iframe>
@@ -113,8 +113,8 @@ function Dsa() {
       <div className="mt-3">
         <iframe
           src={ll1}
-          width="70%"
-          height="300px"
+          width="100%"
+          height="600px"
           title="OOPS Notes"
           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
         ></iframe>
@@ -143,8 +143,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={ll2}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -173,8 +173,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={ll3}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -203,8 +203,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={ll4}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -232,8 +232,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={ll5}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
               ></iframe>
             </div>
@@ -261,8 +261,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={ll6}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -291,8 +291,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={ll7}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -321,8 +321,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={ll8}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -353,8 +353,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={stack1}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -383,8 +383,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={stack2}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -413,8 +413,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={stack3}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -443,8 +443,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={stack4}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -475,8 +475,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={queue1}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -505,8 +505,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={queue2}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -535,8 +535,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={queue3}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -566,8 +566,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={sort1}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -596,8 +596,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={sort2}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -626,8 +626,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={sort3}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -656,8 +656,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={sort4}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
@@ -688,8 +688,8 @@ function Dsa() {
             <div className="mt-3">
               <iframe
                 src={question}
-                width="70%"
-                height="300px"
+                width="100%"
+                height="600px"
                 title="OOPS Notes"
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>

@@ -61,8 +61,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={OopsBasic}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -91,8 +91,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={classObject}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -121,8 +121,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={OopsBasic2}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -151,8 +151,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={Constructor}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -181,8 +181,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={CopyConstructor}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -211,8 +211,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={Destructor}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -241,8 +241,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={Encapsulation}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -271,8 +271,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={Inheritance}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -301,8 +301,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={TypesOfInheritance}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -331,8 +331,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={Polymorphism}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -361,8 +361,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={FriendFunctionInlineFunction}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>
@@ -393,8 +393,8 @@ function Oops() {
         <div className="mt-3">
           <iframe
             src={question}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
           ></iframe>

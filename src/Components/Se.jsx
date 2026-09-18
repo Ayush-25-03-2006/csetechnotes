@@ -58,8 +58,8 @@ function Se() {
                 <div className="mt-3">
                     <iframe
                         src={question1}
-                        width="70%"
-                        height="300px"
+                        width="100%"
+                        height="600px"
                         title="Se Notes"
                         onLoad={() =>
                             toast.success(

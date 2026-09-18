@@ -79,8 +79,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={matrixnotes}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
            </div>
@@ -105,8 +105,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={questionmatrix}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -135,8 +135,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={integration2}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -161,8 +161,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={calculus1}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -188,8 +188,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={integration}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -215,8 +215,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={betagamma1ques}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -242,8 +242,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={betagamma2ques}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -271,8 +271,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={calculus2}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -298,8 +298,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={taylor1}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -325,8 +325,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={taylor}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -352,8 +352,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={maxmin}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -379,8 +379,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={limit}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -406,8 +406,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={continuity}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -433,8 +433,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={indeterminant}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -462,8 +462,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={limitcontinuity}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -489,8 +489,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={partial}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -516,8 +516,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={multivariable}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -545,8 +545,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={vector1}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -572,8 +572,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={vector2}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -599,8 +599,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={vectorquestion}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -628,8 +628,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={question1}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>
@@ -655,8 +655,8 @@ function Matrix() {
            <div className="mt-3">
              <iframe
                src={question2}
-               width="70%"
-               height="300px"
+               width="100%"
+               height="600px"
                title="OOPS Notes"
                onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
              ></iframe>

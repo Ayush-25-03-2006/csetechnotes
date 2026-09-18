@@ -42,8 +42,8 @@ function De() {
                       <div className="mt-3">
                         <iframe
                           src={bool}
-                          width="70%"
-                          height="300px"
+                          width="100%"
+                          height="600px"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
                       </div>
@@ -68,8 +68,8 @@ function De() {
                       <div className="mt-3">
                         <iframe
                           src={gate}
-                          width="70%"
-                          height="300px"
+                          width="100%"
+                          height="600px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
@@ -95,8 +95,8 @@ function De() {
                       <div className="mt-3">
                         <iframe
                           src={combinational}
-                          width="70%"
-                          height="300px"
+                          width="100%"
+                          height="600px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
@@ -122,8 +122,8 @@ function De() {
                       <div className="mt-3">
                         <iframe
                           src={sequential}
-                          width="70%"
-                          height="300px"
+                          width="100%"
+                          height="600px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>
@@ -150,8 +150,8 @@ function De() {
                       <div className="mt-3">
                         <iframe
                           src={question}
-                          width="70%"
-                          height="300px"
+                          width="100%"
+                          height="600px"
                           title="OOPS Notes"
                           onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                         ></iframe>

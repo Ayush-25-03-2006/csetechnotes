@@ -90,8 +90,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={probability1}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -120,8 +120,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={probability2}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -150,8 +150,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={probability3}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -180,8 +180,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={additional}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -210,8 +210,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={conditional}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -240,8 +240,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={probability3}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -270,8 +270,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={bayes}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -300,8 +300,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={discrete1}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -330,8 +330,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={binomial}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -360,8 +360,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={binomial1}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -390,8 +390,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={poisson}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -420,8 +420,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={continous1}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -450,8 +450,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={continous2}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -480,8 +480,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={normal}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -510,8 +510,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={exponential}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -540,8 +540,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={gamma}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -572,8 +572,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={statistics}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -602,8 +602,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={moment}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -632,8 +632,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={chebyshev}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -662,8 +662,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={discrete2}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -692,8 +692,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={continous3}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -722,8 +722,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={variance}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -752,8 +752,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={correlation}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -782,8 +782,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={curve}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>
@@ -814,8 +814,8 @@ function Probability_Statistics() {
                 <div className="mt-3">
                   <iframe
                     src={question}
-                    width="70%"
-                    height="300px"
+                    width="100%"
+                    height="600px"
                     title="OOPS Notes"
                     onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                   ></iframe>

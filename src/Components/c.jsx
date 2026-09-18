@@ -33,8 +33,8 @@ function C() {
                 <div
                     className="mt-3">
                         <iframe src={question2} 
-                            width="70%"
-                            height="300px"
+                            width="100%"
+                            height="600px"
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>
@@ -56,8 +56,8 @@ function C() {
                 <div
                     className="mt-3">
                         <iframe src={question1} 
-                            width="70%"
-                            height="300px"
+                            width="100%"
+                            height="600px"
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>

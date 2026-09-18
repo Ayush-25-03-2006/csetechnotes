@@ -41,8 +41,8 @@ function Os() {
         <div className="mt-3">
           <iframe
             src={os}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OOPS Notes"
             onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
           ></iframe>
@@ -70,8 +70,8 @@ function Os() {
         <div className="mt-3">
           <iframe
             src={question1}
-            width="70%"
-            height="300px"
+            width="100%"
+            height="600px"
             title="OS Notes"
             style={{ marginBottom: "20px" }}
             onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
