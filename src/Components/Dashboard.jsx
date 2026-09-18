@@ -2,19 +2,35 @@ import { Link } from "react-router-dom";
 // import imagenotes from "./Images/digital notes.webp";
 import chakravyu from "./Images/chakravyu.jpeg";
 import "./Dashboard.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Dashboard() {
     useEffect(() => {
         document.title = "Learn Computer Science"
     })
+
+    const [showAI, setShowAI] = useState(false);
     return (
         <>
             <div className="dashboard-container">
 
                 <div className="hero-section">
-                    <a target="_blank" href="https://chakravyuai.vercel.app/"><img src={chakravyu} alt="notes" className="hero-image" /></a>
-                    <a href="https://chakravyuai.vercel.app/" target="_blank" className="chakravyu-btn">Chakravyu AI Mode</a>
+                    {/* <a target="_blank" href="https://chakravyuai.vercel.app/"><img src={chakravyu} alt="notes" className="hero-image" /></a> */}
+                    {/* <a href="https://chakravyuai.vercel.app/" target="_blank" className="chakravyu-btn">Chakravyu AI Mode</a> */}
+                    <button
+                        className="chakravyu-btn"
+                        onClick={() => setShowAI(!showAI)}
+                    >
+                        {showAI ? "Hide Chakravyu AI Mode" : "Chakravyu AI Mode"}
+                    </button>
+                    {(showAI &&
+                    <iframe
+                        src="https://chakravyuai.vercel.app/"
+                        width="100%"
+                        height="500px"
+                        style={{ border: "none", borderRadius: "15px" }}
+                    />
+                    )}
                     <h1 className="title">Explore Top Categories</h1>
                 </div>
 
@@ -93,7 +109,7 @@ function Dashboard() {
                     <i className="bi bi-journal-check"></i>
                     <p>Quiz</p>
                 </Link>
-                
+
                 <Link to="/about" className="quiz-card">
                     <i className="bi bi-person-circle"></i>
                     <p>About</p>
