@@ -35,6 +35,10 @@ function C() {
                         <iframe src={question2} 
                             width="100%"
                             height="600px"
+                            style={{
+                                border: "1px solid #ccc",
+                                borderRadius: "10px"
+                            }}
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>
@@ -58,6 +62,10 @@ function C() {
                         <iframe src={question1} 
                             width="100%"
                             height="600px"
+                            style={{
+                                border: "1px solid #ccc",
+                                borderRadius: "10px"
+                            }}
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>

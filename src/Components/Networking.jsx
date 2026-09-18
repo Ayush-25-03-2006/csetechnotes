@@ -45,6 +45,10 @@ function Networking() {
               width="100%"
               height="600px"
               title="OOPS Notes"
+              style={{
+                  border: "1px solid #ccc",
+                  borderRadius: "10px"
+            }}
               onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
             ></iframe>
           </div>
@@ -72,6 +76,10 @@ function Networking() {
               width="100%"
               height="600px"
               title="OOPS Notes"
+              style={{
+                  border: "1px solid #ccc",
+                  borderRadius: "10px"
+            }}
               onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
             ></iframe>
           </div>
@@ -99,6 +107,10 @@ function Networking() {
               width="100%"
               height="600px"
               title="OOPS Notes"
+              style={{
+                  border: "1px solid #ccc",
+                  borderRadius: "10px"
+            }}
               onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
             ></iframe>
           </div>

@@ -61,6 +61,10 @@ function Se() {
                         width="100%"
                         height="600px"
                         title="Se Notes"
+                        style={{
+                                border: "1px solid #ccc",
+                                borderRadius: "10px"
+                            }}
                         onLoad={() =>
                             toast.success(
                                 "Notes Loaded Successfully...",

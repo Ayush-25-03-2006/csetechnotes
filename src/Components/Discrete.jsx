@@ -46,6 +46,10 @@ function Discrete() {
                     <iframe src={setinmath} 
                         width="100%"
                         height="600px"
+                        style={{
+                            border: "1px solid #ccc",
+                            borderRadius: "10px"
+                          }}
                         onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                     ></iframe>
                 </div>
@@ -72,6 +76,10 @@ function Discrete() {
               src={relation}
               width="100%"
               height="600px"
+              style={{
+                            border: "1px solid #ccc",
+                            borderRadius: "10px"
+                          }}
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -98,6 +106,10 @@ function Discrete() {
               src={func}
               width="100%"
               height="600px"
+              style={{
+                            border: "1px solid #ccc",
+                            borderRadius: "10px"
+                          }}
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -124,6 +136,10 @@ function Discrete() {
               src={logic}
               width="100%"
               height="600px"
+              style={{
+                            border: "1px solid #ccc",
+                            borderRadius: "10px"
+                          }}
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -150,6 +166,10 @@ function Discrete() {
               src={graph}
               width="100%"
               height="600px"
+              style={{
+                            border: "1px solid #ccc",
+                            borderRadius: "10px"
+                          }}
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>
@@ -178,6 +198,10 @@ function Discrete() {
               src={question}
               width="100%"
               height="600px"
+              style={{
+                            border: "1px solid #ccc",
+                            borderRadius: "10px"
+                          }}
               onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
             ></iframe>
           </div>

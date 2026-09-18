@@ -77,6 +77,10 @@ function Ai() {
                         width="100%"
                         height="600px"
                         title="Toc Notes"
+                        style={{
+                                border: "1px solid #ccc",
+                                borderRadius: "10px"
+                            }}
                         onLoad={() =>
                             toast.success(
                                 "Notes Loaded Successfully...",

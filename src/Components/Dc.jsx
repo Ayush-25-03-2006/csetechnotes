@@ -80,6 +80,10 @@ function Dc() {
                         <iframe src={limit} 
                             width="100%"
                             height="600px"
+                             style={{
+                              border: "1px solid #ccc",
+                              borderRadius: "10px"
+                          }}
                             onLoad={() => toast.success("Notes Loaded Successully",{autoClose:1000,transition:null})}
                         ></iframe>
                     </div>
@@ -107,6 +111,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -134,6 +142,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -160,6 +172,10 @@ function Dc() {
                   src={leibnitz}
                   width="100%"
                   height="600px"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -187,6 +203,10 @@ function Dc() {
                   src={differential}
                   width="100%"
                   height="600px"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -214,6 +234,10 @@ function Dc() {
                   src={homogeneous}
                   width="100%"
                   height="600px"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -240,6 +264,10 @@ function Dc() {
                 <iframe
                   src={linear}
                   width="100%"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   height="600px"
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
@@ -269,6 +297,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -296,6 +328,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -323,6 +359,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -350,6 +390,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -377,6 +421,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -404,6 +452,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -431,6 +483,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -458,6 +514,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -485,6 +545,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -512,6 +576,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -539,6 +607,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -566,6 +638,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -593,6 +669,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -620,6 +700,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -647,6 +731,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -674,6 +762,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -703,6 +795,10 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  style={{
+                      border: "1px solid #ccc",
+                      borderRadius: "10px"
+                  }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>

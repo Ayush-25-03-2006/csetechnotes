@@ -54,6 +54,10 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -81,6 +85,10 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -108,6 +116,10 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
@@ -134,6 +146,10 @@ function Dbms() {
                   src={normalization}
                   width="100%"
                   height="600px"
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   title="DBMS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -161,6 +177,10 @@ function Dbms() {
                   src={re}
                   width="100%"
                   height="600px"
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -188,6 +208,10 @@ function Dbms() {
                   src={sql}
                   width="100%"
                   height="600px"
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -215,6 +239,10 @@ function Dbms() {
                   src={index}
                   width="100%"
                   height="600px"
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   title="OOPS Notes"
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
@@ -244,7 +272,10 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="DBMS Notes"
-                  style={{marginBottom:"20px"}}
+                   style={{
+                          border: "1px solid #ccc",
+                          borderRadius: "10px"
+                        }}
                   onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
                 ></iframe>
               </div>
