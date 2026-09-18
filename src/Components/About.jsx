@@ -1,5 +1,5 @@
 import "./About.css";
-import about_page from "./Images/about.jpeg";
+import about_page from "./Images/about.png";
 function About() {
     return (
         <div className="contain">
