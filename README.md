@@ -231,7 +231,7 @@ Interested in:
 
 ### Akash Kumar
 
-Content & Quiz Contributor
+## Content & Quiz Contributor
 
 Akash Kumar played an important role in building the educational content of CSENotes.
 
