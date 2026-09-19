@@ -229,6 +229,35 @@ Interested in:
 
 ---
 
+### Akash Kumar
+
+Content & Quiz Contributor
+
+Akash Kumar played an important role in building the educational content of CSENotes.
+
+His contributions include:
+
+📝 Creating the Quiz Section
+❓ Preparing MCQ questions
+📚 Creating and organizing study notes
+📄 Preparing subject-wise learning materials
+🧠 Contributing educational content for students
+🔍 Reviewing and improving learning resources
+
+His contribution helped make CSENotes more useful as a study and examination-preparation platform.
+
+---
+
+### 🤝 Acknowledgement
+
+Special thanks to Akash Kumar for his valuable contribution to the CSENotes project, especially for creating the quiz section and preparing the study notes and learning materials.
+
+CSENotes is a collaborative effort focused on making Computer Science learning resources more accessible to students.
+
+Built by Ayush Kumar with valuable contributions from Akash Kumar. ❤️
+
+---
+
 ## ⭐ Support
 
 If you find CSENotes useful, consider giving this repository a ⭐ on GitHub.
