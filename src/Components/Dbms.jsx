@@ -54,6 +54,7 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"
@@ -85,6 +86,7 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"
@@ -116,6 +118,7 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"
@@ -146,6 +149,7 @@ function Dbms() {
                   src={normalization}
                   width="100%"
                   height="600px"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"
@@ -177,6 +181,7 @@ function Dbms() {
                   src={re}
                   width="100%"
                   height="600px"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"
@@ -208,6 +213,7 @@ function Dbms() {
                   src={sql}
                   width="100%"
                   height="600px"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"
@@ -239,6 +245,7 @@ function Dbms() {
                   src={index}
                   width="100%"
                   height="600px"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"
@@ -272,6 +279,7 @@ function Dbms() {
                   width="100%"
                   height="600px"
                   title="DBMS Notes"
+                  loading="eager"
                    style={{
                           border: "1px solid #ccc",
                           borderRadius: "10px"

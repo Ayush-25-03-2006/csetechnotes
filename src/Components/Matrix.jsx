@@ -81,6 +81,7 @@ function Matrix() {
                src={matrixnotes}
                width="100%"
                height="600px"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -112,6 +113,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -146,6 +148,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -175,6 +178,7 @@ function Matrix() {
                src={calculus1}
                width="100%"
                height="600px"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -206,6 +210,7 @@ function Matrix() {
                src={integration}
                width="100%"
                height="600px"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -237,6 +242,7 @@ function Matrix() {
                src={betagamma1ques}
                width="100%"
                height="600px"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -268,6 +274,7 @@ function Matrix() {
                src={betagamma2ques}
                width="100%"
                height="600px"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -301,6 +308,7 @@ function Matrix() {
                src={calculus2}
                width="100%"
                height="600px"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -332,6 +340,7 @@ function Matrix() {
                src={taylor1}
                width="100%"
                height="600px"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -364,6 +373,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -395,6 +405,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -425,6 +436,7 @@ function Matrix() {
                src={limit}
                width="100%"
                height="600px"
+               loading="eager"
                title="OOPS Notes"
                style={{
                     border: "1px solid #ccc",
@@ -457,6 +469,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -488,6 +501,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -520,6 +534,7 @@ function Matrix() {
                src={limitcontinuity}
                width="100%"
                height="600px"
+               loading="eager"
                title="OOPS Notes"
                style={{
                     border: "1px solid #ccc",
@@ -552,6 +567,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -581,6 +597,7 @@ function Matrix() {
              <iframe
                src={multivariable}
                width="100%"
+               loading="eager"
                height="600px"
                title="OOPS Notes"
                style={{
@@ -615,6 +632,7 @@ function Matrix() {
                src={vector1}
                width="100%"
                height="600px"
+               loading="eager"
                title="OOPS Notes"
                style={{
                     border: "1px solid #ccc",
@@ -647,6 +665,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -678,6 +697,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -711,6 +731,7 @@ function Matrix() {
                width="100%"
                height="600px"
                title="OOPS Notes"
+               loading="eager"
                style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -740,6 +761,7 @@ function Matrix() {
              <iframe
                src={question2}
                width="100%"
+               loading="eager"
                height="600px"
                title="OOPS Notes"
                style={{

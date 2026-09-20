@@ -80,6 +80,7 @@ function Dc() {
                         <iframe src={limit} 
                             width="100%"
                             height="600px"
+                            loading="eager"
                              style={{
                               border: "1px solid #ccc",
                               borderRadius: "10px"
@@ -111,6 +112,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -142,6 +144,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -172,6 +175,7 @@ function Dc() {
                   src={leibnitz}
                   width="100%"
                   height="600px"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -203,6 +207,7 @@ function Dc() {
                   src={differential}
                   width="100%"
                   height="600px"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -234,6 +239,7 @@ function Dc() {
                   src={homogeneous}
                   width="100%"
                   height="600px"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -264,6 +270,7 @@ function Dc() {
                 <iframe
                   src={linear}
                   width="100%"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -297,6 +304,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -328,6 +336,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -359,6 +368,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -390,6 +400,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -421,6 +432,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -452,6 +464,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -483,6 +496,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -514,6 +528,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -545,6 +560,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -576,6 +592,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -607,6 +624,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -638,6 +656,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -669,6 +688,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -700,6 +720,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -731,6 +752,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -762,6 +784,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -795,6 +818,7 @@ function Dc() {
                   width="100%"
                   height="600px"
                   title="OOPS Notes"
+                  loading="eager"
                   style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"

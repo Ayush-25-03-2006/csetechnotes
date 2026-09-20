@@ -65,6 +65,7 @@ function CompilerDesign() {
                             width="100%"
                             height="600px"
                             title="Compiler Design - Lexical Analyser Notes"
+                            loading="eager"
                             style={{
                                 marginBottom: "20px",
                                 border: "1px solid #ddd"
@@ -106,6 +107,7 @@ function CompilerDesign() {
                             width="100%"
                             height="600px"
                             title="OOPS Notes"
+                            loading="eager"
                             style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"
@@ -137,6 +139,7 @@ function CompilerDesign() {
                             width="100%"
                             height="600px"
                             title="OOPS Notes"
+                            loading="eager"
                             style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"
@@ -168,6 +171,7 @@ function CompilerDesign() {
                             width="100%"
                             height="600px"
                             title="OOPS Notes"
+                            loading="eager"
                             style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"
@@ -199,6 +203,7 @@ function CompilerDesign() {
                             width="100%"
                             height="600px"
                             title="OOPS Notes"
+                            loading="eager"
                             style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"
@@ -230,6 +235,7 @@ function CompilerDesign() {
                             width="100%"
                             height="600px"
                             title="OOPS Notes"
+                            loading="eager"
                             style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"

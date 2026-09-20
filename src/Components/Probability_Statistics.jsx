@@ -92,7 +92,7 @@ function Probability_Statistics() {
                     src={probability1}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -126,7 +126,7 @@ function Probability_Statistics() {
                     src={probability2}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -160,7 +160,7 @@ function Probability_Statistics() {
                     src={probability3}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -194,7 +194,7 @@ function Probability_Statistics() {
                     src={additional}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -228,7 +228,7 @@ function Probability_Statistics() {
                     src={conditional}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -262,7 +262,7 @@ function Probability_Statistics() {
                     src={probability3}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -296,7 +296,7 @@ function Probability_Statistics() {
                     src={bayes}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -330,7 +330,7 @@ function Probability_Statistics() {
                     src={discrete1}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -364,7 +364,7 @@ function Probability_Statistics() {
                     src={binomial}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -398,7 +398,7 @@ function Probability_Statistics() {
                     src={binomial1}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -432,7 +432,7 @@ function Probability_Statistics() {
                     src={poisson}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -466,7 +466,7 @@ function Probability_Statistics() {
                     src={continous1}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -500,7 +500,7 @@ function Probability_Statistics() {
                     src={continous2}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -534,7 +534,7 @@ function Probability_Statistics() {
                     src={normal}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -568,7 +568,7 @@ function Probability_Statistics() {
                     src={exponential}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -602,7 +602,7 @@ function Probability_Statistics() {
                     src={gamma}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -638,7 +638,7 @@ function Probability_Statistics() {
                     src={statistics}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -672,7 +672,7 @@ function Probability_Statistics() {
                     src={moment}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -706,7 +706,7 @@ function Probability_Statistics() {
                     src={chebyshev}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -740,7 +740,7 @@ function Probability_Statistics() {
                     src={discrete2}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -774,7 +774,7 @@ function Probability_Statistics() {
                     src={continous3}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -808,7 +808,7 @@ function Probability_Statistics() {
                     src={variance}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -842,7 +842,7 @@ function Probability_Statistics() {
                     src={correlation}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -876,7 +876,7 @@ function Probability_Statistics() {
                     src={curve}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"
@@ -912,7 +912,7 @@ function Probability_Statistics() {
                     src={question}
                     width="100%"
                     height="600px"
-                    title="OOPS Notes"
+                    loading="eager"
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "10px"

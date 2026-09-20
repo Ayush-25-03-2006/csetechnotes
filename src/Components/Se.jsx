@@ -61,6 +61,7 @@ function Se() {
                         width="100%"
                         height="600px"
                         title="Se Notes"
+                        loading="eager"
                         style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"

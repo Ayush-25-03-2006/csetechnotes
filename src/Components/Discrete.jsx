@@ -46,6 +46,7 @@ function Discrete() {
                     <iframe src={setinmath} 
                         width="100%"
                         height="600px"
+                        loading="eager"
                         style={{
                             border: "1px solid #ccc",
                             borderRadius: "10px"
@@ -76,6 +77,7 @@ function Discrete() {
               src={relation}
               width="100%"
               height="600px"
+              loading="eager"
               style={{
                             border: "1px solid #ccc",
                             borderRadius: "10px"
@@ -106,6 +108,7 @@ function Discrete() {
               src={func}
               width="100%"
               height="600px"
+              loading="eager"
               style={{
                             border: "1px solid #ccc",
                             borderRadius: "10px"
@@ -135,6 +138,7 @@ function Discrete() {
             <iframe
               src={logic}
               width="100%"
+              loading="eager"
               height="600px"
               style={{
                             border: "1px solid #ccc",
@@ -166,6 +170,7 @@ function Discrete() {
               src={graph}
               width="100%"
               height="600px"
+              loading="eager"
               style={{
                             border: "1px solid #ccc",
                             borderRadius: "10px"
@@ -197,6 +202,7 @@ function Discrete() {
             <iframe
               src={question}
               width="100%"
+              loading="eager"
               height="600px"
               style={{
                             border: "1px solid #ccc",

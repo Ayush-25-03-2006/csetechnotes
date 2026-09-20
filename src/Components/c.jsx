@@ -35,6 +35,7 @@ function C() {
                         <iframe src={question2} 
                             width="100%"
                             height="600px"
+                            loading="eager"
                             style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"
@@ -62,6 +63,7 @@ function C() {
                         <iframe src={question1} 
                             width="100%"
                             height="600px"
+                            loading="eager"
                             style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"

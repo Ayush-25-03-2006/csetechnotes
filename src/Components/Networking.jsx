@@ -45,6 +45,7 @@ function Networking() {
               width="100%"
               height="600px"
               title="OOPS Notes"
+              loading="eager"
               style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -75,6 +76,7 @@ function Networking() {
               src={physical}
               width="100%"
               height="600px"
+              loading="eager"
               title="OOPS Notes"
               style={{
                   border: "1px solid #ccc",
@@ -107,6 +109,7 @@ function Networking() {
               width="100%"
               height="600px"
               title="OOPS Notes"
+              loading="eager"
               style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"

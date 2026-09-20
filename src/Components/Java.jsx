@@ -66,6 +66,7 @@ function Java() {
             src={java1}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -96,6 +97,7 @@ function Java() {
             src={java2}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -126,6 +128,7 @@ function Java() {
             src={java3}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -156,6 +159,7 @@ function Java() {
             src={java4}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -186,6 +190,7 @@ function Java() {
             src={java5}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -216,6 +221,7 @@ function Java() {
             src={java6}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -246,6 +252,7 @@ function Java() {
             src={java7}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -276,6 +283,7 @@ function Java() {
             src={java8}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -306,6 +314,7 @@ function Java() {
             src={java9}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -336,6 +345,7 @@ function Java() {
             src={java10}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -366,6 +376,7 @@ function Java() {
             src={java11}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -396,6 +407,7 @@ function Java() {
             src={java12}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -426,6 +438,7 @@ function Java() {
             src={java13}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -456,6 +469,7 @@ function Java() {
             src={java}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -492,6 +506,7 @@ function Java() {
             width="100%"
             height="600px"
             title="OOPS Notes"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"

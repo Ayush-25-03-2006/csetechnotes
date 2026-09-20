@@ -64,6 +64,7 @@ function Oops() {
             width="100%"
             height="600px"
             title="OOPS Notes"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -96,6 +97,7 @@ function Oops() {
           <iframe
             src={classObject}
             width="100%"
+            loading="eager"
             height="600px"
             title="OOPS Notes"
             style={{
@@ -131,6 +133,7 @@ function Oops() {
             src={OopsBasic2}
             width="100%"
             height="600px"
+            loading="eager"
             title="OOPS Notes"
             style={{
                   border: "1px solid #ccc",
@@ -165,6 +168,7 @@ function Oops() {
             src={Constructor}
             width="100%"
             height="600px"
+            loading="eager"
             title="OOPS Notes"
             style={{
                   border: "1px solid #ccc",
@@ -199,6 +203,7 @@ function Oops() {
             src={CopyConstructor}
             width="100%"
             height="600px"
+            loading="eager"
             title="OOPS Notes"
             style={{
                   border: "1px solid #ccc",
@@ -232,6 +237,7 @@ function Oops() {
           <iframe
             src={Destructor}
             width="100%"
+            loading="eager"
             height="600px"
             title="OOPS Notes"
             style={{
@@ -267,6 +273,7 @@ function Oops() {
             src={Encapsulation}
             width="100%"
             height="600px"
+            loading="eager"
             title="OOPS Notes"
             style={{
                   border: "1px solid #ccc",
@@ -302,6 +309,7 @@ function Oops() {
             width="100%"
             height="600px"
             title="OOPS Notes"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -335,6 +343,7 @@ function Oops() {
             src={TypesOfInheritance}
             width="100%"
             height="600px"
+            loading="eager"
             title="OOPS Notes"
             style={{
                   border: "1px solid #ccc",
@@ -369,6 +378,7 @@ function Oops() {
             src={Polymorphism}
             width="100%"
             height="600px"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -404,6 +414,7 @@ function Oops() {
             width="100%"
             height="600px"
             title="OOPS Notes"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
@@ -438,6 +449,7 @@ function Oops() {
           <iframe
             src={question}
             width="100%"
+            loading="eager"
             height="600px"
             title="OOPS Notes"
             style={{

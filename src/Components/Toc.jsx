@@ -76,9 +76,10 @@ function Toc() {
                         src={question1}
                         width="100%"
                         height="600px"
+                        loading="eager"
                         title="Toc Notes"
                         style={{
-                                border: "1px solid #ccc",
+                                border: "1px solid #ccc" ,
                                 borderRadius: "10px"
                             }}
                         onLoad={() =>

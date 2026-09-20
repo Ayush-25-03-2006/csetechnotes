@@ -86,6 +86,7 @@ function Dsa() {
           src={introduction}
           width="100%"
           height="600px"
+          loading="eager"
           title="OOPS Notes"
           style={{
                             border: "1px solid #ccc",
@@ -119,6 +120,7 @@ function Dsa() {
           src={ll1}
           width="100%"
           height="600px"
+          loading="eager"
           title="OOPS Notes"
           style={{
                             border: "1px solid #ccc",
@@ -154,6 +156,7 @@ function Dsa() {
                 width="100%"
                 height="600px"
                 title="OOPS Notes"
+                loading="eager"
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -187,6 +190,7 @@ function Dsa() {
                 src={ll3}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -221,6 +225,7 @@ function Dsa() {
                 src={ll4}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -255,6 +260,7 @@ function Dsa() {
                 width="100%"
                 height="600px"
                 title="OOPS Notes"
+                loading="eager"
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -288,6 +294,7 @@ function Dsa() {
                 width="100%"
                 height="600px"
                 title="OOPS Notes"
+                loading="eager"
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -321,6 +328,7 @@ function Dsa() {
                 src={ll7}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -354,6 +362,7 @@ function Dsa() {
               <iframe
                 src={ll8}
                 width="100%"
+                loading="eager"
                 height="600px"
                 title="OOPS Notes"
                 style={{
@@ -392,6 +401,7 @@ function Dsa() {
                 width="100%"
                 height="600px"
                 title="OOPS Notes"
+                loading="eager"
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -426,6 +436,7 @@ function Dsa() {
                 width="100%"
                 height="600px"
                 title="OOPS Notes"
+                loading="eager"
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -458,6 +469,7 @@ function Dsa() {
               <iframe
                 src={stack3}
                 width="100%"
+                loading="eager"
                 height="600px"
                 title="OOPS Notes"
                 style={{
@@ -493,6 +505,7 @@ function Dsa() {
                 src={stack4}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -529,6 +542,7 @@ function Dsa() {
                 src={queue1}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -564,6 +578,7 @@ function Dsa() {
                 width="100%"
                 height="600px"
                 title="OOPS Notes"
+                loading="eager"
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
@@ -597,6 +612,7 @@ function Dsa() {
                 src={queue3}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -632,6 +648,7 @@ function Dsa() {
                 src={sort1}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -666,6 +683,7 @@ function Dsa() {
                 src={sort2}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -699,6 +717,7 @@ function Dsa() {
               <iframe
                 src={sort3}
                 width="100%"
+                loading="eager"
                 height="600px"
                 title="OOPS Notes"
                 style={{
@@ -734,6 +753,7 @@ function Dsa() {
                 src={sort4}
                 width="100%"
                 height="600px"
+                loading="eager"
                 title="OOPS Notes"
                 style={{
                     border: "1px solid #ccc",
@@ -771,6 +791,7 @@ function Dsa() {
                 width="100%"
                 height="600px"
                 title="OOPS Notes"
+                loading="eager"
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"

@@ -43,6 +43,7 @@ function Os() {
             src={os}
             width="100%"
             height="600px"
+            loading="eager"
             title="OOPS Notes"
             style={{
                   border: "1px solid #ccc",
@@ -77,6 +78,7 @@ function Os() {
             width="100%"
             height="600px"
             title="OS Notes"
+            loading="eager"
             style={{
                   border: "1px solid #ccc",
                   borderRadius: "10px"
