@@ -77,7 +77,7 @@ function Ai() {
                         width="100%"
                         height="600px"
                         title="Toc Notes"
-                        loading="eager"
+                        loading="lazy"
                         style={{
                                 border: "1px solid #ccc",
                                 borderRadius: "10px"

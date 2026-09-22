@@ -78,7 +78,7 @@ function Ml() {
                             src={ml1}
                             width="100%"
                             height="600px"
-                            loading="eager"
+                            loading="lazy"
                             title="Machine Learning Notes"
                             style={{
                                 border: "1px solid #ccc",
