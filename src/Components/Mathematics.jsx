@@ -9,7 +9,7 @@ function Mathematics() {
     return (
         <div className="math-container">
 
-            <h1 className="math-title">📘 Mathematics</h1>
+            <h1 className="math-title" style={{color:"black"}}>📘 Mathematics</h1>
 
             <div className="category-grid">
 

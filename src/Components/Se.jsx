@@ -16,7 +16,7 @@ function Se() {
         <div className="container mt-4">
             <h2
                 style={{
-                    color: "black",
+                    color:"black", backgroundColor:"white",borderRadius:"25px",
                     fontFamily: "sans-serif",
                     fontSize: "40px"
                 }}

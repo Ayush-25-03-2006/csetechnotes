@@ -20,7 +20,7 @@ function Dashboard() {
                     <button
                         className="chakravyu-btn"
                         onClick={() => setShowAI(!showAI)}
-                    >
+                    > 
                         {showAI ? "Hide Chakravyu AI Mode" : "Chakravyu AI Mode"}
                     </button>
                     {(showAI &&
@@ -31,7 +31,7 @@ function Dashboard() {
                         style={{ border: "none", borderRadius: "15px" }}
                     />
                     )}
-                    <h1 className="title">Explore Top Categories</h1>
+                    <h1 className="title" style={{color:"black", backgroundColor:"white", borderRadius:"25px"}}>Explore Top Categories</h1>
                 </div>
 
                 <div className="category-grid">
@@ -102,17 +102,17 @@ function Dashboard() {
             <div className="cont">
                 <Link to="https://www.akubihar.com/btech-cs-question-papers.html" className="quiz-card">
                     <i className="bi bi-patch-question"></i>
-                    <p>BEU Question</p>
+                    <p style={{color:"black"}}>BEU Question</p>
                 </Link>
 
                 <Link to="/quiz" className="quiz-card">
                     <i className="bi bi-journal-check"></i>
-                    <p>Quiz</p>
+                    <p style={{color:"black"}}>Quiz</p>
                 </Link>
 
                 <Link to="/about" className="quiz-card">
                     <i className="bi bi-person-circle"></i>
-                    <p>About</p>
+                    <p style={{color:"black"}}>About</p>
                 </Link>
             </div>
         </>

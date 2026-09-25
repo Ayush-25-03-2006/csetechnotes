@@ -61,7 +61,7 @@ function Dsa() {
     })
     return (
     <div className="container mt-4">
-    <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>Data Structure & Algorithm</h2>
+    <h2 style={{color:"black", backgroundColor:"white",borderRadius:"25px",fontFamily:"sans-serif", fontSize:"40px"}}>Data Structure & Algorithm</h2>
     <hr />
     <u><h3 >Topic Wise Notes Content</h3></u>
     <hr />
@@ -97,7 +97,7 @@ function Dsa() {
       </div>
     )}
   <hr />
-  <h1 style={{color:"black"}}> # Linked List</h1>
+  <h1 style={{color:"black", backgroundColor:"white", borderRadius:"25px"}}> # Linked List</h1>
   <hr />
     <h3 className="mb-4">1. Linked List In C</h3>
     <a
@@ -368,13 +368,14 @@ function Dsa() {
                 style={{
                     border: "1px solid #ccc",
                     borderRadius: "10px"
+
                 }}
                 onLoad={() => toast.success("Notes Loaded Successfully...",{autoClose:1000,transition:null})}
               ></iframe>
             </div>
           )}
           <hr />
-          <h1 style={{color:"black"}}> # Stack </h1>
+          <h1 style={{color:"black",backgroundColor:"white", borderRadius:"25px"}}> # Stack </h1>
                           <hr />
            <h3 className="mb-4">1. Implementation Of Stack using Array In C (Creating & Displaying)</h3>
     
@@ -516,7 +517,7 @@ function Dsa() {
             </div>
           )}
           <hr />
-          <h1 style={{color:"black"}}> # Queue</h1>
+          <h1 style={{color:"black",backgroundColor:"white", borderRadius:"25px"}}> # Queue</h1>
           <hr />
            <h3 className="mb-4">1. Implementation Of Queue using Array In C (Create & Display)</h3>
     
@@ -623,7 +624,7 @@ function Dsa() {
             </div>
           )}
           <hr />
-          <h1 style={{color:"black"}}># Searching & Sorting Algorithm's</h1>
+          <h1 style={{color:"black",backgroundColor:"white", borderRadius:"25px"}}># Searching & Sorting Algorithm's</h1>
           <hr />
            <h3 className="mb-4">1. Quick Sort</h3>
           <a

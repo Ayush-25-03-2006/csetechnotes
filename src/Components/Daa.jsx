@@ -22,7 +22,7 @@ function Daa() {
       })
     return(
         <div className="container mt-4">
-        <h2 style={{color:"black", fontFamily:"sans-serif", fontSize:"40px"}}>Design & Analysis Of Algorithm</h2>
+        <h2 style={{color:"black", backgroundColor:"white",borderRadius:"25px",fontFamily:"sans-serif", fontSize:"40px"}}>Design & Analysis Of Algorithm</h2>
           <hr />
               <u><h3 >Topic Wise Notes Content</h3></u>
             <hr/>

@@ -23,9 +23,11 @@ function Ai() {
 
             <h2
                 style={{
-                    color: "black",
                     fontFamily: "sans-serif",
-                    fontSize: "40px"
+                    fontSize: "40px",
+                    color : "black",
+                    backgroundColor : "white",
+                    borderRadius : "25px"
                 }}
             >
                 Artificial Intelligence

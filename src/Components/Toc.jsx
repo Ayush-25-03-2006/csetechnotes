@@ -23,7 +23,7 @@ function Toc() {
 
             <h2
                 style={{
-                    color: "black",
+                    color:"black", backgroundColor:"white",borderRadius:"25px",
                     fontFamily: "sans-serif",
                     fontSize: "40px"
                 }}

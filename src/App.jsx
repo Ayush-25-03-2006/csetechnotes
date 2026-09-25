@@ -35,12 +35,26 @@ import About from './Components/About'
 import CompilerDesign from './Components/CompilerDesign'
 import WebinternetTechnology from './Components/WebInternetTechnology'
 import Ml from './Components/Ml'
-
+import { useEffect, useState } from 'react'
+import "./App.css";
 function App() {
+
+  const [darkmode, setdarkmode] = useState(() => {
+    return localStorage.getItem("darkmode") === "true"
+  })
+
+  useEffect(() => {
+    localStorage.setItem("darkmode",darkmode)
+  },[darkmode])
+
   return (
     <BrowserRouter>
-      <div>
-        <h1 style={{color:"black", backgroundColor:"burlywood"}}>Hello Engineer's, Always Eager To Learn !</h1>
+
+        <div className={darkmode ? "app dark-mode" : "app light-mode"}>
+          <h1 style={{color:"black", backgroundColor:"burlywood"}}>Hello Engineer's, Always Eager To Learn !</h1>
+          <button className='theme-btn' onClick={() => setdarkmode(!darkmode)}>
+            {darkmode ? 'Light Mode' : "Dark Mode"}
+          </button>
         <Navbar/>
         
         <Routes>
@@ -80,7 +94,7 @@ function App() {
           <Route path='/wit' element={<WebinternetTechnology/>}/>
           <Route path='/ml' element={<Ml/>}/>
         </Routes>
-      </div>
+        </div>
     </BrowserRouter>
   )
 }

@@ -1,0 +1,153 @@
+/* Remove default browser spacing */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Make body cover the complete screen */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Main application */
+.app {
+  min-height: 100vh;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   LIGHT MODE
+   ========================= */
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.light-mode,
+.light-mode body {
+  background-color: #ffffff;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+.dark-mode  {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.dark-mode body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+  width: 100%;
+  box-sizing: border-box;
+
+  background-color: burlywood;
+  padding: 15px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: 0.3s;
+}
+
+.header h1 {
+  margin: 0;
+  color: black;
+}
+
+
+/* Dark header */
+
+.dark-mode .header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .header h1 {
+  color: white;
+}
+
+
+/* =========================
+   DARK MODE COMMON ELEMENTS
+   ========================= */
+
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode label {
+  color: white;
+}
+
+
+/* Cards */
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+  border-color: #444;
+}
+
+
+/* Buttons */
+
+.theme-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer; 
+
+  font-size: 15px;
+  font-weight: bold;
+
+  background-color: #222;
+  color: white;
+
+  transition: 0.3s;
+}
+
+.dark-mode .theme-btn {
+  background-color: white;
+  color: black;
+}
+
+
+/* Inputs */
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+
+/* Links */
+
+.dark-mode a {
+  color: #66b3ff;
+}
