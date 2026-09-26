@@ -1,51 +1,124 @@
-/* Navbar background same theme as dashboard */
-.navbar {
-    background: linear-gradient(135deg, #e3f2fd, #ffffff);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 10px 0;
-    border-radius: 50px;
-    margin: 20px
+/* =========================================
+   THEME VARIABLES
+========================================= */
+
+/* WHITE MODE */
+:root {
+    --navbar-bg: linear-gradient(135deg, #e3f2fd, #ffffff);
+    --navbar-text: #333333;
+    --navbar-shadow: rgba(0, 0, 0, 0.1);
+
+    --nav-hover-bg: #65a17c;
+    --nav-active-bg: #0d6efd;
 }
 
-/* Scroll container */
+
+/* DARK MODE */
+.dark-mode {
+    --navbar-bg: linear-gradient(135deg, #121212, #222222);
+    --navbar-text: #ffffff;
+    --navbar-shadow: rgba(0, 0, 0, 0.45);
+
+    --nav-hover-bg: #65a17c;
+    --nav-active-bg: #0d6efd;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    background: var(--navbar-bg);
+
+    box-shadow:
+        0 2px 10px var(--navbar-shadow);
+
+    padding: 10px 0;
+
+    border-radius: 50px;
+
+    margin: 20px;
+
+    transition:
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   SCROLL CONTAINER
+========================================= */
+
 .nav-scroll {
     overflow-x: auto;
+
     white-space: nowrap;
 }
 
-/* Remove scrollbar (optional clean UI) */
+
+/* Remove scrollbar */
+
 .nav-scroll::-webkit-scrollbar {
     display: none;
 }
 
-/* Nav items */
+
+/* =========================================
+   NAV ITEMS
+========================================= */
+
 .navbar-nav {
     gap: 15px;
 }
 
-/* Links */
+
+/* =========================================
+   LINKS
+========================================= */
+
 .nav-link {
-    color: #333 !important;
+    color: var(--navbar-text) !important;
+
     font-weight: 500;
+
     padding: 8px 15px;
+
     border-radius: 10px;
-    transition: all 0.3s ease;
+
+    transition:
+        all 0.3s ease;
 }
 
-/* Hover effect */
+
+/* =========================================
+   HOVER
+========================================= */
+
 .nav-link:hover {
-    background: #65a17c;
+    background: var(--nav-hover-bg);
+
     color: white !important;
+
     transform: scale(1.05);
 }
 
-/* Active look (optional) */
+
+/* =========================================
+   ACTIVE
+========================================= */
+
 .nav-link.active {
-    background: #0d6efd;
+    background: var(--nav-active-bg);
+
     color: white !important;
 }
 
-/* Icon style */
+
+/* =========================================
+   ICON
+========================================= */
+
 .nav-link i {
     font-size: 18px;
 }

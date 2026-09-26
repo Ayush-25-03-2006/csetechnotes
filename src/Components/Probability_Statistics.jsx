@@ -66,7 +66,7 @@ function Probability_Statistics() {
           <hr />
               <u><h3 >Topic Wise Notes Content</h3></u>
             <hr/>
-              <h1 style={{color:"black"}}># Probability</h1>
+              <h1 style={{color:"black", backgroundColor:"white",borderRadius:"25px"}}># Probability</h1>
             <hr />
               <h3 className="mb-4">1. Probability Part-I</h3>
 
@@ -612,7 +612,7 @@ function Probability_Statistics() {
                 </div>
               )}
               <hr />
-              <h1 style={{color:"black"}}># Statistics</h1>
+              <h1 style={{color:"black", backgroundColor:"white",borderRadius:"25px"}}># Statistics</h1>
               <hr/>
               <h3 className="mb-4">1. Basic Statistics</h3>
         

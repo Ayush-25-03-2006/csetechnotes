@@ -1,65 +1,184 @@
-/* Container */
-.contain{
+
+/* ================================
+   THEME VARIABLES
+================================ */
+
+:root {
+    /* White Mode */
+    --container-bg: #ffffff;
+    --question-bg: #f1f3f5;
+    --question-text: #222222;
+
+    --option-bg: #ffffff;
+    --option-text: #222222;
+    --option-border: #0d6efd;
+
+    --hover-bg: #0d6efd;
+    --hover-text: #ffffff;
+
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    --correct-bg: #198754;
+    --wrong-bg: #dc3545;
+
+    --body-text: #222222;
+}
+
+/* ================================
+   DARK MODE
+   Add .dark-mode to body or parent
+================================ */
+
+.dark-mode {
+    --container-bg: #222222;
+    --question-bg: #111111;
+    --question-text: #ffffff;
+
+    --option-bg: #3a3a3a;
+    --option-text: #ffffff;
+    --option-border: #0d6efd;
+
+    --hover-bg: #0d6efd;
+    --hover-text: #ffffff;
+
+    --shadow: rgba(0, 0, 0, 0.4);
+
+    --correct-bg: #198754;
+    --wrong-bg: #dc3545;
+
+    --body-text: #ffffff;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.contain {
     width: 85%;
     max-width: 900px;
     margin: 30px auto;
     padding: 25px;
-    background: #fff;
+
+    background-color: var(--container-bg);
+
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+
+    box-shadow: 0 4px 15px var(--shadow);
+
+    color: var(--body-text);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-/* Question */
-.question{
+
+/* ================================
+   QUESTION
+================================ */
+
+.question {
     font-size: 22px;
     font-weight: 600;
+
     margin: 30px 0 15px;
-    color: #222;
+    padding: 15px 20px;
+
+    background-color: var(--question-bg);
+    color: var(--question-text);
+
+    border-radius: 12px;
+
     line-height: 1.6;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
-/* Option Buttons */
-.option{
+
+/* ================================
+   OPTION BUTTONS
+================================ */
+
+.option {
     display: block;
+
     width: 100%;
+
     margin: 10px 0;
+
     padding: 15px;
-    border: 2px solid #0d6efd;
+
+    border: 2px solid var(--option-border);
+
     border-radius: 8px;
-    background: white;
-    color: #222;
+
+    background-color: var(--option-bg);
+    color: var(--option-text);
+
     font-size: 18px;
+
     text-align: left;
+
     cursor: pointer;
-    transition: .3s;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
 }
 
-.option:hover:not(:disabled){
-    background: #0d6efd;
-    color: white;
+
+/* Hover */
+
+.option:hover:not(:disabled) {
+    background-color: var(--hover-bg);
+    color: var(--hover-text);
+
+    transform: translateY(-1px);
 }
 
-.option:disabled{
+
+/* Disabled */
+
+.option:disabled {
     cursor: default;
 }
 
-/* Correct Answer */
-.correct{
-    background: green !important;
+
+/* ================================
+   CORRECT ANSWER
+================================ */
+
+.correct {
+    background-color: var(--correct-bg) !important;
     color: white !important;
-    border-color: #198754 !important;
+    border-color: var(--correct-bg) !important;
 }
 
-/* Wrong Answer */
-.wrong{
-    background: red !important;
+
+/* ================================
+   WRONG ANSWER
+================================ */
+
+.wrong {
+    background-color: var(--wrong-bg) !important;
     color: white !important;
-    border-color: #dc3545 !important;
+    border-color: var(--wrong-bg) !important;
 }
+
+
+/* ================================
+   RESULT MESSAGES
+================================ */
 
 .excellent {
     font-size: 30px;
-    color: green;
+    color: #198754;
     font-weight: bold;
 }
 
@@ -81,47 +200,57 @@
     font-weight: bold;
 }
 
-/* Tablet */
-@media (max-width:768px){
 
-    .contain{
-        width:95%;
-        padding:18px;
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+    .contain {
+        width: 95%;
+        padding: 18px;
     }
 
-    .question{
-        font-size:20px;
+    .question {
+        font-size: 20px;
     }
 
-    .option{
-        font-size:17px;
-        padding:14px;
+    .option {
+        font-size: 17px;
+        padding: 14px;
     }
 }
 
-/* Mobile */
-@media (max-width:480px){
 
-    .contain{
-        width:98%;
-        padding:12px;
-        margin:10px auto;
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .contain {
+        width: 98%;
+        padding: 12px;
+        margin: 10px auto;
     }
 
-    .question{
-        font-size:18px;
-        line-height:1.5;
+    .question {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 12px 15px;
     }
 
-    .option{
-        font-size:16px;
-        padding:12px;
-        margin:8px 0;
+    .option {
+        font-size: 16px;
+        padding: 12px;
+        margin: 8px 0;
+
         white-space: normal;
         word-wrap: break-word;
     }
 
-    hr{
-        margin:20px 0 !important;
+    hr {
+        margin: 20px 0 !important;
     }
 }

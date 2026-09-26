@@ -1,200 +1,393 @@
-#head{
-    text-align: left;
-}
-/* Container */
-.dashboard-container {
-    padding: 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #e3f2fd, #ffffff);
-    min-height: 100vh;
+/* =========================================
+   THEME VARIABLES
+========================================= */
+
+/* WHITE MODE */
+:root {
+    --dashboard-bg: linear-gradient(135deg, #e3f2fd, #ffffff);
+
+    --title-color: #333;
+    --text-color: #222;
+
+    --card-bg: #ffffff;
+    --card-text: #0d6efd;
+    --card-shadow: rgba(0, 0, 0, 0.10);
+
+    --hr-color: #222;
+
+    --button-text: #ffffff;
 }
 
-/* Hero Section */
+
+/* DARK MODE */
+.dark-mode {
+    --dashboard-bg: linear-gradient(135deg, #121212, #222222);
+
+    --title-color: #ffffff;
+    --text-color: #ffffff;
+
+    --card-bg: #292929;
+    --card-text: #66aaff;
+    --card-shadow: rgba(0, 0, 0, 0.45);
+
+    --hr-color: #777;
+
+    --button-text: #ffffff;
+}
+
+
+/* =========================================
+   HEAD
+========================================= */
+
+#head {
+    text-align: left;
+    color: var(--title-color);
+}
+
+
+/* =========================================
+   DASHBOARD CONTAINER
+========================================= */
+
+.dashboard-container {
+    padding: 20px;
+
+    text-align: center;
+
+    background: var(--dashboard-bg);
+
+    min-height: 100vh;
+
+    color: var(--text-color);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
 .hero-section {
     margin-bottom: 30px;
 }
 
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
 .hero-image {
     width: 250px;
-    border-radius: 15px;
-    margin-bottom: 15px;
 
+    border-radius: 15px;
+
+    margin-bottom: 15px;
 }
+
+
+/* =========================================
+   TITLE
+========================================= */
 
 .title {
     font-size: 2.2rem;
+
     font-weight: bold;
-    color: #333;
-}
-.hr{
-    margin: 40px;
-    border: 2px solid black;
+
+    color: var(--title-color);
+
+    transition: color 0.3s ease;
 }
 
-/* Grid Layout */
+
+/* =========================================
+   HORIZONTAL LINE
+========================================= */
+
+.hr {
+    margin: 40px;
+
+    border: 2px solid var(--hr-color);
+
+    transition: border-color 0.3s ease;
+}
+
+
+/* =========================================
+   GRID LAYOUT
+========================================= */
+
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
     gap: 20px;
+
     padding: 20px;
 }
 
-/* Card Design */
+
+/* =========================================
+   CARD CONTAINER
+========================================= */
+
 .cont {
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 30px;
+
     margin: 30px auto;
+
     flex-wrap: wrap;
 }
 
+
+/* =========================================
+   QUIZ CARD
+========================================= */
+
 .quiz-card {
     display: block;
+
     text-decoration: none;
-    background: white;
+
+    background: var(--card-bg);
+
     padding: 15px;
+
     border-radius: 15px;
-    color: #0d6efd;
+
+    color: var(--card-text);
+
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,.1);
-    transition: .3s;
+
+    box-shadow: 0 4px 15px var(--card-shadow);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+
     width: 230px;
+
     height: 130px;
 }
 
+
+/* =========================================
+   QUIZ CARD HOVER
+========================================= */
+
 .quiz-card:hover {
     background: #0d6efd;
+
     color: white;
+
     transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(13, 110, 253, 0.35);
 }
 
-.quiz-card i, p {
+
+/* FIX:
+   Previously `p` affected ALL paragraphs on the page.
+*/
+
+.quiz-card i,
+.quiz-card p {
     font-size: 30px;
 }
 
+
+/* =========================================
+   CHAKRAVYU BUTTON
+========================================= */
+
 .chakravyu-btn {
     display: inline-block;
+
     padding: 11px 24px;
+
     margin: 10px;
 
-    color: white;
+    color: var(--button-text);
+
     text-decoration: none;
+
     font-weight: bold;
+
     letter-spacing: 0.3px;
 
     border-radius: 25px;
+
     position: relative;
+
     isolation: isolate;
 
-    background: linear-gradient(135deg, #70828c, #961791);
+    background:
+        linear-gradient(
+            135deg,
+            #70828c,
+            #961791
+        );
 
-    /* Permanent glow — static, no motion */
-    /* box-shadow:
-        0 0 12px rgba(66, 133, 244, 0.45),
-        0 0 22px rgba(156, 39, 176, 0.35),
-        0 0 32px rgba(255, 64, 129, 0.25); */
-
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
-/* ================================= */
-/* STATIC GLOWING BORDER (no rotation) */
-/* ================================= */
+
+/* =========================================
+   STATIC GLOWING BORDER
+========================================= */
 
 .chakravyu-btn::before {
     content: "";
+
     position: absolute;
+
     inset: -3px;
+
     border-radius: 28px;
 
-    background: linear-gradient(
-        135deg,
-        #4285f4,
-        #9c27b0,
-        #c599a8
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #4285f4,
+            #9c27b0,
+            #c599a8
+        );
 
-    filter: blur(3px) hue-rotate(0deg);
+    filter: blur(3px);
+
     opacity: 0.5;
 
-    animation: chakravyuHueRotate 4s linear infinite;
+    animation:
+        chakravyuHueRotate 4s linear infinite;
 
     z-index: -2;
 }
 
+
+/* =========================================
+   HUE ROTATION
+========================================= */
+
 @keyframes chakravyuHueRotate {
+
     0% {
-        filter: blur(3px) hue-rotate(0deg);
+        filter:
+            blur(3px)
+            hue-rotate(0deg);
     }
+
     100% {
-        filter: blur(3px) hue-rotate(360deg);
+        filter:
+            blur(3px)
+            hue-rotate(360deg);
     }
 }
 
-/* ================================= */
-/* FIXED BUTTON CENTER */
-/* ================================= */
+
+/* =========================================
+   BUTTON CENTER
+========================================= */
 
 .chakravyu-btn::after {
     content: "";
+
     position: absolute;
+
     inset: 3px;
+
     border-radius: 22px;
 
-    background: linear-gradient(90deg, #7272eb, #bdabc3);
+    background:
+        linear-gradient(
+            90deg,
+            #7272eb,
+            #bdabc3
+        );
 
     z-index: -1;
 }
 
-/* ================================= */
-/* HOVER */
-/* ================================= */
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
 
 .chakravyu-btn:hover {
-    transform: translateY(-4px) scale(1.04);
-/* 
-    box-shadow:
-        0 8px 25px rgba(66, 133, 244, 0.4),
-        0 0 30px rgba(156, 39, 176, 0.4),
-        0 0 45px rgba(255, 64, 129, 0.3); */
+    transform:
+        translateY(-4px)
+        scale(1.04);
 
     color: white;
 }
 
+
 .chakravyu-btn:hover::before {
     filter: blur(4px);
+
     opacity: 1;
 }
 
-/* ================================= */
-/* CLICK */
-/* ================================= */
+
+/* =========================================
+   BUTTON CLICK
+========================================= */
 
 .chakravyu-btn:active {
-    transform: translateY(-1px) scale(0.97);
+    transform:
+        translateY(-1px)
+        scale(0.97);
 
-    box-shadow: 0 3px 10px rgba(66, 133, 244, 0.2);
+    box-shadow:
+        0 3px 10px rgba(66, 133, 244, 0.2);
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    .hero-image {
-        width: 180px;
-    }
 
-    .title {
-        font-size: 1.5rem;
-    }
-}
+/* =========================================
+   MOBILE
+========================================= */
 
-/* Mobile */
 @media (max-width: 600px) {
+
     .hero-image {
         width: 250px;
     }
 
     .title {
         font-size: 1.5rem;
+    }
+
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    .category-grid {
+        grid-template-columns:
+            repeat(auto-fit, minmax(150px, 1fr));
+
+        gap: 15px;
+
+        padding: 10px;
+    }
+
+    .quiz-card {
+        width: 200px;
+        height: 120px;
     }
 }

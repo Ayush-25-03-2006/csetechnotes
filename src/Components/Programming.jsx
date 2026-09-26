@@ -9,7 +9,7 @@ function Programming() {
     return (
         <div className="programming-container">
 
-            <h1 className="programming-title" style={{color:"black"}}>💻 Programming</h1>
+            <h1 className="programming-title">💻 Programming</h1>
 
             <div className="category-grid">
 

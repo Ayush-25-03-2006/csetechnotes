@@ -1,82 +1,224 @@
+/* =========================================
+   THEME VARIABLES
+========================================= */
+
+:root {
+    /* White Mode */
+    --programming-bg: linear-gradient(135deg, #e3f2fd, #ffffff);
+    --programming-title: #222;
+    --card-bg: #ffffff;
+    --card-text: #333;
+    --card-icon: #0d6efd;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --glow: rgba(13, 110, 253, 0.2);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark-mode {
+    --programming-bg: linear-gradient(135deg, #121212, #222222);
+    --programming-title: #ffffff;
+    --card-bg: #2b2b2b;
+    --card-text: #ffffff;
+    --card-icon: #66aaff;
+    --card-shadow: rgba(0, 0, 0, 0.45);
+    --glow: rgba(66, 153, 255, 0.25);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
 .programming-container {
     padding: 30px;
+
     min-height: 100vh;
-    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+
+    background: var(--programming-bg);
+
+    transition: background 0.3s ease;
 }
 
-/* Title */
+
+/* =========================================
+   TITLE
+========================================= */
+
 .programming-title {
     text-align: center;
+
     font-size: 2.5rem;
+
     margin-bottom: 30px;
-    color: #222;
+
+    color: var(--programming-title);
+
     letter-spacing: 1px;
+
+    transition: color 0.3s ease;
 }
 
-/* Grid */
+
+/* =========================================
+   GRID
+========================================= */
+
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
     gap: 25px;
 }
 
-/* Card */
+
+/* =========================================
+   CARD
+========================================= */
+
 .card {
-    background: white;
+    background: var(--card-bg);
+
     padding: 30px;
+
     border-radius: 18px;
+
     text-align: center;
+
     text-decoration: none;
-    color: #333;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+
+    color: var(--card-text);
+
+    box-shadow:
+        0 8px 25px var(--card-shadow);
+
+    transition:
+        all 0.3s ease;
+
     position: relative;
+
     overflow: hidden;
 }
 
-/* Glow effect */
+
+/* =========================================
+   GLOW EFFECT
+========================================= */
+
 .card::before {
     content: "";
+
     position: absolute;
+
     width: 100%;
+
     height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(13,110,253,0.2), transparent);
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            var(--glow),
+            transparent
+        );
+
     top: 0;
+
     left: -100%;
+
     transition: 0.5s;
 }
+
 
 .card:hover::before {
     left: 100%;
 }
 
-/* Icon */
+
+/* =========================================
+   ICON
+========================================= */
+
 .card i {
     font-size: 45px;
+
     margin-bottom: 12px;
-    color: #0d6efd;
+
+    color: var(--card-icon);
+
+    transition: color 0.3s ease;
 }
 
-/* Hover */
+
+/* =========================================
+   HOVER
+========================================= */
+
 .card:hover {
-    transform: translateY(-10px) scale(1.04);
-    background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+    transform:
+        translateY(-10px)
+        scale(1.04);
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d6efd,
+            #6ea8fe
+        );
+
     color: white;
 }
+
 
 .card:hover i {
     color: white;
 }
 
-/* Text */
+
+/* =========================================
+   TEXT
+========================================= */
+
 .card p {
     font-size: 1.1rem;
+
     font-weight: 500;
+
+    color: inherit;
 }
 
-/* Mobile */
+
+/* =========================================
+   MOBILE
+========================================= */
+
 @media (max-width: 600px) {
+
+    .programming-container {
+        padding: 20px;
+    }
+
     .programming-title {
         font-size: 1.8rem;
+    }
+
+    .category-grid {
+        grid-template-columns:
+            repeat(auto-fit, minmax(160px, 1fr));
+
+        gap: 15px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card i {
+        font-size: 38px;
     }
 }

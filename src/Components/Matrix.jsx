@@ -58,7 +58,7 @@ function Matrix() {
       <hr />
        <u><h3 >Topic Wise Notes Content</h3></u>
        <hr />
-       <h1 style={{color:"black"}}># Matrix</h1>
+       <h1 style={{color:"black", backgroundColor:"white", borderRadius:"25px"}}># Matrix</h1>
        <hr />
          <h3 className="mb-4">1. Matrix Notes</h3>
          <a
@@ -123,7 +123,7 @@ function Matrix() {
            </div>
          )}
          <hr />
-         <h1 style={{color:"black"}}># Calculus-I</h1>
+         <h1 style={{color:"black", backgroundColor:"white", borderRadius:"25px"}}># Calculus-I</h1>
          <hr />
          <hr />
          <h3 className="mb-4">1. Integration Question & Answer</h3>
@@ -285,7 +285,7 @@ function Matrix() {
            </div>
          )}
          <hr />
-         <h1 style={{color:"black"}}># Calculus-II</h1>
+         <h1 style={{color:"black", backgroundColor:"white", borderRadius:"25px"}}># Calculus-II</h1>
          <hr />
          <h3 className="mb-4">1. Calculus-II Notes</h3>
          <a
@@ -511,7 +511,7 @@ function Matrix() {
            </div>
          )}
          <hr />
-         <h1 style={{color:"black"}}># Multivariable Calculus</h1>
+         <h1 style={{color:"black", backgroundColor:"white", borderRadius:"25px"}}># Multivariable Calculus</h1>
          <hr />
          <h3 className="mb-4">1. Limit, Continuity & Differentiability</h3>
          <a
@@ -609,7 +609,7 @@ function Matrix() {
            </div>
          )}
          <hr />
-         <h1 style={{color:"black"}}># Vector</h1>
+         <h1 style={{color:"black", backgroundColor:"white", borderRadius:"25px"}}># Vector</h1>
          <hr />
          <h3 className="mb-4">1. Vector Calculus Part-I</h3>
          <a
