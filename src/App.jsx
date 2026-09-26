@@ -51,7 +51,7 @@ function App() {
     <BrowserRouter>
 
         <div className={darkmode ? "app dark-mode" : "app light-mode"}>
-          <h1 style={{color:"black", backgroundColor:"burlywood"}}>Hello Engineer's, Always Eager To Learn !</h1>
+          <h1 style={{color:"black", backgroundColor:"burlywood"}}>Hello, Engineers! Keep Learning, Keep Growing!</h1>
           <button className='theme-btn' onClick={() => setdarkmode(!darkmode)}>
             {darkmode ? 'Light Mode' : "Dark Mode"}
           </button>

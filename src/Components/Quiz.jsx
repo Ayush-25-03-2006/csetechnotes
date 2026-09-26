@@ -8,62 +8,69 @@ function Quiz() {
     });
     return (
         <>
-        <h1
-  style={{
-    color: "black",
-    textAlign: "center",
-    marginTop: "20px",
-    fontSize: "40px",
-  }}
->
-  Quiz
-</h1>
-        <div className="dashboard-container">
-            <div className="category-grid">
+            <h1
+                style={{
+                    color: "black",
+                    textAlign: "center",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "20px auto",
+                    width: "200px",
+                    height: "60px",
+                    fontSize: "40px",
+                    backgroundColor: "white",
+                    borderRadius: "25px"
+                }}
+            >
+                Quiz
+            </h1>
+            <div className="dashboard-container">
+                <div className="category-grid">
 
-                <Link to="/programmingquiz" className="card programming-card">
-                    <i className="bi bi-code-slash"></i>
-                    <p>Programming</p>
-                </Link>
+                    <Link to="/programmingquiz" className="card programming-card">
+                        <i className="bi bi-code-slash"></i>
+                        <p>Programming</p>
+                    </Link>
 
-                <Link to="/networkingquiz" className="card">
-                    <i className="bi bi-hdd-network"></i>
-                    <p>Computer Networks</p>
-                </Link>
+                    <Link to="/networkingquiz" className="card">
+                        <i className="bi bi-hdd-network"></i>
+                        <p>Computer Networks</p>
+                    </Link>
 
-                <Link to="/osquiz" className="card">
-                    <i className="bi bi-cpu"></i>
-                    <p>Operating System</p>
-                </Link>
+                    <Link to="/osquiz" className="card">
+                        <i className="bi bi-cpu"></i>
+                        <p>Operating System</p>
+                    </Link>
 
-                <Link to="/dequiz" className="card">
-                    <i className="bi bi-cpu-fill"></i>
-                    <p>Digital Electronics</p>
-                </Link>
+                    <Link to="/dequiz" className="card">
+                        <i className="bi bi-cpu-fill"></i>
+                        <p>Digital Electronics</p>
+                    </Link>
 
-                <Link to="/dbmsquiz" className="card">
-                    <i className="bi bi-database"></i>
-                    <p>DBMS</p>
-                </Link>
+                    <Link to="/dbmsquiz" className="card">
+                        <i className="bi bi-database"></i>
+                        <p>DBMS</p>
+                    </Link>
 
-                <Link to="/tocquiz" className="card">
-                    <i className="bi bi-diagram-3"></i>
-                    <p>Theory of Computation</p>
-                </Link>
+                    <Link to="/tocquiz" className="card">
+                        <i className="bi bi-diagram-3"></i>
+                        <p>Theory of Computation</p>
+                    </Link>
 
-                <Link to="/aiquiz" className="card">
-                    <i className="bi bi-robot"></i>
-                    <p>Artificial Intelligence</p>
-                </Link>
+                    <Link to="/aiquiz" className="card">
+                        <i className="bi bi-robot"></i>
+                        <p>Artificial Intelligence</p>
+                    </Link>
 
-                <Link to="/sequiz" className="card">
-                    <i className="bi bi-journal-code"></i>
-                    <p>Software Engineering</p>
-                </Link>
+                    <Link to="/sequiz" className="card">
+                        <i className="bi bi-journal-code"></i>
+                        <p>Software Engineering</p>
+                    </Link>
 
+                </div>
             </div>
-        </div>
-    </>
+        </>
     );
 }
 

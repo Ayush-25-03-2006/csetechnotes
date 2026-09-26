@@ -190,7 +190,7 @@ function Networking() {
         <hr />
         <h1 style={{ color: "crimson" }}>@ Important Question</h1>
         <hr />
-        <h3 className="mb-4">1. Computer Network Important Question</h3>
+        <h3 className="mb-4">1. Computer Network Top 40 Question & Answer</h3>
         <a
           href={question}
           download
