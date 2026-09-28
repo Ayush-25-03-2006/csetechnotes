@@ -11,6 +11,7 @@ import com6 from "./Compiler_Design/LR(0).pdf";
 import com7 from "./Compiler_Design/SLR(1).pdf";
 import com8 from "./Compiler_Design/LR(1) & CLR(1).pdf";
 import com9 from "./Compiler_Design/LALR(1).pdf";
+import com10 from "./Compiler_Design/Semantic Analyser.pdf";
 
 function CompilerDesign() {
 
@@ -28,6 +29,7 @@ function CompilerDesign() {
     const [showPdf8, setShowPdf8] = useState(false);
     const [showPdf9, setShowPdf9] = useState(false);
     const [showPdf10, setShowPdf10] = useState(false);
+    const [showPdf11, setShowPdf11] = useState(false);
 
     const notify = () => {
         toast("Downloading Notes For You", {
@@ -93,7 +95,7 @@ function CompilerDesign() {
                 <hr />
                 <h1 style={{color:"black", backgroundColor:"white",borderRadius:"25px",}}> # Syntax Analyser</h1>
                 <hr />
-                <h3 className="mb-4">1. Syntax Analyser</h3>
+                <h3 className="mb-4">A. Syntax Analyser</h3>
                 <a
                     href={com1}
                     download
@@ -125,7 +127,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">2. First & Follow</h3>
+                <h3 className="mb-4">B. First & Follow</h3>
                 <a
                     href={com2}
                     download
@@ -157,7 +159,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">3. Types Of Parsing</h3>
+                <h3 className="mb-4">C. Types Of Parsing</h3>
                 <a
                     href={com3}
                     download
@@ -189,7 +191,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">4. LL (1)</h3>
+                <h3 className="mb-4">D. LL (1)</h3>
                 <a
                     href={com4}
                     download
@@ -221,7 +223,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">5. Bottom-Up-Parsing </h3>
+                <h3 className="mb-4">E. Bottom-Up-Parsing </h3>
                 <a
                     href={com5}
                     download
@@ -253,7 +255,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">6. LR(0) </h3>
+                <h3 className="mb-4">F. LR(0) </h3>
                 <a
                     href={com6}
                     download
@@ -285,7 +287,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">7. SLR(1) </h3>
+                <h3 className="mb-4">G. SLR(1) </h3>
                 <a
                     href={com7}
                     download
@@ -317,7 +319,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">8. LR(1) & CLR(1) </h3>
+                <h3 className="mb-4">H. LR(1) & CLR(1) </h3>
                 <a
                     href={com8}
                     download
@@ -349,7 +351,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h3 className="mb-4">9. LALR(1) </h3>
+                <h3 className="mb-4">I. LALR(1) </h3>
                 <a
                     href={com9}
                     download
@@ -368,6 +370,38 @@ function CompilerDesign() {
                     <div className="mt-3">
                         <iframe
                             src={com9}
+                            width="100%"
+                            height="600px"
+                            title="OOPS Notes"
+                            loading="eager"
+                            style={{
+                                border: "1px solid #ccc",
+                                borderRadius: "10px"
+                            }}
+                            onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
+                        ></iframe>
+                    </div>
+                )}
+                <hr/>
+                <h3 className="mb-4">3. Semantic Analyser</h3>
+                <a
+                    href={com10}
+                    download
+                    className="btn btn-primary btn-lg mb-4"
+                    onClick={notify}
+                >
+                    Download PDF
+                </a>
+                <button
+                    className="btn btn-success btn-lg mb-4 ms-3"
+                    onClick={() => setShowPdf11(!showPdf11)}
+                >
+                    {showPdf11 ? "Hide Notes" : "Show Notes"}
+                </button>
+                {showPdf11 && (
+                    <div className="mt-3">
+                        <iframe
+                            src={com10}
                             width="100%"
                             height="600px"
                             title="OOPS Notes"
