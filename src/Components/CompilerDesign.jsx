@@ -12,6 +12,8 @@ import com7 from "./Compiler_Design/SLR(1).pdf";
 import com8 from "./Compiler_Design/LR(1) & CLR(1).pdf";
 import com9 from "./Compiler_Design/LALR(1).pdf";
 import com10 from "./Compiler_Design/Semantic Analyser.pdf";
+import com11 from "./Compiler_Design/Intermediate Code Generation.pdf";
+import question1 from "./Compiler_Design/CD TOP 50 QUES-ANS.pdf";
 
 function CompilerDesign() {
 
@@ -30,6 +32,8 @@ function CompilerDesign() {
     const [showPdf9, setShowPdf9] = useState(false);
     const [showPdf10, setShowPdf10] = useState(false);
     const [showPdf11, setShowPdf11] = useState(false);
+    const [showPdf12, setShowPdf12] = useState(false);
+    const [showPdf13, setShowPdf13] = useState(false);
 
     const notify = () => {
         toast("Downloading Notes For You", {
@@ -45,7 +49,7 @@ function CompilerDesign() {
     return (
         <>
             <div className="container mt-4">
-                <h2 style={{color:"black", backgroundColor:"white",borderRadius:"25px",fontFamily: "sans-serif", fontSize: "40px" }}>Compiler Design</h2>
+                <h2 style={{ color: "black", backgroundColor: "white", borderRadius: "25px", fontFamily: "sans-serif", fontSize: "40px" }}>Compiler Design</h2>
                 <hr />
                 <u><h3 >Topic Wise Notes Content</h3></u>
                 <hr />
@@ -93,7 +97,7 @@ function CompilerDesign() {
                     </div>
                 )}
                 <hr />
-                <h1 style={{color:"black", backgroundColor:"white",borderRadius:"25px",}}> # Syntax Analyser</h1>
+                <h1 style={{ color: "black", backgroundColor: "white", borderRadius: "25px", }}> # Syntax Analyser</h1>
                 <hr />
                 <h3 className="mb-4">A. Syntax Analyser</h3>
                 <a
@@ -382,7 +386,7 @@ function CompilerDesign() {
                         ></iframe>
                     </div>
                 )}
-                <hr/>
+                <hr />
                 <h3 className="mb-4">3. Semantic Analyser</h3>
                 <a
                     href={com10}
@@ -411,6 +415,67 @@ function CompilerDesign() {
                                 borderRadius: "10px"
                             }}
                             onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
+                        ></iframe>
+                    </div>
+                )}
+                <hr />
+                <h3 className="mb-4">4. Intermediate Code Generation</h3>
+                <a
+                    href={com11}
+                    download
+                    className="btn btn-primary btn-lg mb-4"
+                    onClick={notify}
+                >
+                    Download PDF
+                </a>
+                <button
+                    className="btn btn-success btn-lg mb-4 ms-3"
+                    onClick={() => setShowPdf12(!showPdf12)}
+                >
+                    {showPdf12 ? "Hide Notes" : "Show Notes"}
+                </button>
+                {showPdf12 && (
+                    <div className="mt-3">
+                        <iframe
+                            src={com11}
+                            width="100%"
+                            height="600px"
+                            title="OOPS Notes"
+                            loading="eager"
+                            style={{
+                                border: "1px solid #ccc",
+                                borderRadius: "10px"
+                            }}
+                            onLoad={() => toast.success("Notes Loaded Successfully...", { autoClose: 1000, transition: null })}
+                        ></iframe>
+                    </div>
+                )}
+                <h1 style={{ color: "crimson" }}>@ Important Questions</h1>
+                <hr />
+                <h3 className="mb-4">2. CD Top 50 Question & Answer</h3>
+                <a href={question1}
+                    download
+                    className="btn btn-primary btn-lg mb-4"
+                    onClick={notify}
+                >Download Pdf</a>
+                <button
+                    className="btn btn-success btn-lg mb-4 ms-3"
+                    onClick={() => setShowPdf13(!showPdf13)}
+                >
+                    {showPdf13 ? "Hide Notes" : "Show Notes"}
+                </button>
+                {showPdf13 && (
+                    <div
+                        className="mt-3">
+                        <iframe src={question1}
+                            width="100%"
+                            height="600px"
+                            loading="eager"
+                            style={{
+                                border: "1px solid #ccc",
+                                borderRadius: "10px"
+                            }}
+                            onLoad={() => toast.success("Notes Loaded Successully", { autoClose: 1000, transition: null })}
                         ></iframe>
                     </div>
                 )}
