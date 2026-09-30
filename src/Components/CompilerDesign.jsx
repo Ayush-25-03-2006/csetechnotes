@@ -452,7 +452,7 @@ function CompilerDesign() {
                 )}
                 <h1 style={{ color: "crimson" }}>@ Important Questions</h1>
                 <hr />
-                <h3 className="mb-4">2. CD Top 50 Question & Answer</h3>
+                <h3 className="mb-4">1. CD Top 50 Question & Answer</h3>
                 <a href={question1}
                     download
                     className="btn btn-primary btn-lg mb-4"
