@@ -68,6 +68,11 @@ function Quiz() {
                         <p>Software Engineering</p>
                     </Link>
 
+                    <Link to="/compilerdesignquiz" className="card">
+                        <i className="bi bi-terminal"></i>
+                        <p>Compiler Design</p>
+                    </Link>
+
                 </div>
             </div>
         </>

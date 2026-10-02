@@ -37,6 +37,8 @@ import WebinternetTechnology from './Components/WebInternetTechnology'
 import Ml from './Components/Ml'
 import { useEffect, useState } from 'react'
 import "./App.css";
+import CompilerDesign_Quiz from './Components/CompilerDesign_Quiz'
+
 function App() {
 
   const [darkmode, setdarkmode] = useState(() => {
@@ -93,6 +95,7 @@ function App() {
           <Route path='/cd' element={<CompilerDesign/>}/>
           <Route path='/wit' element={<WebinternetTechnology/>}/>
           <Route path='/ml' element={<Ml/>}/>
+          <Route path='/compilerdesignquiz' element={<CompilerDesign_Quiz/>}/>
         </Routes>
         </div>
     </BrowserRouter>
