@@ -455,7 +455,15 @@ function CompilerDesign_Quiz() {
         <>
             <div className="contain">
                 <p className="question">
-                    1. Which of the following languages is regular?
+                    <pre>
+                    1. is corrected. Options have been shuffled. <br />
+                        Correct-option distribution: A = 10, B = 13, C = 10, D = 12. <br />
+                        1. <br />
+                        Consider the grammar: <br />
+                        S → CC <br />
+                        C → cC | d <br />
+                        Which statement is correct? <br />
+                    </pre>
                 </p>
 
                 {options1.map((option, index) => (
@@ -482,7 +490,11 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    2. Which automaton can recognize every regular language?
+                    2. For the grammar: <br />
+                        S → AB <br />
+                        A → a | ε <br />
+                        B → b | ε <br />
+                        Which is the correct FIRST(S)? <br />
                 </p>
 
                 {options2.map((option, index) => (
@@ -509,7 +521,12 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    3. ε-transitions are allowed in:
+                    3. For the grammar: <br />
+                        S → ABC <br />
+                        A → a | ε <br />
+                        B → b | ε <br />
+                        C → c <br />
+                        Which symbol(s) can belong to FIRST(S)? <br />
                 </p>
 
                 {options3.map((option, index) => (
@@ -536,7 +553,11 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    4. Which operation does not preserve regularity?
+                    4. Consider: <br />
+                        S → AB <br />
+                        A → a | ε <br />
+                        B → b <br />
+                        If FIRST(B) = {"{b}"}, then FOLLOW(A) must contain:
                 </p>
 
                 {options4.map((option, index) => (
@@ -563,7 +584,10 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    5. The minimum number of states in a DFA is obtained using:
+                    5. For the grammar: <br />
+                        S → Aa <br />
+                        A → b | ε <br />
+                        What is FOLLOW(A)? <br />
                 </p>
 
                 {options5.map((option, index) => (
@@ -590,7 +614,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    6. A DFA having n states can be converted into an equivalent NFA with:
+                    6. Which condition indicates a potential conflict between two productions A → α and A → β in an LL(1) parsing table?
                 </p>
 
                 {options6.map((option, index) => (
@@ -617,7 +641,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    7. Which of the following is not a closure property of regular languages?
+                    7. If ε ∈ FIRST(α), the production A → α is entered in:
                 </p>
 
                 {options7.map((option, index) => (
@@ -644,7 +668,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    8. The Pumping Lemma is mainly used to prove:
+                    8. Which grammar contains immediate left recursion?
                 </p>
 
                 {options8.map((option, index) => (
@@ -671,7 +695,9 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    9. Which grammar generates exactly the regular languages?
+                    9. For the grammar: <br />
+                        E → E + T | T <br />
+                        After eliminating immediate left recursion, which form is correct? <br />
                 </p>
 
                 {options9.map((option, index) => (
@@ -698,7 +724,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    10. The transition function of a DFA is:
+                    10. Which parsing technique constructs the parse tree starting from the start symbol and tries to derive the input string?
                 </p>
 
                 {options10.map((option, index) => (
@@ -725,7 +751,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    11. Which of the following is deterministic?
+                    11. A top-down parser constructs:
                 </p>
 
                 {options11.map((option, index) => (
@@ -752,7 +778,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    12. If a language is accepted by an NFA, then:
+                    12. A bottom-up parser constructs:
                 </p>
 
                 {options12.map((option, index) => (
@@ -779,7 +805,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    13. Which method is commonly used to convert an NFA into a DFA?
+                    13. In shift-reduce parsing, a handle is:
                 </p>
 
                 {options13.map((option, index) => (
@@ -806,7 +832,10 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    14. The language accepted by a DFA is always:
+                    14. Consider: <br />
+                        E → E + T | T <br />
+                        T → id <br />
+                        For the input id + id, the first reduction in a bottom-up parser is generally: <br />
                 </p>
 
                 {options14.map((option, index) => (
@@ -833,7 +862,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    15. Which of the following is a necessary component of every finite automaton?
+                    15. Which of the following is not an action in a conventional LR parsing table?
                 </p>
 
                 {options15.map((option, index) => (
@@ -860,7 +889,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    16. Regular expressions and finite automata are:
+                    16. In an LR parsing table, the GOTO function is applied primarily to:
                 </p>
 
                 {options16.map((option, index) => (
@@ -887,7 +916,9 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    17. A DFA for strings ending with "01" over {"{0,1}"} requires at least:
+                    17. For the augmented grammar: <br />
+                        S' → S <br />
+                        the item representing acceptance is: <br />
                 </p>
 
                 {options17.map((option, index) => (
@@ -914,7 +945,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    18. Which language cannot be accepted by any finite automaton?
+                    18. In an LR(0) item, the dot indicates:
                 </p>
 
                 {options18.map((option, index) => (
@@ -941,7 +972,11 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    19. The complement of a DFA language is obtained by:
+                    19. Consider the grammar: <br />
+                        S → CC <br />
+                        C → cC | d <br />
+                        Which production is included in the closure when an LR(0) item contains: <br />
+                        S → .CC <br />
                 </p>
 
                 {options19.map((option, index) => (
@@ -968,7 +1003,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    20. A finite automaton has:
+                    20. The closure operation for an LR(0) item is required when the dot is immediately before:
                 </p>
 
                 {options20.map((option, index) => (
@@ -995,7 +1030,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    21. Which of the following languages is context-free but not regular?
+                    21. Which sequence correctly represents the construction of an LR(0) parser?
                 </p>
 
                 {options21.map((option, index) => (
@@ -1022,7 +1057,10 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    22. Which automaton recognizes context-free languages?
+                    22. For the grammar: <br />
+                        S → CC <br />
+                        C → cC | d <br />
+                        How many productions are present in the augmented grammar? <br />
                 </p>
 
                 {options22.map((option, index) => (
@@ -1049,7 +1087,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    23. Which production is allowed in Chomsky Normal Form (CNF)?
+                    23. In SLR(1), a reduction using A → α is placed under:
                 </p>
 
                 {options23.map((option, index) => (
@@ -1076,7 +1114,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    24. Before converting a CFG into CNF, which production is usually removed first?
+                    24. The major difference between LR(0) and SLR(1) reduction placement is that SLR(1):
                 </p>
 
                 {options24.map((option, index) => (
@@ -1103,7 +1141,9 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    25. Which of the following is a unit production?
+                    25. Suppose an LR state contains: <br />
+                        A → α. <br />
+                        In SLR(1), reduction by A → α is placed under: <br />
                 </p>
 
                 {options25.map((option, index) => (
@@ -1130,7 +1170,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    26. A grammar is called ambiguous if:
+                    26. A shift-reduce conflict occurs when a parser table entry requires:
                 </p>
 
                 {options26.map((option, index) => (
@@ -1157,7 +1197,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    27. Which grammar type generates context-free languages?
+                    27. A reduce-reduce conflict occurs when:
                 </p>
 
                 {options27.map((option, index) => (
@@ -1184,7 +1224,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    28. Which of the following is accepted by a Pushdown Automaton but not by a DFA?
+                    28. Which LR parser generally has the greatest parsing power among the following?
                 </p>
 
                 {options28.map((option, index) => (
@@ -1211,7 +1251,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    29. Which machine recognizes recursively enumerable languages?
+                    29. Which parser is generally obtained by merging LR(1) states having the same LR(0) core?
                 </p>
 
                 {options29.map((option, index) => (
@@ -1238,7 +1278,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    30. Which of the following is true about a Turing Machine?
+                    30. Which statement about LL(1) and LR parsing is correct?
                 </p>
 
                 {options30.map((option, index) => (
@@ -1265,7 +1305,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    31. Pumping Lemma for context-free languages is mainly used to prove:
+                    31. The primary function of a semantic analyzer is to:
                 </p>
 
                 {options31.map((option, index) => (
@@ -1292,7 +1332,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    32. Which language is not context-free?
+                    32. Which of the following is primarily detected during semantic analysis?
                 </p>
 
                 {options32.map((option, index) => (
@@ -1319,7 +1359,10 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    33. Which of the following is not a component of a CFG?
+                    33.Consider the statement: <br />
+                        int x; <br />
+                        x = "Hello"; <br />
+                        The error in this statement is primarily a: <br />
                 </p>
 
                 {options33.map((option, index) => (
@@ -1346,7 +1389,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    34. Which normal form allows only productions of the form A → BC or A → a?
+                    34. Which of the following is NOT generally a task of semantic analysis?
                 </p>
 
                 {options34.map((option, index) => (
@@ -1373,7 +1416,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    35. Which language requires memory to count symbols?
+                    35. During function execution, an activation record is primarily used to:
                 </p>
 
                 {options35.map((option, index) => (
@@ -1400,7 +1443,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    36. Which symbol can derive every string in a grammar?
+                    36. Which of the following is typically associated with an activation record?
                 </p>
 
                 {options36.map((option, index) => (
@@ -1427,7 +1470,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    37. A PDA differs from a DFA because it has:
+                    37. Which memory area is commonly used to maintain activation records for function calls?
                 </p>
 
                 {options37.map((option, index) => (
@@ -1454,7 +1497,9 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    38. Which of the following is an unrestricted grammar?
+                    38. Consider the calls: <br />
+                        main() → A() → B() <br />
+                        When B() is executing, which activation record is at the top of the run-time stack? <br />
                 </p>
 
                 {options38.map((option, index) => (
@@ -1481,7 +1526,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    39. In Chomsky Hierarchy, the most powerful grammar is:
+                    39. When a function finishes execution, its activation record is generally:
                 </p>
 
                 {options39.map((option, index) => (
@@ -1508,7 +1553,7 @@ function CompilerDesign_Quiz() {
                 ))}
 
                 <p className="question">
-                    40. Which of the following problems is decidable by a Turing Machine?
+                    40. Which of the following is not normally a component of an activation record?
                 </p>
 
                 {options40.map((option, index) => (
@@ -1529,6 +1574,137 @@ function CompilerDesign_Quiz() {
                             setSelected40(index);
                         }}
                         disabled={selected40 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+                <p className="question">
+                    41. Which compiler phase is primarily responsible for checking whether an identifier has been declared with a compatible type?
+                </p>
+
+                {options41.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected41 !== null
+                            ? index === correctAnswer41
+                                ? "correct"
+                                : index === selected41
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => {
+                            if (index !== correctAnswer41 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected41(index);
+                        }}
+                        disabled={selected41 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+                <p className="question">
+                    42. Which of the following is most closely associated with syntax-directed translation?
+                </p>
+
+                {options42.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected42 !== null
+                            ? index === correctAnswer42
+                                ? "correct"
+                                : index === selected42
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => {
+                            if (index !== correctAnswer42 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected42(index);
+                        }}
+                        disabled={selected42 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+                <p className="question">
+                    43. In three-address code, an instruction generally contains:
+                </p>
+
+                {options43.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected43 !== null
+                            ? index === correctAnswer43
+                                ? "correct"
+                                : index === selected43
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => {
+                            if (index !== correctAnswer43 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected43(index);
+                        }}
+                        disabled={selected43 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+                <p className="question">
+                    44. For the expression: <br />
+                        a = (b + c) * (b + c) <br />
+                        A DAG can optimize the expression primarily by: <br />
+                </p>
+
+                {options44.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected44 !== null
+                            ? index === correctAnswer44
+                                ? "correct"
+                                : index === selected44
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => {
+                            if (index !== correctAnswer44 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected44(index);
+                        }}
+                        disabled={selected44 !== null}
+                    >
+                        {option}
+                    </button>
+                ))}
+                 <p className="question">
+                    45. Which optimization replaces an expensive operation with an equivalent cheaper operation, such as replacing multiplication by a constant with suitable shifts/additions where valid?
+                </p>
+                {options45.map((option, index) => (
+                    <button
+                        key={index}
+                        className={`btn option ${selected45 !== null
+                            ? index === correctAnswer45
+                                ? "correct"
+                                : index === selected45
+                                    ? "wrong"
+                                    : ""
+                            : ""
+                            }`}
+                        onClick={() => {
+                            if (index !== correctAnswer45 && "vibrate" in navigator) {
+                                navigator.vibrate(200);
+                            }
+                            setSelected45(index);
+                        }}
+                        disabled={selected45 !== null}
                     >
                         {option}
                     </button>
