@@ -456,13 +456,10 @@ function CompilerDesign_Quiz() {
             <div className="contain">
                 <p className="question">
                     <pre>
-                    1. is corrected. Options have been shuffled. <br />
-                        Correct-option distribution: A = 10, B = 13, C = 10, D = 12. <br />
-                        1. <br />
-                        Consider the grammar: <br />
-                        S → CC <br />
-                        C → cC | d <br />
-                        Which statement is correct? <br />
+                    1. Consider the grammar: <br />
+                       S → CC <br />
+                       C → cC | d <br />
+                       Which statement is correct? <br />
                     </pre>
                 </p>
 
